@@ -11,7 +11,7 @@ categories:
 
 대부분의 회사는 마케팅을 합니다. 그리고 서비스를 운영하는 회사는 퍼포먼스 마케팅을 합니다.
 
-![](/images/1*3WmEk8QT7uCdszO0isqwwA.jpeg)
+![](/images/1%2A3WmEk8QT7uCdszO0isqwwA.jpeg)
 
 ### 퍼포먼스 마케팅이란?
 
@@ -43,7 +43,7 @@ categories:
 
 Deferred Deeplink는 기본적으로 Deeplink와 똑같이 동작하지만 링크 속성이 앱에 들어와서도 유지됩니다. 어떤 마케팅 캠페인으로부터 왔는지 구분할 수 있기 때문에 행동을 직접 유도하고, 실제로 도달하였는지 측정할 수 있습니다.
 
-\[caption id="" align="aligncenter" width="864"\]![](/images/1*ZnZyXEDotV04II1lOpndsw.jpeg) Deeplink는 단순히 앱에 진입시키지만, Deferred Deeplink는 유지되는 레퍼러 값을 이용하여 행동을 유도할 수 있습니다.\[/caption\]
+\[caption id="" align="aligncenter" width="864"\]![](/images/1%2AZnZyXEDotV04II1lOpndsw.jpeg) Deeplink는 단순히 앱에 진입시키지만, Deferred Deeplink는 유지되는 레퍼러 값을 이용하여 행동을 유도할 수 있습니다.\[/caption\]
 
 ### Deferred Deeplink를 어떻게 구현하지?
 
