@@ -29,7 +29,7 @@ PP와 CR을 해야 하는 이유에 대해서는 많은 article들과 서적에�
 
 따라서 장기적인 관점에서 전체 개발에 필요한 시간이 감소한다고 볼 수 있습니다. 버그가 감소하기 때문에 불필요한 디버깅이 없어지고, 설계가 개선되어 추후 디버깅을 하거나 기능을 추가 개발할 때 필요한 시간이 줄어들기 때문입니다. 어떤 유망한 회사에 투자를 하면 처음에는 가지고 있는 여유 자금이 줄어들어 손실로 보이지만, 장기적으로 손익분기점을 넘게 되면 큰 이득을 얻습니다. 마찬가지로 PP와 CR도 처음에는 시간과 노력이라는 투자가 필요하지만, 시간이 지나 성숙도가 올라가면 큰 이득을 얻는다는 것을 경험했습니다.
 
-[![design_stamina_hypo](/images/4kJdFpl0qM.png)](https://blog.dramancompany.com/wp-content/uploads/2016/05/design_stamina_hypo.png)
+[![design_stamina_hypo](/images/zN1TpgwGfD.png)](https://blog.dramancompany.com/wp-content/uploads/2016/05/design_stamina_hypo.png)
 
 > _**출처: [http://martinfowler.com/bliki/DesignStaminaHypothesis.html](http://martinfowler.com/bliki/DesignStaminaHypothesis.html)**_
 > 
@@ -95,15 +95,15 @@ Tom님과 API 개발을 할 때도 마찬가지 방식으로 진행하였습니�
 
 PR을 사용할 때는 크게 두 가지 방식이 있는 것 같습니다. 하나는 원본 repository를 fork한 별도의 repository에서 PR을 생성하는 방법이고, 다른 하나는 같은 repository에 브랜치를 하나 만들어 여기서 PR을 생성하는 방법입니다. 저희는 이 중 브랜치 방식을 택하여 시도를 해보았습니다. 그 이유는 Tom님, Jaden님 모두 이미 git flow를 사용하고 있는 상황이었고, 또 같은 repository에 브랜치를 하나 만드는 것이 리뷰어가 코드를 받아 확인하고 실행하는 것이 더 쉽다고 생각했기 때문입니다.
 
-[![pr_code_review](/images/sPAyqjIopV.png)](https://blog.dramancompany.com/wp-content/uploads/2016/05/pr_code_review.png)
+[![pr_code_review](/images/8gjJh5W92U.png)](https://blog.dramancompany.com/wp-content/uploads/2016/05/pr_code_review.png)
 
 위 그림과 같이 git flow의 convention을 사용하여 feature/profile(기능 추가 개발 시), fix/profile(버그 픽스) 등과 같은 브랜치를 만들고 여기에 관련 코드를 커밋 & 푸시합니다. 모든 작업이 끝나면 develop 브랜치로 PR을 하나 생성한 후 사내 커뮤니케이션 도구인 Slack으로 리뷰어들에게 리뷰를 요청합니다. 리뷰어들은 PR에 line comment를 달아 리뷰를 해줍니다.
 
-[![review_comment](/images/fcOoR7hAiz.png)](https://blog.dramancompany.com/wp-content/uploads/2016/05/review_comment.png)
+[![review_comment](/images/9mu7AQph5i.png)](https://blog.dramancompany.com/wp-content/uploads/2016/05/review_comment.png)
 
 필요하면 코드 리뷰를 더 재미있고 쉽게 만들어주는 PR 기반의 도구를 사용할 수도 있습니다.
 
-[![review_ninja](/images/tHktGd1NDk.png)](https://blog.dramancompany.com/wp-content/uploads/2016/05/review_ninja.png)
+[![review_ninja](/images/i17di0Yvwd.png)](https://blog.dramancompany.com/wp-content/uploads/2016/05/review_ninja.png)
 
 요청자는 리뷰들을 다시 브랜치에 수정 반영하고, 2차 리뷰를 요청합니다. 이러한 과정을 3차, 4차 등으로 계속 반복할 수 있습니다(그렇지만 실제로는 2차 리뷰를 넘는 경우는 거의 없었습니다). 만약 리뷰 후의 수정사항이 간단하여 2차 리뷰를 굳이 받을 필요가 없다고 판단되면, 리뷰를 요청하지 않고 바로 머지할 수도 있습니다.
 

@@ -59,7 +59,7 @@ Code Deploy를 이용할 경우 배포는 다음과 같이 이루어집니다.
 
 평소에는 클라이언트의 요청을 ELB에서 받고 1번 ASG로 요청을 보내줍니다. 배포를 하려고 하면 1번 ASG와 똑같은 크기와 설정을 갖는 2번 ASG를 만든 뒤에 ASG 내부에 새로운 코드를 갖고 있는 서버들을 추가합니다. 그리고 ELB에 새로 들어온는 요청들을 1번 ASG에서 2번 ASG로 보내게 하여 무중단 배포를 진행합니다.
 
-[![](/images/palCd7vXAe.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
+[![](/images/eJOBq4Laow.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
 
 기존에 저희가 사용하고 있던 운영 서버 배포 절차는 다음과 같습니다.
 
@@ -254,7 +254,7 @@ CodeDeploy에서는 Application, Deployment group, Deployment 세 가지의 개�
 
 가장 상위 개념으로 CodeDeploy를 이용하여 배포를 진행할 프로젝트를 나타냅니다.
 
-[![](/images/FV45wFpCtQ.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-11.14.02.png)
+[![](/images/epJlmL9zxV.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-11.14.02.png)
 
  
 
@@ -262,11 +262,11 @@ CodeDeploy에서는 Application, Deployment group, Deployment 세 가지의 개�
 
 같은 application 내에 어떤 종류의 배포인지를 나타냅니다. 예를 들면 test/production 등 환경일 수 있고 특정 Auto Scaling Group일 수 있습니다.
 
-![](/images/oyBUSAjBs5.png)
+![](/images/LFLMVCRlCC.png)
 
 생성 시 deployment type를 정할 수 있으며 배포할 대상(EC2, ASG 등)을 정할수도 있습니다.
 
-![](/images/Z0fL3gkwNg.png)
+![](/images/hWEMTLrRW0.png)
 
  
 
@@ -274,7 +274,7 @@ CodeDeploy에서는 Application, Deployment group, Deployment 세 가지의 개�
 
 실제 배포 건을 나타냅니다.
 
-[![](/images/D40KcLildV.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-11.42.27.png)
+[![](/images/6VqhWZtjOg.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-11.42.27.png)
 
  
 
@@ -282,19 +282,19 @@ CodeDeploy에서는 Application, Deployment group, Deployment 세 가지의 개�
 
 이제 배포를 진행합니다. 어떤 application의 어떤 그룹에다가 어떤 commit을 배포를 진행할지 적습니다.
 
-[![](/images/LoZ8ICwCY7.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.03.26.png)
+[![](/images/M5t5HTd2f9.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.03.26.png)
 
 배포 이력에서 배포 진행 현황을 살펴볼 수 있고, 성공 여부도 볼 수 있습니다.
 
-[![](/images/HhrzwZfWVw.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.03.51.png)
+[![](/images/iDp7NxtUzv.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.03.51.png)
 
 View Events를 통하여 각 hook 부분 당 얼만큼의 시간이 소요되었으며 현재 어떤 과정을 거치고 있는지 실시간으로 확인할 수 있습니다.
 
-[![](/images/dWnnPHKCYZ.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.04.41.png)
+[![](/images/uTOqXMReUA.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.04.41.png)
 
 에러가 났을 경우에는 script 실행 중 어떤 로그를 발생하면서 에러가 났는지도 확인할 수 있습니다.
 
-[![](/images/fhr2wlVKtf.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-30-at-11.04.59.png)
+[![](/images/RNaQ1qPKDJ.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-30-at-11.04.59.png)
 
  
 

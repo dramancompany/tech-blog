@@ -22,7 +22,7 @@ tags:
 
 지금 우리가 배포하려는 서버는 다음과 같은 구조를 가지고 있다고 가정합니다.
 
-[![서버구조](/images/qgFKCfrkDw.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-14.42.22.png)
+[![서버구조](/images/URizxcSRnN.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-14.42.22.png)
 
 이와같은 구조에서 배포를 할 경우 일단 ELB 구성이 되어 있으므로 다음과 같은 순서로 무중단 배포는 가능합니다.
 
@@ -37,7 +37,7 @@ tags:
 
 그래서 좀더 안정적이고 쉬운 배포를 위해 다음과 같이 구성을 해봅시다.
 
-[![](/images/palCd7vXAe.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
+[![](/images/eJOBq4Laow.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
 
 AWS에서는 훌륭한 Auto Scaling 서비스를 무료로 제공하고 있습니다. Auto Scaling은 쉽게말해 **Amazon Machine Image(이하 AMI)**를 설정한 조건에 따라 인스턴스를 늘리거나 줄이는 일을 합니다. 여기서 제가 주목하는 점은 'AMI'입니다. AMI는 말 그대로 머신 이미지를 말하는데 이를 이용하면 AMI를 생성하기 위한 서버 1대만 있으면 이를 이용해 이미지를 생성한 후 똑같은 서버를 원하는 만큼 생성할 수 있습니다.
 
@@ -55,7 +55,7 @@ AWS에서는 훌륭한 Auto Scaling 서비스를 무료로 제공하고 있습�
 
 아래는 현재 리멤버 서버 배포시 구성을 간략히 그려보았습니다.
 
-[![](/images/pEKZE7Rogc.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-30-12.14.13.png)
+[![](/images/zrwHY4lL6z.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-30-12.14.13.png)
 
 AMI 생성용 서버에 Capistrano를 이용해 배포 후 AWS web console에서 설정만 해주면 쉽게 모든 서버 업데이트를 마칠 수 있도록 되어 있습니다. 그럼 Capistrano를 어떻게 설치하고 설정 하는지 알아보도록 하겠습니다.
 
