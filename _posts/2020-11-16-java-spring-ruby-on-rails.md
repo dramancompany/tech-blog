@@ -95,7 +95,7 @@ _from [Ruby on Rails 공식 가이드](https://guides.rubyonrails.org/getting_st
 
 <figure>
 
-[![](/images/rails-console-example-1.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/rails-console-example-1.png)
+[![](/images/qx8ik6hos3.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/rails-console-example-1.png)
 
 <figcaption>
 
@@ -121,7 +121,7 @@ rails console 실행 예시
 
 <figure>
 
-[![](/images/test-coverage-example-1024x109.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/test-coverage-example.png)
+[![](/images/DawhJOxgQZ.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/test-coverage-example.png)
 
 <figcaption>
 
@@ -170,7 +170,7 @@ Time.current.yesterday.beginning_of_day
 
 <figure>
 
-[![](/images/email-preview-example.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/email-preview-example.png)
+[![](/images/q1nT2naYJx.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/email-preview-example.png)
 
 <figcaption>
 
