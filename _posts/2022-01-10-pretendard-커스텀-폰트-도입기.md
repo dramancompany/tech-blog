@@ -26,7 +26,7 @@ tags:
 
 <figure>
 
-[![](/images/1-1024x382.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/1.png)
+[![](/images/M49RxcKw6X.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/1.png)
 
 <figcaption>
 
@@ -50,11 +50,11 @@ tags:
 
 ### 2\. 다양한 굵기(Weight)를 지원할 것
 
-기존의 타이포그래피 스타일에서 폰트만 교체하는 것이라, 최소한 기존 양 플랫폼에서 제공하는 시스템 폰트들의 굵기는 다 커버할 수 있어야 했습니다. 
+기존의 타이포그래피 스타일에서 폰트만 교체하는 것이라, 최소한 기존 양 플랫폼에서 제공하는 시스템 폰트들의 굵기는 다 커버할 수 있어야 했습니다. 
 
 <figure>
 
-[![](/images/Weight-1024x490.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/Weight.png)
+[![](/images/Q4SKiorqqE.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/Weight.png)
 
 <figcaption>
 
@@ -70,7 +70,7 @@ iOS의 시스템폰트가 안드로이드 대비 더 많은 굵기를 제공하�
 
 <figure>
 
-[![](/images/3.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/3.png)
+[![](/images/lcCG4DyDnr.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/3.png)
 
 <figcaption>
 
@@ -90,15 +90,15 @@ UI 상에서 1행의 한글 텍스트를 배치했을 때 기존 시스템 서�
 
 스포카 폰트는 이미 디자이너들 사이에서 대체 시스템 폰트로 널리 사용되고 있으며, 리멤버 역시 웹사이트에서 사용하고 있었기 때문에 가장 유력한 후보였습니다. 아무래도 폰트를 만들어서 배포하고 있는 스포카가 직접 실무에서 활용하기 위해 만들었기 때문에 지속적으로 유지보수가 된다는 점과 한글에 최적화되어 있다는 점이 장점입니다.
 
-스포카 폰트 다운로드 : [https://spoqa.github.io/spoqa-han-sans/](https://spoqa.github.io/spoqa-han-sans/)
+스포카 폰트 다운로드 : [https://spoqa.github.io/spoqa-han-sans/](https://spoqa.github.io/spoqa-han-sans/)
 
 ### **2\. Pretendard**
 
 프리텐다드는 요즘 디자인 업계에서 가장 핫한 시스템 폰트로, 디자이너 길형진 님이 inter와 noto를 결합해 서로의 단점을 보완해서 만든 폰트입니다. 여러 플랫폼에서 애플의 san francisco나 apple sd gothic처럼 사용할 수 있는 시스템 폰트를 만들기 위한 목적이라고 합니다. Noto Sans KR(본고딕)을 베이스로 가장 두꺼운 Black 마스터를 만든 후, 9개의 레벨 굵기로 만들어졌으며, Window, iOS 둘 다 지원하고 조형적인 아름다움, 다국어 환경 조화, 한국어에 최적화된 기호까지 지원됩니다.
 
-길형진 디자이너 티스토리:  [https://cactus.tistory.com/306](https://cactus.tistory.com/306)
+길형진 디자이너 티스토리:  [https://cactus.tistory.com/306](https://cactus.tistory.com/306)
 
-프리텐다드 폰트 다운로드: [https://github.com/orioncactus/pretendard](https://github.com/orioncactus/pretendard)
+프리텐다드 폰트 다운로드: [https://github.com/orioncactus/pretendard](https://github.com/orioncactus/pretendard)
 
 ## **최종 검토**
 
@@ -106,7 +106,7 @@ UI 상에서 1행의 한글 텍스트를 배치했을 때 기존 시스템 서�
 
 ### 1\. 상업적 무료 폰트
 
-둘 다 [SIL 오픈 폰트 라이선스](https://scripts.sil.org/OFL)로 글꼴 단독 판매를 제외한 모든 상업적 행위 및 수정, 재배포가 가능합니다.
+둘 다 [SIL 오픈 폰트 라이선스](https://scripts.sil.org/OFL)로 글꼴 단독 판매를 제외한 모든 상업적 행위 및 수정, 재배포가 가능합니다.
 
 ### 2\. 다양한 굵기(weight) 제공
 
@@ -114,7 +114,7 @@ UI 상에서 1행의 한글 텍스트를 배치했을 때 기존 시스템 서�
 
 <figure>
 
-[![](/images/6-1-1024x707.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/6-1.png)
+[![](/images/mz3vsIi4UJ.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/6-1.png)
 
 <figcaption>
 
@@ -128,13 +128,13 @@ UI 상에서 1행의 한글 텍스트를 배치했을 때 기존 시스템 서�
 
 기본적으로 양 폰트 모두 한글을 고려해서 제작되었기 때문에 한글 표현에 강점이 있지만, 한글 폰트의 쏠림 현상은 스포카에서도 여전히 발생하고 있었습니다. 그에 반해 프리텐다드는 폰트에 별 다른 조치를 취하지 않아도 텍스트 박스의 가운데 잘 배치되어 보입니다.
 
-[![](/images/5-1024x277.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/5.png)
+[![](/images/v4v6szCoGT.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/5.png)
 
 고려 사항을 바탕으로 최종 검토 결과 Pretendard가 더 적합하다고 판단되어 리멤버의 시스템 폰트로 적용하기로 결정하게 되었습니다.
 
 ## **적용 후기**
 
-시스템 서체가 플랫폼에 상관없이 통합됨에 따라서 더 이상 디자이너들이 플랫폼 별로 디자인을 만들 필요가 없어졌고, 디자인 시스템 상의 컴포넌트도 단일화되어 유지 보수가 더 간편해졌습니다. 아직 적용한 지 얼마 되지 않았지만 실 사용자인 동료 디자이너들의 피드백을 통해 커스터 폰트 도입의 효과를 체감할 수 있었습니다.
+시스템 서체가 플랫폼에 상관없이 통합됨에 따라서 더 이상 디자이너들이 플랫폼 별로 디자인을 만들 필요가 없어졌고, 디자인 시스템 상의 컴포넌트도 단일화되어 유지 보수가 더 간편해졌습니다. 아직 적용한 지 얼마 되지 않았지만 실 사용자인 동료 디자이너들의 피드백을 통해 커스터 폰트 도입의 효과를 체감할 수 있었습니다.
 
 > 이전에는 안드로이드와 iOS 각각 다른 폰트를 쓰니 같은 디자인을 적용해도 OS별로 다르게 시각 보정을 해야 했습니다. 각각 다른 폰트의 고유 높이와 내부 정렬 때문에 디자인이 같아도 쏠림 현상이 있어서 미세한 디자인 조정을 해야 했었지요. 그런데 프리텐다드를 적용하니 그럴 필요가 없어져서 작업 시간이 엄청 줄었습니다!!!!!
 > 

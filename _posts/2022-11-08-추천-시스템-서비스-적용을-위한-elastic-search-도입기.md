@@ -32,7 +32,7 @@ tags:
 
 리멤버 커뮤니티는 크게 인사이트 / 직무 커뮤니티 / 관심사 커뮤니티 의 카테고리로 나뉩니다. 각 카테고리는 직장생활에서 얻을 수 있는 인사이트를 제공하고, 직무별로 정보를 공유할 수 있으며, 회사생활이나 기타 관심사에 대한 정보도 교류할 수 있는 공간입니다.
 
-![](/images/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B7_1_%E1%84%8F%E1%85%A5%E1%84%86%E1%85%B2%E1%84%82%E1%85%B5%E1%84%90%E1%85%B5%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB.png)
+![](/images/그림_1_커뮤니티메인.png)
 
 리멤버 커뮤니티 메인화면 \[1\]
 
@@ -58,7 +58,7 @@ tags:
 
 콘텐츠 기반 필터링 방식은 사용자가 특정 아이템을 선호하는 경우, 그 아이템과 비슷한 콘텐츠를 가진 다른 아이템을 추천해 주는 방식 입니다.
 
-![](/images/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B7_2_%E1%84%8F%E1%85%A9%E1%86%AB%E1%84%90%E1%85%A6%E1%86%AB%E1%84%8E%E1%85%B3%E1%84%80%E1%85%B5%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8E%E1%85%AE%E1%84%8E%E1%85%A5%E1%86%AB%E1%84%8B%E1%85%A8%E1%84%89%E1%85%B5.png)
+![](/images/그림_2_콘텐츠기반추천예시.png)
 
 유저가 관심분야의 글을 많이 읽을 것이라는 가정하에 콘텐츠 기반 필터링 방식을 선택했습니다. 커뮤니티에서 글을 추천해주는 방식으로는 유저가 커뮤니티에서 읽은 글과 유사한 글들을 추천해주는 방식을 적용하고자 했습니다.
 
@@ -66,7 +66,7 @@ tags:
 
 유사한 콘텐츠를 추천해주기 위해서는 추천이 필요한 각 게시물(콘텐츠)들을 잘 표현해주는 것이 중요합니다. 저희는 각 게시물을 잘 표현하기 위한 모델로 Sentence Representation 모델인 SimCSE(Simple Contrastive Learning of Sentence Embeddings)를 채택했습니다. Input Sentence에 대해서 dropout을 noise로 사용해 contrastive object에서 스스로를 예측하는 비지도학습이 가능한 모델 입니다. 아래 그림과 같이 한 mini-batch에 있는 문장들 안에서, dropout이 적용된 같은 문장을 postive pair로서 활용, 다른 문장들을 negative pair로써 활용하여 contrastive learning을 학습하는 Sentence Representation 모델 입니다.
 
-![](/images/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B7_3_SimCSE%E1%84%8B%E1%85%A8%E1%84%89%E1%85%B5.png)
+![](/images/그림_3_SimCSE예시.png)
 
 Unsupervised SimCSE 학습 과정 \[6\]
 
@@ -80,7 +80,7 @@ Unsupervised SimCSE 학습 과정 \[6\]
 
 콘텐츠를 구성하는 데이터들을 앞서 설명한 SimCSE 모델을 기반으로 임베딩 벡터를 추출합니다. 사용한 SimCSE 인코더는 transformer 기반의 모델인 BERT를 활용했습니다. 각 콘텐츠의 임베딩 벡터는 ”제목”, “본문”, “카테고리”, “좋아요 클릭 여부”, “댓글작성 여부”를 활용하여 생성했습니다. ”커뮤니티 유형”, “입력 시간” 역시 활용하려고 하였으나 추천 결과에 대한 정성 / 정량 평가를 기준으로 표현에서 제외 하게 되었습니다.
 
-![](/images/image-2.png)
+![](/images/GimdbBzm1g.png)
 
 ## 3-2. 가중평균을 활용한 유저 임베딩 벡터 생성
 
@@ -92,13 +92,13 @@ Unsupervised SimCSE 학습 과정 \[6\]
 
 여러 변수를 검증해봤을때 가장 성능이 좋았던 좋아요와 댓글 작성 여부를 활용해서 가중치를 적용하여 가중평균한 임배딩을 산출 했습니다.
 
-![](/images/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B7_5_%E1%84%8B%E1%85%B2%E1%84%8C%E1%85%A5%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%87%E1%85%A2%E1%84%83%E1%85%B5%E1%86%BC%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC.png)
+![](/images/그림_5_유저임배딩생성.png)
 
 ## 3-3. 전체 추천 로직
 
 전체적인 추천 로직을 정리해보자면, 유저 임베딩과 유저가 참여중인 커뮤니티의 콘텐츠들과 유사도를 비교하여 가장 유사한 top K개를 추천해주는 로직 입니다.
 
-![](/images/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B7_6_%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%8E%E1%85%A6%E1%84%8E%E1%85%AE%E1%84%8E%E1%85%A5%E1%86%AB%E1%84%85%E1%85%A9%E1%84%8C%E1%85%B5%E1%86%A8.png)
+![](/images/그림_6_전체추천로직.png)
 
 * * *
 
@@ -117,9 +117,9 @@ Unsupervised SimCSE 학습 과정 \[6\]
 ## 4-2. MongoDB
 
 - MongoDB 란?
-    - MongoDB는 기존의 테이블 기반 관계형 데이터베이스 구조가 아닌 문서 지향 데이터 모델을 사용하는 교차 플랫폼 오픈 소스 데이터베이스입니다. 이러한 유형의 모델을 사용하면 정형 및 비정형 데이터를 보다 쉽고 빠르게 통합할 수 있습니다.
+    - MongoDB는 기존의 테이블 기반 관계형 데이터베이스 구조가 아닌 문서 지향 데이터 모델을 사용하는 교차 플랫폼 오픈 소스 데이터베이스입니다. 이러한 유형의 모델을 사용하면 정형 및 비정형 데이터를 보다 쉽고 빠르게 통합할 수 있습니다.
 - 변경 전 방법  
-    ![](/images/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B7_7_%E1%84%86%E1%85%A9%E1%86%BC%E1%84%80%E1%85%A9DB%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC.png)
+    ![](/images/그림_7_몽고DB활용.png)
 
 - 처음 고려했던 서비스 제공 방식은 위와 같이 설명할 수 있습니다.
     1. 유저가 리멤버 커뮤니티에 접속
@@ -160,11 +160,11 @@ Amazon OpenSearch Service는 인프라 관리, 모니터링 및 유지 관리에
 
 k-NN을 사용하면 벡터 공간에서 포인트를 검색하고 해당 포인트에 대한 “가장 가까운 이웃”을 Euclidean 거리 또는 코사인 유사도로 찾을 수 있습니다.
 
-![](/images/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B7_8_knn%E1%84%8B%E1%85%A8%E1%84%89%E1%85%B5.png)
+![](/images/그림_8_knn예시.png)
 
 ##### HNSW (Hierarchical Navigable Small World Algorithm)
 
-![](/images/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B7_9_HSWM.png)
+![](/images/그림_9_HSWM.png)
 
 OpenSearch에서 k-NN 검색문제에 대해서 빠르고 정확한 솔루션을 제공하기위해서 HNSW 알고리즘을 기반으로 하여 검색엔진이 동작합니다. 이 알고리즘은 적은 거리를 계산하고, 거리 계산 비용을 더 저렴하게 하도록 하는 것을 중점적으로 두고 있습니다. 입력 쿼리에 대한 가장 가까운 이웃을 찾기 위해 검색 프로세스는 최상위 계층의 그래프에서 가장 가까운 이웃을 찾고 이 점을 후속 계층에 대한 진입점으로 사용합니다.
 
@@ -208,7 +208,7 @@ PUT/myindex/_doc/2
 OpenSearch에서는 3가지 다른 방법의 쿼리 벡터에 대해서 k-NN의 결과를 얻을 수 있는 3가지 다른 방법을 제공 합니다.
 
 1. **Approximate k-NN**
-    - 첫 번째 방법은 Approximate k-NN입니다. 여러 알고리즘 중 하나를 사용하여 대략적인 k-NN 결과를 쿼리 벡터로 반환합니다. 일반적으로 이러한 알고리즘은 더 짧은 대기 시간, 더 작은 메모리 공간 및 더 확장 가능한 검색과 같은 성능 이점이 있습니다. 그러나 인덱싱 속도와 검색 정확도의 성능은 일부 떨어질 수 있다는 단점이 있습니다.
+    - 첫 번째 방법은 Approximate k-NN입니다. 여러 알고리즘 중 하나를 사용하여 대략적인 k-NN 결과를 쿼리 벡터로 반환합니다. 일반적으로 이러한 알고리즘은 더 짧은 대기 시간, 더 작은 메모리 공간 및 더 확장 가능한 검색과 같은 성능 이점이 있습니다. 그러나 인덱싱 속도와 검색 정확도의 성능은 일부 떨어질 수 있다는 단점이 있습니다.
 2. **Script Score k-NN**
     - 두 번째 방법은 Script Score k-NN 입니다. OpenSearch의 Script Score 기능을 확장하여 나타나는 “knn\_vector”에 대하여 정확한 k-NN 검색을 수행합니다. 이 방식을 사용하면 인덱스에 있는 벡터의 하위 집합에 대해서 k-NN 검색을 실행할 수 있습니다. 따라서, 존재하는 벡터에 대해서 사전 필터링이 필요할 경우에 이 방식을 사용합니다.
 3. **Painless extensions**
@@ -217,7 +217,7 @@ OpenSearch에서는 3가지 다른 방법의 쿼리 벡터에 대해서 k-NN의 
 저희는 소속된 커뮤니티와 날짜를 관련한 필터링 조건이 필요하기 때문에 Script Score k-NN을 선택하여 진행했습니다. _(복잡하지 않은 조건이기 때문에 속도가 더 빠른 Script Score k-NN 사용)_ 이를 통해서 소속된 커뮤니티 등록 날짜 등의 조건으로 필터링된 대상에 대한 검색을 수행할 수 있었습니다.
 
 - 변경 후 방법  
-    ![](/images/%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%86%B7_10_opensearch%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%8B%E1%85%A8%E1%84%89%E1%85%B5.png)
+    ![](/images/그림_10_opensearch활용예시.png)
 
 1. 유저가 리멤버 커뮤니티에 접속
 2. MongoDB에서 유저의 임베딩 값을 추출
@@ -230,7 +230,7 @@ MongoDB를 활용하여 임베딩 벡터를 추출할 때 생겼던 병목을 Op
 
 임베딩을 추출하고 유사도를 계산하는 추천 로직에 있어서 평균적으로 _**0.2 sec**_ 로 결과를 반환하는 API를 생성할 수 있었습니다.
 
-![](/images/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA-2022-11-07-%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE-10.13.47.png)
+![](/images/스크린샷-2022-11-07-오후-10.13.47.png)
 
 * * *
 
@@ -238,7 +238,7 @@ MongoDB를 활용하여 임베딩 벡터를 추출할 때 생겼던 병목을 Op
 
 구축한 추천 로직을 활용하여 A/B test를 진행했습니다. A/B test를 통해 추천 로직으로 배포된 글과 “최신글 + 인기글(좋아요, 댓글 다수)”의 클릭률을 비교했습니다. 그 결과, 인기글 보단 클릭률이 낮았고 최신글보단 클릭률이 높은 결과가 나타났습니다.
 
-![](/images/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA-2022-11-08-%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE-1.57.38.png)
+![](/images/스크린샷-2022-11-08-오후-1.57.38.png)
 
 좀 더 다양한 변수를 활용한 고도화된 모델에 대한 연구 진행을 검토했으나 내부 사정으로 인해서 추가 연구와 서비스까지는 이어지지는 못했습니다. 그러나 머신러닝 모델에 대한 서비스 적용은 결과 평가에 앞서서 서비스에 어떻게 적용할 것인지를 고민하는 것이 중요하다는 것을 다시 한번 느끼게 해주는 프로젝트 였습니다.
 
@@ -257,6 +257,6 @@ MongoDB를 활용하여 임베딩 벡터를 추출할 때 생겼던 병목을 Op
 - \[3\] opensearch knn documentation.. [https://opensearch.org/docs/latest/search-plugins/knn/index/](https://opensearch.org/docs/latest/search-plugins/knn/index/)
 - \[4\] [https://opensearch.org/blog/odfe-updates/2020/04/Building-k-Nearest-Neighbor-(k-NN)-Similarity-Search-Engine-with-Elasticsearch/](https://opensearch.org/blog/odfe-updates/2020/04/Building-k-Nearest-Neighbor-(k-NN)-Similarity-Search-Engine-with-Elasticsearch/)
 - \[5\] MongoDB documentation, [](https://www.mongodb.com/docs/)[https://www.mongodb.com/docs/](https://www.mongodb.com/docs/)
-- \[6\] Transformer, Vaswani, Ashish, et al. "Attention is all you need." _Advances in neural information processing systems_ 30 (2017).
-- \[7\] Devlin, Jacob, et al. "Bert: Pre-training of deep bidirectional transformers for language understanding." _arXiv preprint arXiv:1810.04805_ (2018).
-- \[8\] SimCSE, Gao, Tianyu, Xingcheng Yao, and Danqi Chen. "Simcse: Simple contrastive learning of sentence embeddings." _arXiv preprint arXiv:2104.08821_ (2021).
+- \[6\] Transformer, Vaswani, Ashish, et al. "Attention is all you need." _Advances in neural information processing systems_ 30 (2017).
+- \[7\] Devlin, Jacob, et al. "Bert: Pre-training of deep bidirectional transformers for language understanding." _arXiv preprint arXiv:1810.04805_ (2018).
+- \[8\] SimCSE, Gao, Tianyu, Xingcheng Yao, and Danqi Chen. "Simcse: Simple contrastive learning of sentence embeddings." _arXiv preprint arXiv:2104.08821_ (2021).

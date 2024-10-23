@@ -38,7 +38,8 @@ Web Vitals란 구글에서 제안하는, 더 나은 웹페이지를 개발하기
 
 <figure>
 
-<img src="/images/img1-edited.png" />
+[![](/images/aJKsc15BUv.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img1.png)
+
 <figcaption>
 
 [community.rememberapp.co.kr/post/25955](https://community.rememberapp.co.kr/post/25955) 여러분은 어떻게 생각하시나요?
@@ -57,7 +58,7 @@ LCP란, 뷰포트 내에서 이미지/비디오/텍스트 블록중 시각적으
 
 <figure>
 
-<img src="/images/img2.svg" />
+[![](https://blog.dramancompany.com/wp-content/uploads/2021/04/img2.svg)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img2.svg)
 
 <figcaption>
 
@@ -83,7 +84,7 @@ FID는 유저의 인터랙션 이후 이에 대한 이벤트 핸들러를 실행
 
 <figure>
 
-<img src="/images/img3-1024x554.png" />
+[![](/images/25WazX1XAD.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img3.png)
 
 <figcaption>
 
@@ -111,9 +112,9 @@ CLS 값은 밀려나는 요소의 크기가 클수록, 밀려나는 거리가 �
 
 아래 그림과 같이 크롬에서 측정할 페이지에 접속한후 디버거의 Lighthouse 탭에서 테스트를 돌리고, 결과 리포트를 확인할수 있습니다.
 
-[![](/images/img4-1024x469.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img4.png)
+[![](/images/KbZWtls5Zo.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img4.png)
 
-[![](/images/img5-1024x477.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img5.png)
+[![](/images/ImBHiJ67Pd.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img5.png)
 
 ## 좋네요 점수도 확인했고, 그럼 다 된건가요?
 
@@ -147,7 +148,7 @@ Lighthouse CI는 아래의 요소들을 포함하고 있습니다.
 
 구축한 인프라를 간단하게 요약하면 그림과 같습니다.
 
-[![](/images/img6-1024x657.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img6.png)
+[![](/images/0nGqsMzrlc.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img6.png)
 
 배포를 시작하면 AWS CodeBuild 에서 빌드와 테스트를 진행합니다.
 
@@ -157,11 +158,11 @@ Lighthouse CI는 아래의 요소들을 포함하고 있습니다.
 
 Lighthouse 대시보드에 접속하면 웹 페이지를 분석하는데에 도움이 되는 다양한 기능이 있습니다.
 
-[![](/images/img7-1024x211.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img7.png)
+[![](/images/1AWyAo4dsI.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img7.png)
 
 우선 테스트를 수행한 빌드 목록을 확인할수 있습니다.
 
-[![](/images/img8-1024x929.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img8.png)
+[![](/images/0pwoJBgVlE.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img8.png)
 
 목록에서 빌드를 클릭하면 해당빌드의 상세한 측정결과를 확인할수 있습니다.
 
@@ -169,13 +170,13 @@ Lighthouse 대시보드에 접속하면 웹 페이지를 분석하는데에 도�
 
 또한 퍼포먼스 외에도 접근성, SEO와 관련된 테스트 결과도 확인할 수 있습니다.
 
-[![](/images/img9-1024x431.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img9.png)
+[![](/images/1UhBKYzmSL.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img9.png)
 
 단순히 측정 결과만 알려주는게 아니라 어떻게 개선할수 있는지를 파악하는 데에도 도움을 줍니다.
 
 <figure>
 
-<img src="/images/img10-1024x381.png" />
+[![](/images/tAbraedQHu.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img10.png)
 
 <figcaption>
 
@@ -209,7 +210,7 @@ Lighthouse는 소스 코드를 분석하는 도구가 아닙니다.
 - 페이지 전환시 답답함을 해소하기 위한 애니메이션 추가
 - Bundle 사이즈를 크게 만드는 라이브러리 교체
 
-[![](/images/img11.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img11.png)
+[![](/images/AhVa08s6rV.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img11.png)
 
 이러한 작업들을 통해 최근에 TBT, CLS를 큰폭으로 개선할수 있었고 앞으로도 지속적으로 개선할 예정입니다.
 

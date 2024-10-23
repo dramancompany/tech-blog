@@ -15,13 +15,13 @@ GitHub에서는 Pull Request 생성 시 리뷰어를 요청하는 기능이 있�
 
 ### **사용 방법**
 
-해당 기능을 사용하기 위해서는 CODEOWNERS라는 파일을 생성해야 합니다. 루트 디렉터리 기준으로 **docs/**, **.github/** 중 한 곳에 CODEOWNERS 파일을 생성한 뒤 리뷰어를 지정합니다. ex) @ace9809, @roharon  
+해당 기능을 사용하기 위해서는 CODEOWNERS라는 파일을 생성해야 합니다. 루트 디렉터리 기준으로 **docs/**, **.github/** 중 한 곳에 CODEOWNERS 파일을 생성한 뒤 리뷰어를 지정합니다. ex) @ace9809, @roharon  
 
 파일을 생성하면 Pull Request 요청 시 자신이 소유자로 지정된 파일의 변경 사항이 있을 때 자동으로 검토 요청받게 됩니다. CODEOWNERS 설정 파일의 크기는 3MB 초과하게 되면 불러오지 못하며 CODEOWNERS 파일의 디렉터리 경로는 대소문자를 구분하여 리포지토리의 경로와 정확하게 일치해야 합니다.  
 
 제가 개발하고 있는 커뮤니티 프로젝트에서는 모든 파일에 대해서 프로젝트에 관련된 리뷰어가 지정되도록 하였습니다.
 
-[![](/images/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA-2021-11-16-%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE-10.11.59-1024x332.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-16-오후-10.11.59.png)
+[![](/images/스크린샷-2021-11-16-오후-10.11.59-1024x332.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-16-오후-10.11.59.png)
 
 ### **문법 예시**
 
@@ -82,21 +82,21 @@ apps/ @octocat
 
 코드 소유자로 지정된 사람이 Approve를 하지 않을 때 머지를 할 수 없도록 설정하고 싶은 경우 Settings -> Branches -> Add rules에서 옵션을 설정하는 것도 가능합니다.
 
-[![](/images/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2021-11-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_2_10_25-1024x475.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷_2021-11-17_오전_2_10_25.png)
+[![](/images/스크린샷_2021-11-17_오전_2_10_25-1024x475.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷_2021-11-17_오전_2_10_25.png)
 
 ### **Pull Request 생성하여 리뷰어 확인**
 
 Pull Request 생성 단계에서는 리뷰어가 추가되지 않으며 실제로 생성 한 후 Open 상태일 경우 리뷰어가 추가됩니다. Reviewers 탭이 아래 사진과 같이 보인다면 정상적으로 기능이 동작하게 된 것입니다. 추가된 리뷰어에게도 메일이 정상적으로 가는 것도 확인하실 수 있습니다.
 
-[![](/images/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2021-10-18_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_2_01_10-1024x500.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷_2021-10-18_오전_2_01_10.png)
+[![](/images/스크린샷_2021-10-18_오전_2_01_10-1024x500.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷_2021-10-18_오전_2_01_10.png)
 
-[![](/images/Untitled-1-1024x895.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/Untitled-1.png)
+[![](/images/9eaxb1Qq3f.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/Untitled-1.png)
 
 ## **Pull Request 템플릿 사용하기**
 
 <figure>
 
-<img src="/images/스크린샷-2021-11-17-오전-12.50.54-1024x418.png" />
+[![](/images/스크린샷-2021-11-17-오전-12.50.54-1024x418.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-17-오전-12.50.54.png)
 
 <figcaption>
 
@@ -113,7 +113,7 @@ Pull Request 생성 단계에서는 리뷰어가 추가되지 않으며 실제�
 
 <figure>
 
-<img src="/images/스크린샷-2021-11-18-오전-2.00.49-1024x706.png" />
+[![](/images/스크린샷-2021-11-18-오전-2.00.49-1024x706.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-18-오전-2.00.49.png)
 
 <figcaption>
 
@@ -125,7 +125,7 @@ Pull Request 생성 단계에서는 리뷰어가 추가되지 않으며 실제�
 
 ### **사용 방법**
 
-루트 디렉터리에서 **.github** 디렉터리에 **PULL\_REQUEST\_TEMPLATE.md** 파일을 만듭니다. 회사마다 description에 필요한 정보가 다르겠지만 리멤버 서버팀이 사용하는 PR 템플릿 항목에 대해서 이야기해보도록 하겠습니다.
+루트 디렉터리에서 **.github** 디렉터리에 **PULL\_REQUEST\_TEMPLATE.md** 파일을 만듭니다. 회사마다 description에 필요한 정보가 다르겠지만 리멤버 서버팀이 사용하는 PR 템플릿 항목에 대해서 이야기해보도록 하겠습니다.
 
 ```
 ## 작업 내용 (Content)

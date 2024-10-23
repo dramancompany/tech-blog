@@ -18,11 +18,11 @@ tags:
 
 ### 개발자와 피할 수 없는 숙명, 배포
 
-모든 개발자에게 있어 개발과 배포는 떼려야 뗄 수 없는 관계입니다. 특히 서버의 경우엔 서비스 규모가 커짐에 따라 배포에 대한 부담이 커지기 마련입니다. 그리고 플랫폼에 따라, 사용하는 언어에 따라 배포 방법도 천차만별입니다. 리멤버 서버는 Ruby on Rails(이하 ROR) 기반으로 개발되었는데요. ROR에서는 Capistrano라는 아주 유용한 배포툴이 있습니다. 이에 대해 자세히 알아보기 전에 먼저 다음 배포 시나리오를 보셨으면 합니다.
+모든 개발자에게 있어 개발과 배포는 떼려야 뗄 수 없는 관계입니다. 특히 서버의 경우엔 서비스 규모가 커짐에 따라 배포에 대한 부담이 커지기 마련입니다. 그리고 플랫폼에 따라, 사용하는 언어에 따라 배포 방법도 천차만별입니다. 리멤버 서버는 Ruby on Rails(이하 ROR) 기반으로 개발되었는데요. ROR에서는 Capistrano라는 아주 유용한 배포툴이 있습니다. 이에 대해 자세히 알아보기 전에 먼저 다음 배포 시나리오를 보셨으면 합니다.
 
 지금 우리가 배포하려는 서버는 다음과 같은 구조를 가지고 있다고 가정합니다.
 
-[![서버구조](/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7-2015-09-25-14.42.22.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-14.42.22.png)
+[![서버구조](/images/ib7njlRF6Q.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-14.42.22.png)
 
 이와같은 구조에서 배포를 할 경우 일단 ELB 구성이 되어 있으므로 다음과 같은 순서로 무중단 배포는 가능합니다.
 
@@ -37,13 +37,13 @@ tags:
 
 그래서 좀더 안정적이고 쉬운 배포를 위해 다음과 같이 구성을 해봅시다.
 
-[![](/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7-2015-09-25-16.17.37.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
+[![](/images/sSzeF9TABC.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
 
 AWS에서는 훌륭한 Auto Scaling 서비스를 무료로 제공하고 있습니다. Auto Scaling은 쉽게말해 **Amazon Machine Image(이하 AMI)**를 설정한 조건에 따라 인스턴스를 늘리거나 줄이는 일을 합니다. 여기서 제가 주목하는 점은 'AMI'입니다. AMI는 말 그대로 머신 이미지를 말하는데 이를 이용하면 AMI를 생성하기 위한 서버 1대만 있으면 이를 이용해 이미지를 생성한 후 똑같은 서버를 원하는 만큼 생성할 수 있습니다.
 
 이를 이용하면 만약 신규 배포 후 문제가 생겼을 경우 바로 이전에 사용하던 AMI 이미지로 교체만 해주면 되기 때문에 롤백에 대한 대처도 쉬워집니다.
 
- 
+ 
 
 ### 쉬운 배포, Capistrano
 
@@ -51,17 +51,17 @@ AWS에서는 훌륭한 Auto Scaling 서비스를 무료로 제공하고 있습�
 
 공식 문서에 적혀 있는데로 Capistrano는 원격 서버 자동화 도구입니다. 이에 대해 알아보기 전에 제가 리멤버 서비스를 오픈하기 위해 처음으로 배포 했을때를 이야기 해 드려야 할 것 같습니다. 저희는 코드관리를 처음부터 github을 이용했습니다. (그리고 좀 더 쉽고 효과적인 branch 관리를 위해 [git flow](http://nvie.com/posts/a-successful-git-branching-model/)를 사용했습니다.) 테스트가 끝난 최종 코드를 master에 merge를 하고, 미리 세팅 해 놓은 서버에 git pull을 받은 후 설정을 마치고 1차로 전 직원이 다시한번 내부 테스트를 진행하였습니다. 모두 테스트에 문제가 없다고 생각한 후 미리 등록해둔 안드로이드 앱을 Google Play Console에서 릴리즈 하였는데요. 다시 생각해도 이때의 감정은 말로 다 표현 할 수 없을 것 같습니다.
 
-여담이 좀 섞였지만, 핵심은 서비스 오픈 초반만 해도 배포할 서버가 1대였고 접속자가 많지 않았기 때문에 이와 같은 방법에 큰 불편함이 없었습니다. 하지만 점차 이용자가 많아짐에 따라 서버 대수가 늘어나가 되었고 이에 따라 배포할 때 매번 각 서버에 접속해서 똑같은 작업을 해야 했고, 혹시라도 문제가 생겼을 경우 다시 각 서버에 들어가 수정 또는 롤백을 해야 했습니다. 그리고 가능한 무중단 배포를 지향 하면서 더 이상은 이 방법으로 안되겠다는 결론이 났고, 많은 ROR 개발자들이 추천하는 Capistrano를 이용하기로 결정했습니다.
+여담이 좀 섞였지만, 핵심은 서비스 오픈 초반만 해도 배포할 서버가 1대였고 접속자가 많지 않았기 때문에 이와 같은 방법에 큰 불편함이 없었습니다. 하지만 점차 이용자가 많아짐에 따라 서버 대수가 늘어나가 되었고 이에 따라 배포할 때 매번 각 서버에 접속해서 똑같은 작업을 해야 했고, 혹시라도 문제가 생겼을 경우 다시 각 서버에 들어가 수정 또는 롤백을 해야 했습니다. 그리고 가능한 무중단 배포를 지향 하면서 더 이상은 이 방법으로 안되겠다는 결론이 났고, 많은 ROR 개발자들이 추천하는 Capistrano를 이용하기로 결정했습니다.
 
 아래는 현재 리멤버 서버 배포시 구성을 간략히 그려보았습니다.
 
-[![](/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7-2015-09-30-12.14.13.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-30-12.14.13.png)
+[![](/images/oTIK1CZqtC.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-30-12.14.13.png)
 
 AMI 생성용 서버에 Capistrano를 이용해 배포 후 AWS web console에서 설정만 해주면 쉽게 모든 서버 업데이트를 마칠 수 있도록 되어 있습니다. 그럼 Capistrano를 어떻게 설치하고 설정 하는지 알아보도록 하겠습니다.
 
 ### Capistrano 설치부터 배포까지
 
-설치는 독립 Gem으로 설치하여 사용하거나 Rails project Gemfile에 추가한 후 **bundle install** 명령어로 설치 할 수 있습니다. 사용 방법은 두가지 모두 같으니 여기서는 독립 Gem 설치 기준으로 알려드리겠습니다.
+설치는 독립 Gem으로 설치하여 사용하거나 Rails project Gemfile에 추가한 후 **bundle install** 명령어로 설치 할 수 있습니다. 사용 방법은 두가지 모두 같으니 여기서는 독립 Gem 설치 기준으로 알려드리겠습니다.
 
 ```
 $ gem install capistrano
@@ -224,11 +224,11 @@ end
 after :deploy, :bundle
 ```
 
-이 코드를 추가하면 배포 후 자동으로 배포경로에서 **bundle install**을 실행하게 됩니다. 물론 bundle install 같은 것은 이렇게 직접 구현하지 않고 [capistrano-bundler](https://github.com/capistrano/bundler/)와 같은 gem을 이용하셔도 됩니다. ruby 답게 capistrano와 관련된 유용한 gem들도 많으니 미리 찾아보고 사용한다면 직접 구현하는 수고를 덜 수 있습니다.
+이 코드를 추가하면 배포 후 자동으로 배포경로에서 **bundle install**을 실행하게 됩니다. 물론 bundle install 같은 것은 이렇게 직접 구현하지 않고 [capistrano-bundler](https://github.com/capistrano/bundler/)와 같은 gem을 이용하셔도 됩니다. ruby 답게 capistrano와 관련된 유용한 gem들도 많으니 미리 찾아보고 사용한다면 직접 구현하는 수고를 덜 수 있습니다.
 
 ### 마지막으로
 
-여기까지 AWS 구성부터 Capistrano를 이용한 배포방법을 소개해 드렸습니다. 더욱 자세한 사용 방법은 capistrano documentation에 자세히 설명되어 있습니다. 앞으로 Docker 또는 이를 지원하는 Amazon EC2 Container Service(ECS)를 이용하여 배포하는 방법도 고려 중입니다. 그럼 여기서 마치며 이 글이 배포에 대해 고민하시는 분들께 조금이라도 도움이 되었으면 좋겠습니다.
+여기까지 AWS 구성부터 Capistrano를 이용한 배포방법을 소개해 드렸습니다. 더욱 자세한 사용 방법은 capistrano documentation에 자세히 설명되어 있습니다. 앞으로 Docker 또는 이를 지원하는 Amazon EC2 Container Service(ECS)를 이용하여 배포하는 방법도 고려 중입니다. 그럼 여기서 마치며 이 글이 배포에 대해 고민하시는 분들께 조금이라도 도움이 되었으면 좋겠습니다.
 
 ### 참고링크
 
