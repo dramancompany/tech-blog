@@ -162,7 +162,7 @@ Sort by: total_time
 
 전체 call stack을 html 형식으로 보여줍니다. 필요한 상황에 따라 node를 접고, 일정 값 이상의 %를 소요한 메소드들만 필터링하여 볼 수 있습니다. 각 node를 보면 **A%(B%)**와 같은 형식으로 표시되는데, 앞의 **A**는 위 **GraphPrinter**의 **%self**에 해당하는 값이고, **B**는 부모의가 호출한 자식 메소드들을 기준으로 소요한 시간의 비율입니다.
 
-\[caption id="attachment\_698" align="aligncenter" width="463"\][![screen-shot-2016-11-22-at-9-51-13-pm](/images/RpS8xkB7FM.png)](https://blog.dramancompany.com/wp-content/uploads/2016/11/Screen-Shot-2016-11-22-at-9.51.13-PM.png) CallStackPrinter 예시\[/caption\]
+<caption id="attachment\_698" align="aligncenter" width="463">[![screen-shot-2016-11-22-at-9-51-13-pm](/images/RpS8xkB7FM.png)](https://blog.dramancompany.com/wp-content/uploads/2016/11/Screen-Shot-2016-11-22-at-9.51.13-PM.png) CallStackPrinter 예시</caption>
 
 # **성능 최적화 과정**
 

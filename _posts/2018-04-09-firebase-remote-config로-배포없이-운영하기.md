@@ -18,7 +18,7 @@ categories:
 
 어떻게 운영팀이 원하는 이것을 이룰 수 있을까요?
 
-\[caption id="" align="aligncenter" width="1600"\]![](https://cdn-images-1.medium.com/max/1600/1*tadpqGa9KjLphMZYo6WgRA.jpeg) 해답은... 리모트 컨피그\[/caption\]
+<caption id="" align="aligncenter" width="1600">![](https://cdn-images-1.medium.com/max/1600/1*tadpqGa9KjLphMZYo6WgRA.jpeg) 해답은... 리모트 컨피그</caption>
 
 리모트 컨피그는 사용자가 앱 업데이트를 통하지 않고 동작을 변경할 수 있는 실시간 클라우드 서비스 입니다. 사용 시나리오는 다음과 같습니다.
 
@@ -48,7 +48,7 @@ dependencies {
 apply plugin: 'com.google.gms.google-services'
 ```
 
-\[caption id="" align="aligncenter" width="1600"\]![](https://cdn-images-1.medium.com/max/1600/1*HwLZ93J-UwQSFGclrLbQkA.png) google-services.json을 다운로드 후 app module에 위치\[/caption\]
+<caption id="" align="aligncenter" width="1600">![](https://cdn-images-1.medium.com/max/1600/1*HwLZ93J-UwQSFGclrLbQkA.png) google-services.json을 다운로드 후 app module에 위치</caption>
 
 ### 2\. 구글 플레이 서비스 설치 체크
 
@@ -77,13 +77,13 @@ private void checkGooglePlayServices() {
 
 <figure>
 
-\[caption id="" align="aligncenter" width="1600"\]![](https://cdn-images-1.medium.com/max/1600/1*Sc1x-W2LSitCNELLgqvqhQ.png) 리모트 컨피그 어드민에서 매개변수를 key, value 형태로 추가할 수 있습니다.\[/caption\]
+<caption id="" align="aligncenter" width="1600">![](https://cdn-images-1.medium.com/max/1600/1*Sc1x-W2LSitCNELLgqvqhQ.png) 리모트 컨피그 어드민에서 매개변수를 key, value 형태로 추가할 수 있습니다.</caption>
 
 <figcaption>
 
 
 
-\[caption id="" align="aligncenter" width="1600"\]![](https://cdn-images-1.medium.com/max/1600/1*eujrvHoc_GAhs4BFdi3J6g.png) 추가된 값들은 다음과 같이 보여집니다.\[/caption\]
+<caption id="" align="aligncenter" width="1600">![](https://cdn-images-1.medium.com/max/1600/1*eujrvHoc_GAhs4BFdi3J6g.png) 추가된 값들은 다음과 같이 보여집니다.</caption>
 
 
 
