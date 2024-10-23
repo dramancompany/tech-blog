@@ -41,7 +41,7 @@ New Relic 을 이용하여 서버의 처리량(throughput), 평균 응답 시간
 
 <figure>
 
-[![](/images/g66xoMCyKt.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image.png)
+[![](/images/NdO1pzXXyx.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image.png)
 
 <figcaption>
 
@@ -61,7 +61,7 @@ Application Performance Monitoring
 
 <figure>
 
-[![](/images/PwGP3wGMmR.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-1.png)
+[![](/images/pN8wlwbviZ.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-1.png)
 
 <figcaption>
 
@@ -73,7 +73,7 @@ Infrastructure Metrics - System
 
 <figure>
 
-[![](/images/LnMPU2J2vt.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-2.png)
+[![](/images/wi872FLnf7.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-2.png)
 
 <figcaption>
 
@@ -89,7 +89,7 @@ Infrastructure Metrics - Storage
 
 <figure>
 
-[![](/images/jILhe4pR2u.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-5.png)
+[![](/images/PSEajZ4wj8.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-5.png)
 
 <figcaption>
 
@@ -111,7 +111,7 @@ SLI/SLO 설정을 하고 이를 볼 수 있는 페이지를 만드는 것도 자
 
 <figure>
 
-[![](/images/2t5zFXtFEN.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-3.png)
+[![](/images/89VEmvEAFc.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-3.png)
 
 <figcaption>
 
@@ -125,7 +125,7 @@ CloudWatch 의 custom metric 및 이에 대한 alarm
 
 <figure>
 
-[![](/images/HbTgJsZqlJ.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-4.png)
+[![](/images/STlKLYveED.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-4.png)
 
 <figcaption>
 
@@ -152,7 +152,7 @@ Slack 으로 인지하게 되는 것과 별개로 위 문단에 적어놓은 것
 
 <figure>
 
-[![](/images/RIvhF5GsJu.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-9.png)
+[![](/images/brW62yzew3.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-9.png)
 
 <figcaption>
 
@@ -167,7 +167,7 @@ Slack 으로 인지하게 되는 것과 별개로 위 문단에 적어놓은 것
 
 <figure>
 
-[![](/images/3hepaScKuS.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-10.png)
+[![](/images/WcywKzv1ZU.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-10.png)
 
 <figcaption>
 
@@ -183,7 +183,7 @@ New Relic Alert 가 Slack 으로 게시된 모습
 
 <figure>
 
-[![](/images/V1oiZzjC18.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-11.png)
+[![](/images/931ken7a8g.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-11.png)
 
 <figcaption>
 
@@ -201,7 +201,7 @@ DLQ(Dead Letter Queue) 로 설정해놓은 특정 SQS queue 에 메시지가 전
 
 <figure>
 
-[![](/images/tKUPpurI9n.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-6.png)
+[![](/images/viY5F2Qza3.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-6.png)
 
 <figcaption>
 
@@ -217,7 +217,7 @@ New Relic 에서 본 Logs
 
 <figure>
 
-[![](/images/H9XBICqizd.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-7.png)
+[![](/images/ZwFQQguSJd.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-7.png)
 
 <figcaption>
 
@@ -316,7 +316,7 @@ Prometheus + Grafana, Sentry 같은 오픈소스 제품이나 New Relic, DataDog
 
 <figure>
 
-[![](/images/xqCW0uVY43.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-8.png)
+[![](/images/XOLWF1gjVB.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-8.png)
 
 <figcaption>
 

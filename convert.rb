@@ -22,6 +22,10 @@ def randomize_image_filenames(images_folder_path, md_folder_path)
     randomized_path = File.join(File.dirname(file_path), random_name)
 
     # 파일명 변경
+    # debug_find_file_name = '스크린샷-2022-04-26-오후-8.09.38-1.png'.unicode_normalize
+    # if file_name == debug_find_file_name
+    #   puts "Found file: #{file_name}"
+    # end
     FileUtils.mv(file_path, randomized_path)
 
     # 매핑 저장 (원본 경로와 난수화된 파일 이름)
@@ -30,11 +34,11 @@ def randomize_image_filenames(images_folder_path, md_folder_path)
 
   # Markdown 파일의 이미지 경로 업데이트
   Dir.glob("#{md_folder_path}/**/*.md") do |file_path|
-    content = File.read(file_path, encoding: 'utf-8')
+    content = File.read(file_path, encoding: 'utf-8').unicode_normalize
     updated_content = content.clone
 
     # 패턴을 통해 Markdown에서 파일명 추출 후 매핑에서 변경된 파일명 찾기
-    pattern = /(!\[.*?\]\()\/images\/(.*?\.(png|jpg|jpeg|gif))(\))/
+    pattern = /(!\[.*?\]\()\/images\/(.*?\.(png|jpg|jpeg|gif))/
     content.scan(pattern) do |match|
       original_filename = match[1]
       if filename_mapping.key?(original_filename)
