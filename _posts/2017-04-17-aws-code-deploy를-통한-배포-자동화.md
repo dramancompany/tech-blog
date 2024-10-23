@@ -59,7 +59,7 @@ Code Deploy를 이용할 경우 배포는 다음과 같이 이루어집니다.
 
 평소에는 클라이언트의 요청을 ELB에서 받고 1번 ASG로 요청을 보내줍니다. 배포를 하려고 하면 1번 ASG와 똑같은 크기와 설정을 갖는 2번 ASG를 만든 뒤에 ASG 내부에 새로운 코드를 갖고 있는 서버들을 추가합니다. 그리고 ELB에 새로 들어온는 요청들을 1번 ASG에서 2번 ASG로 보내게 하여 무중단 배포를 진행합니다.
 
-[![](/images/스크린샷-2015-09-25-16.17.37.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
+[![](/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7-2015-09-25-16.17.37.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
 
 기존에 저희가 사용하고 있던 운영 서버 배포 절차는 다음과 같습니다.
 
