@@ -26,7 +26,7 @@ tags:
 
 <figure>
 
-[![](/images/1mOwif1bWA.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/1.png)
+[![](/images/1-1024x382.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/1.png)
 
 <figcaption>
 
@@ -54,7 +54,7 @@ tags:
 
 <figure>
 
-[![](/images/xc5m8Rw2sN.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/Weight.png)
+[![](/images/Weight-1024x490.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/Weight.png)
 
 <figcaption>
 
@@ -70,7 +70,7 @@ iOS의 시스템폰트가 안드로이드 대비 더 많은 굵기를 제공하�
 
 <figure>
 
-[![](/images/8hEnZvxQdK.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/3.png)
+[![](/images/3.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/3.png)
 
 <figcaption>
 
@@ -114,7 +114,7 @@ UI 상에서 1행의 한글 텍스트를 배치했을 때 기존 시스템 서�
 
 <figure>
 
-[![](/images/2QLzkgsUfC.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/6-1.png)
+[![](/images/6-1-1024x707.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/6-1.png)
 
 <figcaption>
 
@@ -128,7 +128,7 @@ UI 상에서 1행의 한글 텍스트를 배치했을 때 기존 시스템 서�
 
 기본적으로 양 폰트 모두 한글을 고려해서 제작되었기 때문에 한글 표현에 강점이 있지만, 한글 폰트의 쏠림 현상은 스포카에서도 여전히 발생하고 있었습니다. 그에 반해 프리텐다드는 폰트에 별 다른 조치를 취하지 않아도 텍스트 박스의 가운데 잘 배치되어 보입니다.
 
-[![](/images/JpmksrnO2H.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/5.png)
+[![](/images/5-1024x277.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/5.png)
 
 고려 사항을 바탕으로 최종 검토 결과 Pretendard가 더 적합하다고 판단되어 리멤버의 시스템 폰트로 적용하기로 결정하게 되었습니다.
 

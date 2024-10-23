@@ -33,7 +33,7 @@ tags:
 
 <figure>
 
-[![](/images/YP3Qq9xGfH.png)](https://blog.dramancompany.com/wp-content/uploads/2023/02/image-2.png)
+[![](/images/image-2-1024x510.png)](https://blog.dramancompany.com/wp-content/uploads/2023/02/image-2.png)
 
 <figcaption>
 
@@ -53,7 +53,7 @@ tags:
 
 <figure>
 
-![](/images/qf2pICePes.png)
+![](/images/215241351-e7c73027-f829-459c-ab1e-f6e2d15f474c.png)
 
 <figcaption>
 
@@ -65,7 +65,7 @@ yarn classic 레포지토리. 기능 개발이 중단되었음을 알리는 디�
 
 <figure>
 
-![](/images/BVu0QKj61y.png)
+![](/images/215241355-efcfd03d-1b08-4e64-a875-acf658c21eb8.png)
 
 <figcaption>
 
@@ -79,7 +79,7 @@ yarn berry 레포지토리. yarn classic과는 대조되는 'Active development'
 
 <figure>
 
-![](/images/VCUFPiQOm1.png)
+![](/images/219931631-edf19a25-06cd-4553-a6ba-88befa0ac587.png)
 
 <figcaption>
 
@@ -187,7 +187,7 @@ yarn berry는 **Plug'n'Play(PnP)** 라는 기술을 사용하여 이러한 문�
 
 <figure>
 
-![](/images/4yPwn69icv.png)
+![](/images/215241955-a7b64cd0-e15c-49c8-8a0a-b7746d5625a3.png)
 
 <figcaption>
 
@@ -199,7 +199,7 @@ yarn berry는 **Plug'n'Play(PnP)** 라는 기술을 사용하여 이러한 문�
 
 <figure>
 
-![](/images/JIjAJDVIiM.png)
+![](/images/215241959-a17f711b-66f1-4494-810f-9f70744d039c.png)
 
 <figcaption>
 
@@ -211,7 +211,7 @@ yarn classic 에서의 node\_modules 크기 (913MB)
 
 <figure>
 
-![](/images/BCGjDt3YgS.png)
+![](/images/215241967-11476f03-2757-4aaf-9913-323f64fc87a4.png)
 
 <figcaption>
 
@@ -328,7 +328,7 @@ packageExtensions:
 
 <figure>
 
-![](/images/Vxfl66f7So.png)
+![](/images/215242255-06b1fe32-b8df-4434-816e-7d0c7b0bd779.png)
 
 <figcaption>
 
@@ -369,11 +369,11 @@ ZipFS 설치
 
 5\. 우측 하단 TypeScript 클릭 or `cmd + shift + p` 를 눌러 TypeScript 검색
 
-![](/images/M3wrAhRNeL.png)
+![](/images/215242264-c9d267c6-a43f-427e-951d-9d0bdd166f42.png)
 
 6\. Use Workspace Version 클릭
 
-![](/images/s6J6XzW1uw.png)
+![](/images/215242269-6d5640db-1ed4-46f1-9242-d4ae20642188.png)
 
 여기까지 진행 한 뒤 다시 한번 진행 상황 저장을 위해 커밋합니다.
 
@@ -403,9 +403,9 @@ COPY .yarn                        ./.yarn
 
 만약 설치를 실행하지 않으면 아래와 같은 오류가 발생합니다.
 
-![](/images/4cN8ZMk8Ad.png)
+![](/images/215242557-6ceaf60b-7044-42e1-99ac-e975823d0088.png)
 
-![](/images/O7Li8a3gbq.png)
+![](/images/215242563-29edb728-b040-402d-bcdb-dcf90a104a80.png)
 
 설치 후 추가된 파일들이 .gitignore에 등록되어 있으며, 설치된 종속성의 폴더명으로부터 플랫폼 종속적이라는 사실을 추측해볼 수 있습니다. 참고로 `.yarn/unplugged` 는 zip으로 묶이지 않고 압축해제 된 종속성들이 설치되는 경로입니다. `yarn unplug` 등의 명령어를 사용하면 압축된 종속성 들을 풀어서 확인할 수 있습니다.
 
@@ -413,7 +413,7 @@ COPY .yarn                        ./.yarn
 
 `eslint` 에서 import 관련 룰을 사용하고 있다면 추가 세팅이 필요합니다. `eslint-plugin-import` 에서 제공하는 `import/order` 옵션을 활용해 다음과 같이 외부 의존성과 내부 의존성을 구분지어 줄바꿈 해주고 있었습니다.
 
-![](/images/jBXHBj6CZO.png)
+![](/images/215242568-de643261-f829-4f7a-a5c3-ebff19da0a53.png)
 
 이 Lint 규칙이 yarn berry 적용 후 제대로 작동하지 않는 것을 발견하였습니다. 프로젝트 내부에서 가져온 모듈과, 외부 라이브러리에서 가져오는 모듈을 구분하는 기준이 node\_modules가 경로에 포함되어 있는지 여부였을 것이라 생각하여 검색해보았습니다. [관련 이슈](https://github.com/import-js/eslint-plugin-import/issues/2164)로부터 힌트를 얻어 [README](https://github.com/import-js/eslint-plugin-import#importexternal-module-folders) 내에 언급된 해결책을 찾을 수 있었습니다.
 
@@ -441,13 +441,13 @@ yarn 2.x 버전 부터는 pre-hook(ex. `preinstall` , `prepare` 등) 을 지원�
 
 ### 4) yarn berry와 vite를 함께 사용할 때 storybook이 실행되지 않는 문제
 
-![](/images/9NZmdPRC3P.png)
+![](/images/215242682-106bffb8-6eb7-452a-86f1-869726aa4b17.png)
 
 이 경우는 누락된 devDependencies를 다 깔아주면 되는 문제로 간단하게 해결할 수 있었습니다. 관련 이슈는 [여기](https://github.com/storybookjs/builder-vite/issues/141)에서 찾아볼 수 있습니다.
 
 하지만 이 종속성들을 설치하고 나서도 storybook이 정상적으로 실행되지는 않았는데, 스토리북으로 띄운 화면 상의 콘솔에 \`"Cannot access "./util.inspect.custom" in client code."\` 라는 에러가 발생했습니다. pnp와 vite 사이에서만 발생하는 문제로 build 과정에서 서버 / 클라이언트 환경에서 실행되는 코드들이 적절히 처리되지 않아서 생기는 문제로 이해했습니다. vite 측에서 폴리필을 추가하여 해결한 것으로 보이며, 관련 이슈는 [여기](https://github.com/vitejs/vite/issues/9238), [여기2](https://github.com/vitejs/vite/issues/7576)에서 찾아볼 수 있습니다.
 
-![](/images/wI4uwhzZKq.png)
+![](/images/215242692-31961169-1beb-4de4-9d3a-a564b61c0ed4.png)
 
 이 외에도 vite와의 조합에서 생기는 문제는 또 있었는데요. build를 실행했을 시 종속성을 제대로 찾지 못하는 문제였습니다. 이 문제는 yarn berry를 3.3.0으로 올리고 vscode sdk를 재설치한 뒤, vite를 3.2.0 버전으로 업데이트 하여 해결했습니다. 관련 이슈는 [여기](https://github.com/yarnpkg/berry/issues/4872#issuecomment-1284318301)에서 찾아볼 수 있습니다.
 
@@ -457,7 +457,7 @@ yarn 2.x 버전 부터는 pre-hook(ex. `preinstall` , `prepare` 등) 을 지원�
 
 <figure>
 
-![image](/images/vOFQO6J7PT.png)
+![image](/images/220504822-90f3f3a5-4142-4bdb-bd5e-32e8b682f2c8.png)
 
 <figcaption>
 
@@ -479,7 +479,7 @@ swc 설치에 소요되는 시간
 
 <figure>
 
-![](/images/Jvjuai9SI9.png)
+![](/images/215242409-a7761e7b-6c11-44e1-9371-c22e10085819.png)
 
 <figcaption>
 
@@ -493,7 +493,7 @@ AWS Codebuild - 편집 - 아티팩트 - 캐싱 메뉴 하단
 
 <figure>
 
-![image](/images/nwiieAuQ8s.png)
+![image](/images/220504970-ba4c5fb9-d6ad-4510-85ec-6785ac8b7132.png)
 
 <figcaption>
 
@@ -505,7 +505,7 @@ AWS Codebuild - 편집 - 아티팩트 - 캐싱 메뉴 하단
 
 <figure>
 
-[![](/images/sb4KQvFDUF.png)](https://blog.dramancompany.com/wp-content/uploads/2023/02/image-6.png)
+[![](/images/image-6-1024x276.png)](https://blog.dramancompany.com/wp-content/uploads/2023/02/image-6.png)
 
 <figcaption>
 
@@ -535,7 +535,7 @@ AWS Codebuild - 편집 - 아티팩트 - 캐싱 메뉴 하단
 
 <figure>
 
-[![](/images/nWZYpgGHYG.png)](https://blog.dramancompany.com/wp-content/uploads/2023/02/image.png)
+[![](/images/image-1024x275.png)](https://blog.dramancompany.com/wp-content/uploads/2023/02/image.png)
 
 <figcaption>
 
