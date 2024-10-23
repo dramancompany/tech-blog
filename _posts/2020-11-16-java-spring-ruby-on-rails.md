@@ -40,7 +40,7 @@ Ruby on Rails 는 MVC 패턴 기반의 개발을 빠르고 편리하게 해주�
 
 \- CoC(Convention over Configuration)
 
-    - Spring Boot 가 나오게 된 배경도 Spring MVC 만을 사용할때 비즈니스 로직보다 설정에 관련된 코드를 많이 작성해야했기 때문인 점과 일맥상통하다고 볼 수 있습니다.
+    - Spring Boot 가 나오게 된 배경도 Spring MVC 만을 사용할때 비즈니스 로직보다 설정에 관련된 코드를 많이 작성해야했기 때문인 점과 일맥상통하다고 볼 수 있습니다.
 
 ```
 The Rails philosophy includes two major guiding principles:
@@ -77,7 +77,7 @@ _from [Ruby on Rails 공식 가이드](https://guides.rubyonrails.org/getting_st
 
 \- 새로운 클래스, 메소드를 만들지 않고 기존 클래스의 기능을 손쉽게 확장 가능합니다. (meta programming)
 
-    - Kotlin 을 활용하여 Spring 으로 개발하면 이 장점을 활용할 것 같기도 합니다.
+    - Kotlin 을 활용하여 Spring 으로 개발하면 이 장점을 활용할 것 같기도 합니다.
 
 \- 이를 바탕으로 만들어진 여러 메소드들은 실제 Rails 에서 개발할 때 아주 활용도가 높습니다.
 
@@ -95,7 +95,7 @@ _from [Ruby on Rails 공식 가이드](https://guides.rubyonrails.org/getting_st
 
 <figure>
 
-[![](/assets/post/images/rails-console-example-1.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/rails-console-example-1.png)
+<img src="/images/rails-console-example-1.png">
 
 <figcaption>
 
@@ -121,7 +121,7 @@ rails console 실행 예시
 
 <figure>
 
-[![](/assets/post/images/test-coverage-example-1024x109.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/test-coverage-example.png)
+<img src="/images/test-coverage-example-1024x109.png">
 
 <figcaption>
 
@@ -156,7 +156,7 @@ Time.current.yesterday.beginning_of_day
 
 \- DB 스키마 관리 방법도 2가지 이상 제공되고 있어서, 개발자(팀)의 선호도에 따라 그 방법을 선택할 수 있게 해준 점도 Rails 에서 잘 한 점이라고 생각합니다.
 
-    - strucuture.sql, schema.rb, db/migration
+    - strucuture.sql, schema.rb, db/migration
 
 \- 한 가지 아쉬운점으로는, 이 스키마 파일을 바탕으로 Rails 에서 알아서 column 값에 대한 getter, setter 메소드를 자동으로 만들어주기 때문에 ActiveModel 클래스만 보고 어떤 필드를 갖고 있는지 확인하기 어렵고, 스키마 파일을 봐야만 한다는 점은 다소 아쉽긴 합니다.
 
@@ -170,7 +170,7 @@ Time.current.yesterday.beginning_of_day
 
 <figure>
 
-[![](/assets/post/images/email-preview-example.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/email-preview-example.png)
+<img src="/images/email-preview-example.png">
 
 <figcaption>
 
@@ -358,7 +358,7 @@ _from [springfox 공식 문서](https://springfox.github.io/springfox/docs/curre
 
 \- 이걸 더 복잡하다고 생각하시는 분들도 계시겠지만, 저는 별도의 openapi.yml 파일을 직접 관리하는 것보다 더 좋았다고 느꼈습니다.
 
-\- springfox 에서 webflux, Kotlin 에 대한 대응이 늦는 등의 문제가 있어서 최근에는 [springdoc](https://springdoc.org) 을 더 많이 사용하는 추세라고 하네요.
+\- springfox 에서 webflux, Kotlin 에 대한 대응이 늦는 등의 문제가 있어서 최근에는 [springdoc](https://springdoc.org) 을 더 많이 사용하는 추세라고 하네요.
 
 여기까지 제가 생각한 'Spring 이 Rails 에 비해 더 강점인 부분들' 을 정리해봤습니다.
 

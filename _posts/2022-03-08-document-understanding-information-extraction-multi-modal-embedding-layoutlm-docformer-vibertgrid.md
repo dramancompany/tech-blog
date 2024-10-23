@@ -33,7 +33,7 @@ tags:
 
 **_문서 이미지를 AI 모델을 통해 문서 이미지 내용을 해석하고 유저가 필요한 정보로 가공해주는 작업_**
 
-![](/assets/post/images/1-14.png)  
+![](/images/1-14.png)  
 Document Understanding의 전체 흐름도 \[1\]
 
 - Document Understanding의 세부적인 작업을 처리해주는 **대표 기술은 네 가지**가 있습니다**.**
@@ -78,13 +78,13 @@ _대표적으로 Document Image Classification, Visual Question Answering, Infor
 ### **1\. Document Image Classification**
 
 문서 이미지를 과학 논문, 이력서, 청구서, 영수증 및 기타 여러 범주로 자동 분류하는 작업입니다.  
-![](/assets/post/images/2.png)
+![](/images/2.png)
 
 ### **2\. Visual Question Answering**
 
 문서 이미지에서 획득한 텍스트 정보, 시각 정보 및 레이아웃 정보를 분석하여 질문에 대한 답을 출력하는 작업입니다.
 
-![](/assets/post/images/3.png)
+![](/images/3.png)
 
 Document Visual Question Answering \[3\]
 
@@ -92,7 +92,7 @@ Document Visual Question Answering \[3\]
 
 문서 레이아웃에서 텍스트 및 시각적 정보를 활용하여 표/그림/차트 정보 및 위치 관계를 찾아 주는 작업입니다.
 
-![](/assets/post/images/image-1.png)
+![](/images/image-1.png)
 
 Document Layout Analysis \[4\]
 
@@ -100,7 +100,7 @@ Document Layout Analysis \[4\]
 
 문서에 있는 2차원 공간에 배열된 비정형 정보에서 필요로 하는 정보만을 추출하는 기술을 나타냅니다.
 
-![](/assets/post/images/5.gif)
+![](/images/5.gif)
 
 Information Extraction \[5\]  
 
@@ -119,13 +119,13 @@ Information Extraction \[5\]
   
   
   
-![](/assets/post/images/image-2.png)
+![](/images/image-2.png)
 
 - **Docformer \[7\]**
     - 텍스트, 시각 및 레이아웃 정보의 상관관계를 학습시키기 위한 Cross-Modality Feature Correlation을 통한 Embedding Feeding 전략을 제안했다.
     - Multi-Modal Self-Attention Layer 구조 설계를 제안했다.
 
-![](/assets/post/images/image-4.png)
+![](/images/image-4.png)
 
 ### **2\. Graph-based approaches**
 
@@ -134,7 +134,7 @@ Information Extraction \[5\]
 - **PICK \[8\]**
     - Graph를 이용하여 텍스트 정보의 시각적, 위치 정보 결합한 모델을 제안했다.
 
-![](/assets/post/images/image-5.png)
+![](/images/image-5.png)
 
 ### **3\. Grid-based approaches**
 
@@ -143,7 +143,7 @@ Information Extraction \[5\]
 - **ViBERTgrid \[9\]**
     - 기존 방대한 Dataset으로 사전 학습된 Model에 의존 하지 않고 시각적 정보에 좀 더 초점을 맞춘 모델
 
-![](/assets/post/images/image-6.png)  
+![](/images/image-6.png)  
 
 ## **Multi-Modal Embedding**
 
@@ -181,12 +181,12 @@ Document Understanding에 대한 소개, Business Task, Information Extraction�
 
 ## **Reference**
 
-\[1\] Cui, Lei, et al. "Document AI: Benchmarks, Models and Applications." _arXiv preprint arXiv:2111.08609_ (2021).  
+\[1\] Cui, Lei, et al. "Document AI: Benchmarks, Models and Applications." _arXiv preprint arXiv:2111.08609_ (2021).  
 \[2\] [https://en.wikipedia.org/wiki/Document\_layout\_analysis](https://en.wikipedia.org/wiki/Document_layout_analysis)  
-\[3\] Mathew, Minesh, et al. "InfographicVQA." _Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision_. 2022.APA  
-\[4\] Zhong, Xu, Jianbin Tang, and Antonio Jimeno Yepes. "Publaynet: largest dataset ever for document layout analysis." _2019 International Conference on Document Analysis and Recognition (ICDAR)_ . IEEE, 2019. 
+\[3\] Mathew, Minesh, et al. "InfographicVQA." _Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision_. 2022.APA  
+\[4\] Zhong, Xu, Jianbin Tang, and Antonio Jimeno Yepes. "Publaynet: largest dataset ever for document layout analysis." _2019 International Conference on Document Analysis and Recognition (ICDAR)_ . IEEE, 2019. 
 \[5\] What is Information Extraction? - A Detailed Guide \[by Vihar Kurama, [https://nanonets.com/blog/information-extraction/](https://nanonets.com/blog/information-extraction/)\]  
-\[6\] Xu, Yang, et al. "Layoutlmv2: Multi-modal pre-training for visually-rich document understanding." _arXiv preprint arXiv:2012.14740_ (2020).  
-\[7\] Appalaraju, Srikar, et al. "Docformer: End-to-end transformer for document understanding." _Proceedings of the IEEE/CVF International Conference on Computer Vision_. 2021.APA  
-\[8\] Yu, Wenwen, et al. "PICK: processing key information extraction from documents using improved graph learning-convolutional networks." _2020 25th International Conference on Pattern Recognition (ICPR)_. IEEE, 2021.APA  
-\[9\] Lin, Weihong, et al. "ViBERTgrid: A Jointly Trained Multi-Modal 2D Document Representation for Key Information Extraction from Documents." _International Conference on Document Analysis and Recognition_. Springer, Cham, 2021.APA
+\[6\] Xu, Yang, et al. "Layoutlmv2: Multi-modal pre-training for visually-rich document understanding." _arXiv preprint arXiv:2012.14740_ (2020).  
+\[7\] Appalaraju, Srikar, et al. "Docformer: End-to-end transformer for document understanding." _Proceedings of the IEEE/CVF International Conference on Computer Vision_. 2021.APA  
+\[8\] Yu, Wenwen, et al. "PICK: processing key information extraction from documents using improved graph learning-convolutional networks." _2020 25th International Conference on Pattern Recognition (ICPR)_. IEEE, 2021.APA  
+\[9\] Lin, Weihong, et al. "ViBERTgrid: A Jointly Trained Multi-Modal 2D Document Representation for Key Information Extraction from Documents." _International Conference on Document Analysis and Recognition_. Springer, Cham, 2021.APA

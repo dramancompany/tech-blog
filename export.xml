@@ -3231,7 +3231,7 @@ NewRelic은 위에서 소개한 기능들 외에도 호스트 서버에 대한 �
 			<wp:comment_author_IP><![CDATA[172.31.26.1]]></wp:comment_author_IP>
 			<wp:comment_date><![CDATA[2020-11-24 20:23:14]]></wp:comment_date>
 			<wp:comment_date_gmt><![CDATA[2020-11-24 11:23:14]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[[&#8230;] API 로그를 살펴보아야 했습니다. 이러한 케이스의 로그 데이터 분석은  ELK, AWS Cloud Watch에서는 살펴보기에는 어려움이 [&#8230;]]]></wp:comment_content>
+			<wp:comment_content><![CDATA[[&#8230;] API 로그를 살펴보아야 했습니다. 이러한 케이스의 로그 데이터 분석은  ELK, AWS Cloud Watch에서는 살펴보기에는 어려움이 [&#8230;]]]></wp:comment_content>
 			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
 			<wp:comment_type><![CDATA[pingback]]></wp:comment_type>
 			<wp:comment_parent>0</wp:comment_parent>
@@ -9642,7 +9642,7 @@ https://blog.dramancompany.com/2020/11/java-spring-ruby-on-rails/]]></wp:comment
 		<dc:creator><![CDATA[sumin]]></dc:creator>
 		<guid isPermaLink="false">http://blog.dramancompany.com/?p=974</guid>
 		<description></description>
-		<content:encoded><![CDATA[<p style="text-align: left;">안녕하세요. 드라마앤컴퍼니 QA팀 곽수민입니다. <span style="font-weight: 400;">이번 포스팅에서 드라마의 QA팀은 어떠한 업무를 하고 있는지 소개하려 합니다. </span></p>
+		<content:encoded><![CDATA[<p style="text-align: left;">안녕하세요. 드라마앤컴퍼니 QA팀 곽수민입니다. <span style="font-weight: 400;">이번 포스팅에서 드라마의 QA팀은 어떠한 업무를 하고 있는지 소개하려 합니다. </span></p>
 <p style="text-align: left;"><span style="font-weight: 400;">삐까뻔쩍한 최신형 휴대폰을 사용해보았더니, 막상 전화 거는 방법도 모르겠고, 키보드를 사용하는 방법도 어렵고, 기본으로 설치된 애플리케이션이 강제 종료되어 작업 중인 내용이 사라진다면 어떨까요? 소비자들로부터 품질 관련 불만이 봇물처럼 터져나오고 아무도 그 휴대폰을 구매하려고 하지 않을 것입니다. 그래서 개발 결과물에 대한 QA 검수가 매우 중요합니다.</span></p>
 QA 검수 단계에서는 크게 다음 두 가지 관점으로 검수를 진행합니다.
 <ul>
@@ -9661,7 +9661,7 @@ QA 검수는 정확성이 생명이기 때문에 최대한 효율적이고, 넓�
 
 <span style="font-weight: 400;">이제 테스트를 진행합니다. 구현된 기능은 문제가 없는지, 다양한 환경에서 앱이 잘 구동되는지의 여부, 레이아웃이나 워딩 등에 문제는 없는지, 입력된 데이터는 정상적으로 등록되어 앱에 표시되는지 등의 사용자 케이스를 충분히 고려하면서 검수를 진행하게 됩니다.</span>
 
-<span style="font-weight: 400;">사실 위에서 언급한 QA 검수는 모든 QA 조직에서 잘하고 계신 부분입니다.  </span><span style="font-weight: 400;">그러나 드라마 QA팀에는 다른 조직과는 구별되는 여러 특징들이 존재합니다. 그 중 첫 번째는 바로 서버 API를 QA검수와 버그 원인 추적에 매우 잘 활용한다는 것입니다.</span>
+<span style="font-weight: 400;">사실 위에서 언급한 QA 검수는 모든 QA 조직에서 잘하고 계신 부분입니다.  </span><span style="font-weight: 400;">그러나 드라마 QA팀에는 다른 조직과는 구별되는 여러 특징들이 존재합니다. 그 중 첫 번째는 바로 서버 API를 QA검수와 버그 원인 추적에 매우 잘 활용한다는 것입니다.</span>
 
 <strong>- 최고의 보조 도구 : API</strong>
 
@@ -9676,11 +9676,11 @@ QA 검수는 정확성이 생명이기 때문에 최대한 효율적이고, 넓�
 <p style="text-align: center;"><span style="font-weight: 400;">‘직원' = ’API’</span></p>
 <span style="font-weight: 400;">손님(클라이언트)은 주방(서버)에서 메뉴(기능)가 어떻게 만들어지는지 모르고 또 알 필요도 없습니다. 다만, 손님은 직원(API)을 통해서 요청(주문)을 보낼 수 있고, 요청의 결과(직원이 내가 주문한 메뉴를 가져다주는지)가 정상인지 확인할 수 있습니다. 예를 들면 우리는 서비스에 로그인을 하기 위해, 로그인 버튼을 누릅니다. 그러면 사용자 입장에서는 그냥 ‘로그인' 버튼만 눌렀다고 인지하게 됩니다. 하지만 실제로 우리가 주목해야 될 내용은</span>
 <ul>
- 	<li style="font-weight: 400;"><span style="font-weight: 400;">‘화면에서 보이는 버튼 중 로그인 버튼을 누름'  = ‘</span><b>로그인 요청 API를 서버로 전송</b><span style="font-weight: 400;">'</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">‘화면에서 보이는 버튼 중 로그인 버튼을 누름'  = ‘</span><b>로그인 요청 API를 서버로 전송</b><span style="font-weight: 400;">'</span></li>
 </ul>
 <span style="font-weight: 400;">입니다. (당연히 ‘로그인’ 버튼을 눌렀는데, ‘회원가입' API가 호출되면 안 됩니다. 식당에서 부대찌개를 시켰는데, 김치찌개가 나오면 안되잖아요?)</span>
 
-<span style="font-weight: 400;">API를 활용할 줄 알면 단순히 화면을 보고, 테스트 시나리오대로 검증하는 역할을 넘어서, 다양한 QA 업무를 더욱 단순하고 빠르게 해결할 수 있습니다. 드라마 QA팀은 팀명함첩 결제 기능처럼 복잡하거나, 반복적으로 이루어지는 테스트에 API를 활용하고 있습니다. 대량의 테스트 데이터를 만들 때도 사용합니다. 프로세스에 대한 고도화가 점점 되어가면서 테스트 API 서버가 여러 번 뻗기도 하였고, 생각지도 못한 기능들의 문제들도 발견할 수 있었습니다. (때문에 서버 개발팀이 고생 많이 하셨죠..) </span><span style="font-weight: 400;">그 외에도 사용자 혹은 사내에서 보고되는 버그들의 원인 파악에도 유용하고 쓰고 있습니다. 그 결과 노가다성 업무들은 60%이상 줄게 되었습니다.</span>
+<span style="font-weight: 400;">API를 활용할 줄 알면 단순히 화면을 보고, 테스트 시나리오대로 검증하는 역할을 넘어서, 다양한 QA 업무를 더욱 단순하고 빠르게 해결할 수 있습니다. 드라마 QA팀은 팀명함첩 결제 기능처럼 복잡하거나, 반복적으로 이루어지는 테스트에 API를 활용하고 있습니다. 대량의 테스트 데이터를 만들 때도 사용합니다. 프로세스에 대한 고도화가 점점 되어가면서 테스트 API 서버가 여러 번 뻗기도 하였고, 생각지도 못한 기능들의 문제들도 발견할 수 있었습니다. (때문에 서버 개발팀이 고생 많이 하셨죠..) </span><span style="font-weight: 400;">그 외에도 사용자 혹은 사내에서 보고되는 버그들의 원인 파악에도 유용하고 쓰고 있습니다. 그 결과 노가다성 업무들은 60%이상 줄게 되었습니다.</span>
 <p style="text-align: center;"><a href="https://blog.dramancompany.com/wp-content/uploads/2019/03/스크린샷-2019-03-18-오후-5.25.25.png"><img class="alignnone size-full wp-image-978" src="https://blog.dramancompany.com/wp-content/uploads/2019/03/스크린샷-2019-03-18-오후-5.25.25.png" alt="" width="389" height="398" /></a></p>
 <p style="text-align: center;"><span style="font-weight: 400;">&lt;회원가입_인증번호 전송을 위한 API 호출&gt;</span></p>
 <span style="font-weight: 400;">위 이미지에서와 같이 API 호출 시 파라미터에 유효한 값, 유효하지 않은 값 등 다양한 값을 입력하고, 서버의 응답 결과를 확인합니다. 이를 통해 기능 요구사항에 맞는 API가 호출되는지, 앱에서는 API 응답을 화면에 잘 보여주는지 등을 확인해보면 실제로 소스 코드에 버그가 있는지, 그 원인은 무엇인지 파악할 수 있습니다.</span>
@@ -9727,7 +9727,7 @@ QA 검수는 정확성이 생명이기 때문에 최대한 효율적이고, 넓�
 <p style="text-align: center;"><span style="font-weight: 400;">&lt;실제 리멤버 앱에서 테스트가 수행되는 Step을 구현한 소스 일부&gt;</span></p>
 <span style="font-weight: 400;">스크립트는 ‘기본 기능 검증’ 위주로 작성해야 합니다. ‘기본 기능 검증' 은 여러가지 의미가 있을 수 있지만 저희는 보통 ‘Happy Path’(예외 또는 오류의 발생 없이 정상적으로 수행되는 기본 시나리오)로 설정하고 있습니다. 기획 내용을 바탕으로 예상한 대로 잘 동작하는지, 특정 상황에서 정의된 에러 메시지(ex. ‘비밀번호를 잘못 입력하셨습니다.’ 등의 메시지(API의 경우 200 OK 응답))가 잘 보여지는지 확인합니다. (참고로 예상치 못한 404, 500 등의 API 에러가 발생하는 경우는 ‘Happy Path’가 아닙니다.)</span>
 
-‘Happy Path’ 위주의 검증 방법을 채택한 이유는 모든 테스트 시나리오에 대해 코드를 작성하면, 무수히 많은 Case들을 고려해야 하므로 결국은 사람이 직접 손으로 테스트를 하는 것보다 훨씬 더 비효율적이기 때문입니다. 너무 많은 테스트 케이스로 인한 스크립트 관리/유지보수의 부담과 Code Quality의 저하로 인해 사람의 손을 더 타게 된다면 배보다 배꼽이 더 큰 상황을 초래할 수 있습니다. <span style="font-weight: 400;">또한, 서비스 기능별로 ‘단위 테스트' 방식 기반으로 스크립트를 작성하였고, 때때로 전체 테스트가 필요하면 모든 단위 테스트를 한번에 모아서 ‘통합 테스트'를 실행하도록 시스템을 구축하였습니다. 이렇게 하면 마이너한 앱 기능 수정(전체 테스트가 필요 없는 코드 수정)이나 빠르게 해결되어야 하는 hotfix(긴급패치) 대응을 위한 테스트를 빠르게 진행하기 쉽습니다. </span>
+‘Happy Path’ 위주의 검증 방법을 채택한 이유는 모든 테스트 시나리오에 대해 코드를 작성하면, 무수히 많은 Case들을 고려해야 하므로 결국은 사람이 직접 손으로 테스트를 하는 것보다 훨씬 더 비효율적이기 때문입니다. 너무 많은 테스트 케이스로 인한 스크립트 관리/유지보수의 부담과 Code Quality의 저하로 인해 사람의 손을 더 타게 된다면 배보다 배꼽이 더 큰 상황을 초래할 수 있습니다. <span style="font-weight: 400;">또한, 서비스 기능별로 ‘단위 테스트' 방식 기반으로 스크립트를 작성하였고, 때때로 전체 테스트가 필요하면 모든 단위 테스트를 한번에 모아서 ‘통합 테스트'를 실행하도록 시스템을 구축하였습니다. 이렇게 하면 마이너한 앱 기능 수정(전체 테스트가 필요 없는 코드 수정)이나 빠르게 해결되어야 하는 hotfix(긴급패치) 대응을 위한 테스트를 빠르게 진행하기 쉽습니다. </span>
 
 이렇게 만들어진 Script는 마치 사람이 실제 앱을 사용하는 것처럼 클라이언트를 조작할 수 있고, 정의된 시나리오대로 앱의 기능 테스트를 수행하게 됩니다.
 
@@ -10054,7 +10054,7 @@ QA이시면 코딩도하실줄아시나요?
 		<dc:creator><![CDATA[sm.im]]></dc:creator>
 		<guid isPermaLink="false">http://blog.dramancompany.com/?p=1016</guid>
 		<description></description>
-		<content:encoded><![CDATA[리멤버 모바일 애플리케이션의 핵심 기능은 단연 카메라일 것입니다. 명함으로 연결되는 세상을 꿈꾸는 리멤버에게 카메라는 오프라인의 명함을 온라인상의 내 인맥으로 만드는 출발점이기 때문이죠. 그렇기 때문에 최대한 명함을 깔끔하게 인식하고, 깨끗하게 처리해서 타이피스트가 정확하게 입력할 수 있도록 전달하는 것이 리멤버 앱의 핵심 임무 중 하나입니다. 몇 년 전에 저희의 이러한 고민을 담아 <a class="external-link" href="https://blog.dramancompany.com/2016/04/crop/" rel="nofollow">블로그 글</a>을 공개했었는데요, 새롭게 개발된 리멤버 안드로이드 앱의 카메라 기능을 소개합니다.
+		<content:encoded><![CDATA[리멤버 모바일 애플리케이션의 핵심 기능은 단연 카메라일 것입니다. 명함으로 연결되는 세상을 꿈꾸는 리멤버에게 카메라는 오프라인의 명함을 온라인상의 내 인맥으로 만드는 출발점이기 때문이죠. 그렇기 때문에 최대한 명함을 깔끔하게 인식하고, 깨끗하게 처리해서 타이피스트가 정확하게 입력할 수 있도록 전달하는 것이 리멤버 앱의 핵심 임무 중 하나입니다. 몇 년 전에 저희의 이러한 고민을 담아 <a class="external-link" href="https://blog.dramancompany.com/2016/04/crop/" rel="nofollow">블로그 글</a>을 공개했었는데요, 새롭게 개발된 리멤버 안드로이드 앱의 카메라 기능을 소개합니다.
 <h3 id="OpenCV를이용한명함인식알고리즘개발-변한것들">새로운 카메라 엔진의 필요성</h3>
 작년 5월, 리멤버가 대대적인 UI 개편을 하면서 카메라 UI 역시 크게 바뀌었습니다. 기존에는 아래와 같이 가로로 명함을 찍도록 유도하는 화면이었다면, 이제는 대부분의 카메라 앱과 마찬가지로 한손으로 편하게 휴대폰을 잡은 방향 그대로 촬영할 수 있도록 하는 것이죠. 하지만 지난 블로그에서 언급한 것처럼, 리멤버 안드로이드 앱에서는 개발의 용이성을 위해서 휴대폰 방향과 평행한 명함만 인식하게 되어있었습니다. 덕분에 많은 개발 리소스를 아낄 수 있었지만, 비스듬히 놓이거나, 휴대폰과 수직으로 놓인 명함은 전혀 인식하지 못했고, 이는 새로운 UI에서 매우 치명적인 허점이었습니다. 따라서 리멤버 리뉴얼을 위해서 새로운 카메라 엔진 개발은 필수적이었습니다.
 
@@ -10063,7 +10063,7 @@ QA이시면 코딩도하실줄아시나요?
 또한, 리멤버 안드로이드 앱의 카메라 성능에 대한 피드백이 꾸준히 제기되고 있었습니다. 전반적으로는 괜찮은 성능을 보이지만, 미묘하게 가장자리가 제대로 인식되지 못하거나, 복잡한 배경 위에서는 명함을 제대로 인식하지 못하거나, 명함 촬영 가이드라인이 심하게 흔들리는 등 사용자의 촬영 경험에 좋지 않은 영향을 미치는 요소들이 매우 많았습니다. BoofCV 라이브러리의 한계와 레거시 코드의 영향으로 간단하고 사소한 개선이 불가능한 상태였고, 저희는 완전히 새로운 로직과 코드 위에서 카메라 엔진을 새롭게 만들기로 결심했습니다.
 <h3 id="OpenCV를이용한명함인식알고리즘개발-그대로인것들"></h3>
 <h1 id="OpenCV를이용한명함인식알고리즘개발-명함인식알고리즘">명함 인식 알고리즘</h1>
-저희의 1차적인 목표는 명함이 어떻게 배치되어 있든 명함을 인식할 수 있도록 하는 것이었습니다. 그러기 위해서는 기존에 사용하던 <a class="external-link" href="https://boofcv.org/index.php?title=Main_Page" rel="nofollow">BoofCV</a> 라이브러리를 포기해야 했습니다. 수직, 수평 방향 직선을 찾는 데에만 최적화되어 있고, Hough Transform을 제외한 모든 연산에서 좋지 않은 성능을 보였기 때문에 실시간 이미지 프로세싱에서 가장 방대한 레퍼런스를 제공하고 있는 <a class="external-link" href="https://opencv.org/" rel="nofollow">OpenCV</a>를 사용하기로 했습니다. 리멤버 앱의 명함 인식은 크게 아래와 같은 과정을 거칩니다.
+저희의 1차적인 목표는 명함이 어떻게 배치되어 있든 명함을 인식할 수 있도록 하는 것이었습니다. 그러기 위해서는 기존에 사용하던 <a class="external-link" href="https://boofcv.org/index.php?title=Main_Page" rel="nofollow">BoofCV</a> 라이브러리를 포기해야 했습니다. 수직, 수평 방향 직선을 찾는 데에만 최적화되어 있고, Hough Transform을 제외한 모든 연산에서 좋지 않은 성능을 보였기 때문에 실시간 이미지 프로세싱에서 가장 방대한 레퍼런스를 제공하고 있는 <a class="external-link" href="https://opencv.org/" rel="nofollow">OpenCV</a>를 사용하기로 했습니다. 리멤버 앱의 명함 인식은 크게 아래와 같은 과정을 거칩니다.
 <ol>
  	<li>Pre-Processing</li>
  	<li>Edge Detection</li>
@@ -10071,23 +10071,23 @@ QA이시면 코딩도하실줄아시나요?
  	<li>Find Rectangle</li>
 </ol>
 <h2 id="OpenCV를이용한명함인식알고리즘개발-Pre-Processing">Pre-Processing</h2>
-리멤버 앱에서는 실시간으로 이미지를 처리하고, 사용자에게 명함의 위치를 보여줘야 했기 때문에 최대한 빠르게(100ms 이내) 이미지를 분석하고 그 안에서 명함을 찾아내야 했습니다. 하지만 요즘 스마트폰에서 보내주는 이미지는 해상도가 매우 높기 때문에 원본을 그대로 사용하면 이미지 처리에 매우 많은 시간이 걸립니다. 명함을 찾기 위해서 고화질의 이미지가 필요하지는 않으므로, 저희는 약 480px 수준으로 원본 이미지를 줄여서 사용했습니다.
+리멤버 앱에서는 실시간으로 이미지를 처리하고, 사용자에게 명함의 위치를 보여줘야 했기 때문에 최대한 빠르게(100ms 이내) 이미지를 분석하고 그 안에서 명함을 찾아내야 했습니다. 하지만 요즘 스마트폰에서 보내주는 이미지는 해상도가 매우 높기 때문에 원본을 그대로 사용하면 이미지 처리에 매우 많은 시간이 걸립니다. 명함을 찾기 위해서 고화질의 이미지가 필요하지는 않으므로, 저희는 약 480px 수준으로 원본 이미지를 줄여서 사용했습니다.
 
-이미지를 줄인 후, 최대한 타겟으로 하는 명함 이미지가 두드러져 보이도록 여러 가지 전처리 작업을 해주었습니다. 저희는 명함과 뒷배경의 대비가 명확하고 uniform 한 경우는 물론이고, 명함과 비슷한 색의 배경, 또는 매우 지저분한 배경에서도 명함이 높은 확률로 인식될 수 있게 하고 싶었습니다. 특히 아래와 같은 상황들은 눈으로도 구분 짓기 어려운 경계선을 찾아내거나, 명확한 직선을 찾는 것을 방해하는 수많은 장애물을 최대한 걷어내야 했습니다.
+이미지를 줄인 후, 최대한 타겟으로 하는 명함 이미지가 두드러져 보이도록 여러 가지 전처리 작업을 해주었습니다. 저희는 명함과 뒷배경의 대비가 명확하고 uniform 한 경우는 물론이고, 명함과 비슷한 색의 배경, 또는 매우 지저분한 배경에서도 명함이 높은 확률로 인식될 수 있게 하고 싶었습니다. 특히 아래와 같은 상황들은 눈으로도 구분 짓기 어려운 경계선을 찾아내거나, 명확한 직선을 찾는 것을 방해하는 수많은 장애물을 최대한 걷어내야 했습니다.
 
 <a href="https://blog.dramancompany.com/wp-content/uploads/2019/03/blog_original-e1553139395490.png"><img class="wp-image-1033 aligncenter" src="https://blog.dramancompany.com/wp-content/uploads/2019/03/blog_original.png" alt="" width="790" height="280" /></a>
 
-따라서 자잘한 디테일은 숨기고, 큰 변화들이 두드러지는 데에 중점을 두고 이미지를 처리했습니다. 이를 위해서 먼저 OpenCV에서 제공하는 다양한 Image Blurring(Image Smoothing) 필터를 통해서 명함과 배경을 혼동하게 만드는 지저분한 정보들을 지운 뒤, Edge Preserving Filter를 통해 명함과 배경 사이의 흐려진 경계선을 최대한 복구했습니다. Edge Preserving Filter들은 이미지를 전반적으로는 부드럽게 만들지만, Edge라고 판단되는 곳, 즉 색상의 급격한 변화가 있는 곳은 더욱 뚜렷하게 만드는 효과가 있습니다.
+따라서 자잘한 디테일은 숨기고, 큰 변화들이 두드러지는 데에 중점을 두고 이미지를 처리했습니다. 이를 위해서 먼저 OpenCV에서 제공하는 다양한 Image Blurring(Image Smoothing) 필터를 통해서 명함과 배경을 혼동하게 만드는 지저분한 정보들을 지운 뒤, Edge Preserving Filter를 통해 명함과 배경 사이의 흐려진 경계선을 최대한 복구했습니다. Edge Preserving Filter들은 이미지를 전반적으로는 부드럽게 만들지만, Edge라고 판단되는 곳, 즉 색상의 급격한 변화가 있는 곳은 더욱 뚜렷하게 만드는 효과가 있습니다.
 
 전처리를 거친 이미지는 아래와 같이 경계선을 판별하기 매우 좋은 상태로 다시 태어나게 됩니다.
 
 <a href="https://blog.dramancompany.com/wp-content/uploads/2019/03/blog_preprocess.png"><img class="wp-image-1034 aligncenter" src="https://blog.dramancompany.com/wp-content/uploads/2019/03/blog_preprocess.png" alt="" width="790" height="280" /></a>
 <h2 id="OpenCV를이용한명함인식알고리즘개발-EdgeDetection">Edge Detection</h2>
-이전보다 깔끔해진 이미지를 가지고 본격적으로 명함의 경계선을 찾아야 합니다. 이를 위해서 저희는 간단한게 OpenCV의 <a class="external-link" href="https://en.wikipedia.org/wiki/Canny_edge_detector" rel="nofollow">Canny Edge Detector</a>를 사용했습니다. Canny Edge Detector는 다섯 단계를 통해서 경계선을 추출해냅니다. 일반적인 사무실 책상에서 찍은 아래의 예시를 보겠습니다.
+이전보다 깔끔해진 이미지를 가지고 본격적으로 명함의 경계선을 찾아야 합니다. 이를 위해서 저희는 간단한게 OpenCV의 <a class="external-link" href="https://en.wikipedia.org/wiki/Canny_edge_detector" rel="nofollow">Canny Edge Detector</a>를 사용했습니다. Canny Edge Detector는 다섯 단계를 통해서 경계선을 추출해냅니다. 일반적인 사무실 책상에서 찍은 아래의 예시를 보겠습니다.
 
 [caption id="attachment_1039" align="aligncenter" width="1827"]<a href="https://blog.dramancompany.com/wp-content/uploads/2019/03/blog_canny-1-e1553140028785.png"><img class="size-full wp-image-1039" src="https://blog.dramancompany.com/wp-content/uploads/2019/03/blog_canny-1.png" alt="" width="1827" height="443" /></a> 왼쪽부터 원본, 전처리, Canny Edge Detection 결과[/caption]
 
-위와 같이 전처리와 경계선 추출을 통해서 드디어 명함의 윤곽이 제대로 드러나기 시작했습니다! 이제 매우 간단하게 직사각형을 찾아낼 수 있을 것 같지만, 저희의 목적은 일반적인 사무실 책상 위의 하얀색 명함이 아니라, 그 어떤 명함과 배경에서도 성공적으로 명함을 찾아내는 것입니다. 따라서 한 가지 작업을 더 해주어야 했습니다. 다양한 배경에 명함이 위치하다보면, 명함의 경계선 중 일부분이 배경색과 같은 경우가 종종 있습니다. 이런 경우에는 Canny Edge Detector에서 찾아낸 Edge가 이어져있지 않고 끊어져있을 때도 있습니다. 사소한 균열일 수도 있지만, 매우 복잡한 배경 속에서 완벽하게 이어져있지 않은 직사각형은 종종 걸림돌이 되곤 했습니다. 따라서 저희는 <a class="external-link" href="https://en.wikipedia.org/wiki/Mathematical_morphology" rel="nofollow">Morphology 연산</a>을 통해서 최대한 균열을 메꾸고자 했습니다.
+위와 같이 전처리와 경계선 추출을 통해서 드디어 명함의 윤곽이 제대로 드러나기 시작했습니다! 이제 매우 간단하게 직사각형을 찾아낼 수 있을 것 같지만, 저희의 목적은 일반적인 사무실 책상 위의 하얀색 명함이 아니라, 그 어떤 명함과 배경에서도 성공적으로 명함을 찾아내는 것입니다. 따라서 한 가지 작업을 더 해주어야 했습니다. 다양한 배경에 명함이 위치하다보면, 명함의 경계선 중 일부분이 배경색과 같은 경우가 종종 있습니다. 이런 경우에는 Canny Edge Detector에서 찾아낸 Edge가 이어져있지 않고 끊어져있을 때도 있습니다. 사소한 균열일 수도 있지만, 매우 복잡한 배경 속에서 완벽하게 이어져있지 않은 직사각형은 종종 걸림돌이 되곤 했습니다. 따라서 저희는 <a class="external-link" href="https://en.wikipedia.org/wiki/Mathematical_morphology" rel="nofollow">Morphology 연산</a>을 통해서 최대한 균열을 메꾸고자 했습니다.
 
 Morphology 연산에는 주변의 가장 밝은 픽셀로 자신을 대체하는 팽창(Dilate)과, 가장 어두운 픽셀로 자신을 대체하는 침식(Erode) 연산이 있습니다. 팽창 연산을 하면 밝은 부분이 늘어나면서 서로 조금씩 떨어져 있던 파편들이 하나로 합쳐지게 되겠죠? 그리고 그 과정에서 하얀색이 차지하는 영역도 늘어나게 될 것입니다. 이 이미지에 침식 연산을 하면 영역은 원래의 크기대로 돌아가지만, 파편들은 여전히 붙어있게 됩니다. 결과적으로 영역의 크기는 유지하면서, 최대한 한 덩어리의 영역으로 합쳐진 이미지를 얻게 되는 것이죠. 아래의 그림을 보면 조금 이해가 되시나요?
 
@@ -10101,7 +10101,7 @@ Contour, 혹은 윤곽선은 같은 색을 가지는 모든 연속적인 점들�
 
 이미지 처리는 이 단계로 끝입니다. 이제 정말로 직선과 직사각형을 찾으러 가봅시다!
 <h2 id="OpenCV를이용한명함인식알고리즘개발-FindRectangle">Find Rectangle</h2>
-가장 먼저 <a class="external-link" href="https://en.wikipedia.org/wiki/Hough_transform" rel="nofollow">Hough Transform</a>을 이용해 이미지에서 직선을 찾습니다. 하지만 아무리 깔끔하게 윤곽선을 만들어 냈더라도, 아직 이미지에 남아있는 약간의 노이즈와 이미지 축소의 영향으로 완벽한 직선이 만들어지지 않을 수도 있습니다. 그 중 가장 대표적인 케이스는 끊어진 직선입니다. 따라서 저희는 만들어진 직선을 순회하면서 다음과 같은 조건을 찾습니다.
+가장 먼저 <a class="external-link" href="https://en.wikipedia.org/wiki/Hough_transform" rel="nofollow">Hough Transform</a>을 이용해 이미지에서 직선을 찾습니다. 하지만 아무리 깔끔하게 윤곽선을 만들어 냈더라도, 아직 이미지에 남아있는 약간의 노이즈와 이미지 축소의 영향으로 완벽한 직선이 만들어지지 않을 수도 있습니다. 그 중 가장 대표적인 케이스는 끊어진 직선입니다. 따라서 저희는 만들어진 직선을 순회하면서 다음과 같은 조건을 찾습니다.
 <ul>
  	<li>평행한 두 직선</li>
  	<li>한 끝점이 다른 직선과 매우 가까이 붙어있는 직선</li>
@@ -10340,8 +10340,8 @@ Mac 10.14 (최신버전)</td>
 - node.js (10.6) 최신버전
 - Android SDK 및 환경변수 설정
 - Android tool (API Level)
-- JDK 설치 및 환경변수 Setting (JAVA, JAVAC)
-- Apache Maven 설치 및 환경변수 Setting
+- JDK 설치 및 환경변수 Setting (JAVA, JAVAC)
+- Apache Maven 설치 및 환경변수 Setting
 - ADB (Android Debug Bridge)
 - Appium Server (CUI/GUI)</td>
 </tr>
@@ -10361,11 +10361,11 @@ Mac 10.14 (최신버전)</td>
 </ol>
 Appium 서버는 개발자가 테스트 프레임워크에서 제공하는 API(WebDriver JSON Wire Protocol)를 사용한 다양한 언어 베이스의 스크립트를 HTTP Commands로 받아주고 스크립트 상의 명령어들을 디바이스에 전송하여 실행하고, 그 결과를 받아와서 Console에 기록해줍니다.
 
-우리가 원하는 모바일의 대표적인 OS를 모두 지원하였고, 다양한 스크립트 언어로 본인이 원하는 방식의 스크립트를 짤 수 있었던게 가장 큰 핵심이었습니다. 또한, 안드로이드의 경우 여러가지 앱을 ADB(Android Debug Bridge)로 병렬 연결하여 한번에 여러 디바이스의 테스트도 가능합니다. (안드로이드는 보통 환경적인 이슈도 많다보니, QA검수 때 iOS보다 환경 선택의 커버리지가 넓은 편이기 때문에 여러 디바이스를 동시에 테스트 할 수 있는 부분이 매력적이었습니다.)
+우리가 원하는 모바일의 대표적인 OS를 모두 지원하였고, 다양한 스크립트 언어로 본인이 원하는 방식의 스크립트를 짤 수 있었던게 가장 큰 핵심이었습니다. 또한, 안드로이드의 경우 여러가지 앱을 ADB(Android Debug Bridge)로 병렬 연결하여 한번에 여러 디바이스의 테스트도 가능합니다. (안드로이드는 보통 환경적인 이슈도 많다보니, QA검수 때 iOS보다 환경 선택의 커버리지가 넓은 편이기 때문에 여러 디바이스를 동시에 테스트 할 수 있는 부분이 매력적이었습니다.)
 
 하지만 단점으로는 오픈소스 라이센스의 특성 상 여러가지 문제 (1. 진입 장벽이 높다. 2. Customer Service의 장벽 3. 구글링을 통한 내용들이 잘못된 정보일수도 있다.) 들이 존재하기도 합니다.
 <p style="text-align: center;"><a href="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-03-오후-5.19.08.png"><img class="alignnone size-full wp-image-1128" src="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-03-오후-5.19.08.png" alt="" width="958" height="488" /></a></p>
-<p style="text-align: right;">          출처 : appium.io</p>
+<p style="text-align: right;">          출처 : appium.io</p>
 국내에는 UI 테스트 자동화 관련 서적은 있지만 초보자가 책을 다뤄보기에는 큰 진입장벽이 있고, 더불어 프로그래밍 지식이 없다면 정보가 매우 제한적일 수 있습니다. 하지만 이 포스팅으로 많은 분들이 더 나은 환경을 구축해보셨으면 좋겠습니다.
 <p style="text-align: center;"><a href="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-05-오전-11.51.24.png"><img class="alignnone size-full wp-image-1196" src="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-05-오전-11.51.24.png" alt="" width="389" height="104" /></a></p>
 <p style="text-align: right;">출처 : appium.io</p>
@@ -10406,17 +10406,17 @@ New Maven Project창에서 Next를 누르다가 해당 화면이 나오면 Group
 
 <a href="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-05-오전-11.01.40.png"><img class="alignnone wp-image-1183 aligncenter" src="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-05-오전-11.01.40.png" alt="" width="781" height="548" /></a>
 
-메이븐 프로젝트가 정상적으로 생성되었으면, Pakage Explorer영역에서 pom.xml 파일을 접근한 뒤, Selenium, TestNG, junit, Appium Java Client 과의 Dependency 를 이미지와 같이 설정해줍니다. 이렇게 하면 자동화를 위한 기본 Setting은 모두 완료되었습니다.
+메이븐 프로젝트가 정상적으로 생성되었으면, Pakage Explorer영역에서 pom.xml 파일을 접근한 뒤, Selenium, TestNG, junit, Appium Java Client 과의 Dependency 를 이미지와 같이 설정해줍니다. 이렇게 하면 자동화를 위한 기본 Setting은 모두 완료되었습니다.
 <h3><strong>자동화 스크립트</strong></h3>
 자동화는 반복되는 작업들을 '자동화' 함으로써 리소스 확보는 물론 제품의 갯수가 늘고 앱의 기능이 추가/변경되어 전체적인 볼륨이 커지는 상황에서도 빛을 발할 수 있습니다. 또한, 이전 포스팅에서도 언급했듯이 컴퓨터는 짜여진 코드 구성으로 반복적인 일을 하게 됨으로써 <strong>일관성 있는 테스트 결과를 받아볼 수 있는데 큰 장점</strong>이 있습니다.
 
-저희는 Eclipse 또는 Visual Studio Code 도구를 이용하여 Selenium Library에 기반한 자동화 관련 소스를 생산해내고 있습니다. 실제 테스트는 코딩 도구의 MarketPlace에서 활용할 수 있는 Extensions 중 <strong>Java Test Runner</strong>라는 Extension을 활용하여 테스트 기기나 가상 머신을 제어할 수 있도록 구성하였습니다.
+저희는 Eclipse 또는 Visual Studio Code 도구를 이용하여 Selenium Library에 기반한 자동화 관련 소스를 생산해내고 있습니다. 실제 테스트는 코딩 도구의 MarketPlace에서 활용할 수 있는 Extensions 중 <strong>Java Test Runner</strong>라는 Extension을 활용하여 테스트 기기나 가상 머신을 제어할 수 있도록 구성하였습니다.
 
 우선, 생성된 프로젝트 내에 있는 src/test/java 경로 하위에 클래스를 생성해 줍니다.
 
 <a href="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-05-오전-11.20.38.png"><img class="alignnone wp-image-1186 aligncenter" src="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-05-오전-11.20.38.png" alt="" width="1020" height="253" /></a>
 
-이렇게 생성된 클래스에서 실제 개발을 진행하게 되는데, 해당 바디는 크게 <strong>선처리, 후처리, 테스트 동작 메소드를</strong> 구성하게 됩니다. (해당 포스팅에서는 '선처리' 부분까지만 다루겠습니다.)
+이렇게 생성된 클래스에서 실제 개발을 진행하게 되는데, 해당 바디는 크게 <strong>선처리, 후처리, 테스트 동작 메소드를</strong> 구성하게 됩니다. (해당 포스팅에서는 '선처리' 부분까지만 다루겠습니다.)
 
 <a href="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-05-오전-11.25.52.png"><img class="alignnone wp-image-1187 aligncenter" src="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-05-오전-11.25.52.png" alt="" width="805" height="371" /></a>
 
@@ -10468,7 +10468,7 @@ public void Setting() throws Exception
 
 아직 포스팅으로 설명해야 할 부분들이 매우 많이 남았지만, 개발 환경 세팅을 하고 Appium과 실제 디바이스를 연결한 것만으로도 크게 한걸음 나아갔다고 해도 과언이 아닐 것 입니다.
 
-다음화는 iOS에서 가장 중요한 '<strong>WebDriverAgent Test모드로 빌드하기'</strong> 로 찾아 뵙겠습니다. 긴 글 읽어주셔서 감사합니다.
+다음화는 iOS에서 가장 중요한 '<strong>WebDriverAgent Test모드로 빌드하기'</strong> 로 찾아 뵙겠습니다. 긴 글 읽어주셔서 감사합니다.
 
 P.S 잘 이해가지 않는 부분이 있다면 언제든, 어느분이든 댓글 남겨주세요.
 <h3><strong>Appium 자동화 관련 참고링크</strong></h3>
@@ -11077,15 +11077,15 @@ QA에 근무중이며 자동화테스터 공부중인데. 속성으로 가르쳐
 		<dc:creator><![CDATA[qkraudghgh]]></dc:creator>
 		<guid isPermaLink="false">http://blog.dramancompany.com/?p=1081</guid>
 		<description></description>
-		<content:encoded><![CDATA[최근 드라마앤컴퍼니에서는<strong> <a href="https://career.rememberapp.co.kr/talent">리멤버 커리어</a></strong>라는 구직자와 리쿠르터를 연결해주는 서비스를 출시하였습니다 :)
+		<content:encoded><![CDATA[최근 드라마앤컴퍼니에서는<strong> <a href="https://career.rememberapp.co.kr/talent">리멤버 커리어</a></strong>라는 구직자와 리쿠르터를 연결해주는 서비스를 출시하였습니다 :)
 
-저는<strong> 리멤버 커리어</strong> 프로젝트를 진행하면서 S3, CloudFront, Route53, CodePipeline, CodeBuild, Lambda@Edge를 사용하여 웹 서비스 배포, 배포 자동화 구축, Server Side Rendering 없이 SEO하기 등 다양한 작업을 진행하였는데요, 리멤버 커리어를 만들면서 경험한 것들을 글로 옮겨 서버 없이 웹을 배포하려고 하는 사람들에게 도움이 되고자 글을 작성하게 되었습니다.
+저는<strong> 리멤버 커리어</strong> 프로젝트를 진행하면서 S3, CloudFront, Route53, CodePipeline, CodeBuild, Lambda@Edge를 사용하여 웹 서비스 배포, 배포 자동화 구축, Server Side Rendering 없이 SEO하기 등 다양한 작업을 진행하였는데요, 리멤버 커리어를 만들면서 경험한 것들을 글로 옮겨 서버 없이 웹을 배포하려고 하는 사람들에게 도움이 되고자 글을 작성하게 되었습니다.
 
-이번 글에서는 서버리스 아키텍쳐의 필요성에 대해 간략히 공유하고, <strong>S3</strong>와 <strong>CloudFront</strong>, <strong>Route53</strong>을 이용해 서버 없이 React Project를 배포하는 방법에 대해 얘기해보도록 하겠습니다.
+이번 글에서는 서버리스 아키텍쳐의 필요성에 대해 간략히 공유하고, <strong>S3</strong>와 <strong>CloudFront</strong>, <strong>Route53</strong>을 이용해 서버 없이 React Project를 배포하는 방법에 대해 얘기해보도록 하겠습니다.
 <h1>서버리스 아키텍쳐의 필요성</h1>
-웹 서버가 존재한다는 것은 서버 관리 비용 또한 존재한다는 것을 의미합니다. 작게는 OS 보안 업데이트에 따른 새로운 AMI 생성부터 크게는 EC2 인스턴스 장애 해결까지 다양한 관리 비용 생깁니다. 드라마앤컴퍼니에서는 DevOps 엔지니어가 따로 존재하지 않고 Server/Web 팀에서 자신이 개발하는 프로젝트의 코드뿐만 아니라 인프라도 함께 유지보수 및 관리를 하고 있기 때문에 <strong>서버 관리 비용이 늘어날수록 서비스 개발 속도에 제동</strong>이 걸리는 문제가 있습니다.
+웹 서버가 존재한다는 것은 서버 관리 비용 또한 존재한다는 것을 의미합니다. 작게는 OS 보안 업데이트에 따른 새로운 AMI 생성부터 크게는 EC2 인스턴스 장애 해결까지 다양한 관리 비용 생깁니다. 드라마앤컴퍼니에서는 DevOps 엔지니어가 따로 존재하지 않고 Server/Web 팀에서 자신이 개발하는 프로젝트의 코드뿐만 아니라 인프라도 함께 유지보수 및 관리를 하고 있기 때문에 <strong>서버 관리 비용이 늘어날수록 서비스 개발 속도에 제동</strong>이 걸리는 문제가 있습니다.
 
-그렇기 때문에 더욱 서버리스 아키텍쳐를 선택할 수 밖에 없었는데, 서버리스 아키텍쳐로 서비스를 운영한다는 것은 서버 관리에 대한 대부분을 Cloud Service 사업자, 즉 AWS가 많은 부분을 관리해 준다는 것이고, 이러한 장점은 <strong>개발자가 코드를 작성하는 것에 더 많은 시간을 투자 </strong>할 수 있게 도와준다는 것을 의미합니다.
+그렇기 때문에 더욱 서버리스 아키텍쳐를 선택할 수 밖에 없었는데, 서버리스 아키텍쳐로 서비스를 운영한다는 것은 서버 관리에 대한 대부분을 Cloud Service 사업자, 즉 AWS가 많은 부분을 관리해 준다는 것이고, 이러한 장점은 <strong>개발자가 코드를 작성하는 것에 더 많은 시간을 투자 </strong>할 수 있게 도와준다는 것을 의미합니다.
 
 또한, 관리 비용 측면 이외에도 <strong>가격이 저렴</strong>하다는 장점도 있는데요, AWS에서 제공하는 비용 계산기로 아주 간단하게 기존 리멤버에서 사용하던 Instance 사양과 가격 그리고 리멤버 커리어의 비용을 비교해 보았습니다.
 
@@ -11100,7 +11100,7 @@ QA에 근무중이며 자동화테스터 공부중인데. 속성으로 가르쳐
 앞에서도 얘기했듯이 <strong>리멤버 커리어</strong>는 S3와 CloudFront 그리고 Route53을 기본으로 사용하여 서비스하고 있는데요, 리멤버 커리어 서비스를 만든 방법 그대로 S3 Bucket 생성부터 CloudFront Distribution 생성, Route53 연동까지 스크린샷과 설명을 통해 하나씩 살펴보도록 하겠습니다 :)
 <ul>
  	<li>이 예제에서는 <strong>CRA(create-react-app)</strong>로 만든 기본 App을 이용합니다.</li>
- 	<li>CRA로 만든 초기 코드에 <strong>react-router-dom</strong>을 이용하여 <strong>/test </strong>route를 추가하였습니다.</li>
+ 	<li>CRA로 만든 초기 코드에 <strong>react-router-dom</strong>을 이용하여 <strong>/test </strong>route를 추가하였습니다.</li>
 </ul>
 <h2>1. S3 Bucket만들기</h2>
 <a href="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-02-오후-5.16.43.png"><img class="aligncenter wp-image-1099 " src="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-02-오후-5.16.43.png" alt="" width="674" height="476" /></a>
@@ -11111,9 +11111,9 @@ AWS S3에 들어가 버킷 생성을 누른 후 버킷의 이름을 설정합니
 
 버킷을 생성하셨다면 로컬에서 Build 한 React app을 업로드 해주어야 합니다.
 
-업로드가 완료되었다면 CloudFront Distribution을 생성해봅시다.
+업로드가 완료되었다면 CloudFront Distribution을 생성해봅시다.
 <h2>3. CloudFront Distribution 생성하기</h2>
-<a href="https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/Introduction.html">Amazon CloudFront</a>는 .html, .css, .js 및 이미지 파일과 같은 정적 및 동적 웹 콘텐츠를 사용자에게 더 빨리 배포하도록 지원하는 CDN 서비스이며 CloudFront는 엣지 로케이션이라고 하는 데이터 센터를 통해 사용자에게 빠르게 콘텐츠를 전달해 줄 수 있습니다. 또한 CloudFront를 사용해야만 SSL 인증서를 사용할 수 있습니다. 그러면 바로 생성을 해보도록 하겠습니다. CloudFront Dashboard에 들어가서 Create Distribution 버튼을 눌러 Distribution을 만들 준비를 합니다.
+<a href="https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/Introduction.html">Amazon CloudFront</a>는 .html, .css, .js 및 이미지 파일과 같은 정적 및 동적 웹 콘텐츠를 사용자에게 더 빨리 배포하도록 지원하는 CDN 서비스이며 CloudFront는 엣지 로케이션이라고 하는 데이터 센터를 통해 사용자에게 빠르게 콘텐츠를 전달해 줄 수 있습니다. 또한 CloudFront를 사용해야만 SSL 인증서를 사용할 수 있습니다. 그러면 바로 생성을 해보도록 하겠습니다. CloudFront Dashboard에 들어가서 Create Distribution 버튼을 눌러 Distribution을 만들 준비를 합니다.
 
 <a href="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-02-오후-5.33.59.png"><img class="aligncenter size-full wp-image-1101" src="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-02-오후-5.33.59.png" alt="" width="2782" height="1092" /></a>
 
@@ -11137,7 +11137,7 @@ Origin Domain은 CloudFront가 web content를 받아 올 서버의 Domain을 뜻
 
 Default Cache Behavior Settings에서는 Path Pattern을 눈여겨봐야 합니다. Default로 설정이 되어있고 이는 바꿀 수 없는데요(Distribution 생성 후 Behavior 추가 가능), 모든 path의 요청에 대해서 Cloudfront가 Request에 대해 어떠한 처리를 할 것인지 설정할 수 있습니다.
 <ul>
- 	<li><strong>Viewer Protocol Policy</strong>를 <strong>Redirect HTTP to HTTPS</strong>로 선택해줍니다.</li>
+ 	<li><strong>Viewer Protocol Policy</strong>를 <strong>Redirect HTTP to HTTPS</strong>로 선택해줍니다.</li>
 </ul>
 <h3>Distribution Setting<a href="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-02-오후-6.23.30.png"><img class="aligncenter size-full wp-image-1104" src="https://blog.dramancompany.com/wp-content/uploads/2019/09/스크린샷-2019-09-02-오후-6.23.30.png" alt="" width="2394" height="2004" /></a></h3>
 Distribution Setting에서는 CloudFront 자체에 대해서 설정을 해줄 수 있습니다. Domain이나 SSL 등이 이에 해당합니다.
@@ -11150,7 +11150,7 @@ Distribution Setting에서는 CloudFront 자체에 대해서 설정을 해줄 �
 (단, Custom Domain을 사용하지 않고 *.cloudfront.net 도메인을 쓰려면 Default 선택)
 (SSL 인증서는 us-east-1 region에 존재해야 사용할 수 있다)</li>
  	<li><span data-token-index="4" data-reactroot=""><strong>Default Root Object</strong>: </span>index.html
-(sample.dramncompany.com/ 으로 request가 들어오면 sample.dramncompany.com/index.html로 request를 바꾸어줌)</li>
+(sample.dramncompany.com/ 으로 request가 들어오면 sample.dramncompany.com/index.html로 request를 바꾸어줌)</li>
 </ul>
 <h3>Distribution 생성 마무리</h3>
 모든 설정을 완료했다면 마지막으로 생성 버튼을 눌러 Distribution을 생성해야 합니다. 생성하고 나면 <strong>InProgress</strong> 상태의 Distribution을 확인 할 수 있는데 모든 작업이 완료되고 <strong>Deployed</strong> 상태가 되는 데까지 약 20분의 시간이 걸립니다.
@@ -12483,7 +12483,7 @@ Spring 에 비해서 Rails 에서는 그 "언젠가"라는 시가가 좀 더 늦
 
 <!-- wp:tadv/classic-paragraph -->
 <h3><span style="font-weight: 400;">담당하고 계신 업무와 기술 스택에 대해 소개 부탁 드립니다.</span></h3>
-<p><span style="font-weight: 400;">강태화 : 현재 Server/Web팀과 채용공고 크루(Crew*)에 속해있습니다. 리멤버 커리어가 잠재적 구직자의 이직을 도와주는 서비스를 먼저 선보였는데요, 적극적 구직자를 위한 서비스를 지원하기 위해 채용공고 서비스를 만들어가고 있습니다.</span> <span style="font-weight: 400;">Server/Web 팀에는 5명의 서버 개발자와 1명의 DevOps 개발자가 있습니다. Ruby on Rails로 대부분의 API 서버를 구현하고 있으며 인프라는 AWS를 이용합니다.<br /></span><em><span style="font-weight: 400;">(*Crew : 서비스별 미션을 달성하기 위한 조직으로, 각 미션별로 적합한 기획, 개발, 디자인, 사업 등의 다양한 크루원을 모집하여 구성) </span></em></p>
+<p><span style="font-weight: 400;">강태화 : 현재 Server/Web팀과 채용공고 크루(Crew*)에 속해있습니다. 리멤버 커리어가 잠재적 구직자의 이직을 도와주는 서비스를 먼저 선보였는데요, 적극적 구직자를 위한 서비스를 지원하기 위해 채용공고 서비스를 만들어가고 있습니다.</span> <span style="font-weight: 400;">Server/Web 팀에는 5명의 서버 개발자와 1명의 DevOps 개발자가 있습니다. Ruby on Rails로 대부분의 API 서버를 구현하고 있으며 인프라는 AWS를 이용합니다.<br /></span><em><span style="font-weight: 400;">(*Crew : 서비스별 미션을 달성하기 위한 조직으로, 각 미션별로 적합한 기획, 개발, 디자인, 사업 등의 다양한 크루원을 모집하여 구성) </span></em></p>
 <p><br /><span style="font-weight: 400;">이민구 : 지금은 인재추천 크루(Crew)에서 사내에 계신 헤드헌터분들이 빠르고 효율적으로 후보자를 찾을 수 있는 admin을 개발 중입니다. 프론트 엔드 개발자 5명과 함께 리멤버 커리어 웹서비스와 리멤버 커뮤니티 웹서비스를 만들기도 했고요. 기술 스택은 React를 사용하고 있습니다. SEO 등 back-end가 필요한 경우에는 Next.js를 사용, 그렇지 않은 경우에는 serverless하게 서비스를 만듭니다</span><span style="font-weight: 400;">.</span></p>
 <p>&nbsp;</p>
 <h3><span style="font-weight: 400;">두 분은 어떤 이유로 리멤버를 선택하셨나요?</span></h3>
@@ -12491,7 +12491,7 @@ Spring 에 비해서 Rails 에서는 그 "언젠가"라는 시가가 좀 더 늦
 <p><span style="font-weight: 400;">리멤버 인터뷰를 봤는데 테스트 코드가 7천개가 넘는다는 내용이 인상적이었어요. 대부분의 조직에서 테스트를 작성하고 싶어하지만 유지보수 가능하게 작성하는 방법을 모르거나, 일정이 빡빡해서 넘어가곤 하잖아요. </span><span style="text-decoration: underline;"><strong>테스트 커버리지가 90%를 넘어가고, 코드 퀄리티를 중시하는 조직</strong></span><span style="font-weight: 400;">이라는 점이 매력적이었죠. 제가 생각하는 개발 문화가 잘 갖춰진 곳이라고 생각했습니다. 참고로 <span style="text-decoration: underline;"><strong>지금 API 프로젝트들의 테스트 코드 수는 9천개가 넘습니다</strong></span>.</span></p>
 <p><a href="https://blog.dramancompany.com/wp-content/uploads/2020/11/Screen-Shot-2020-12-23-at-16.55.08.png"><img class="alignnone wp-image-1942 size-medium" src="https://blog.dramancompany.com/wp-content/uploads/2020/11/Screen-Shot-2020-12-23-at-16.55.08-300x226.png" alt="" width="300" height="226" /></a></p>
 <p><span style="font-weight: 400;">회사의 사업 방향에 대해 공감한 부분도 있고요. ‘명함앱으로 알고 있었는데 리멤버 커리어 등 다양한 서비스가 있구나.’ CEO면접에서 재호님께서 앞으로의 서비스/사업 방향에 대해 굉장히 잘 설명해주셨어요. 리멤버가 유틸리티 앱에서 끝나는 게 아니라 <span style="text-decoration: underline;"><strong>‘</strong></span></span><span style="text-decoration: underline;"><strong>커리어의 생애주기를 책임지는 비즈니스 플랫폼으로 나아가려 하구나</strong></span><span style="font-weight: 400;"><span style="text-decoration: underline;"><strong>’</strong></span>, 그리고 ‘이제 막 그 일을 시작해서 재미있는 일들이 많겠다!’</span></p>
-<p><span style="font-weight: 400;">이민구 : 두 가지 이유가 있었는데요. 첫 번째는 ‘내가 쓰고 싶은 서비스를 많이 만들어보고 싶다’에 대한 니즈가 컸어요. 리멤버는 명함관리 기능을 넘어서 커리어, 커뮤니티 등 </span><span style="text-decoration: underline;"><strong>직장인들을 위한 서비스가 많아질 것</strong></span><span style="font-weight: 400;">이라고 생각했고, B2C 제품을 경험하며 다수 유저의 피드백을 받고 싶었어요. 두 번째는 ‘개발자 개인으로서가 아니라 개발팀의 팀원으로 개발해보고 싶다’에 대한 갈증이 있었던 것 같아요. 이전에는 회사의 전략상 빠르게 많은 제품을 만들어야 하다보니 효율적으로 업무를 배분해서 각자 개발을 진행하는 방식이었어요. 다른 분이 무슨 일을 하는지 전혀 몰랐죠. 면접에서 개발 문화에 대해 많이 질문 드렸는데 </span><span style="text-decoration: underline;"><strong>코드 리뷰나 페어 프로그래밍 등이 잘 정착</strong></span><span style="font-weight: 400;">되어 있다고 생각해 합류하게 되었습니다. </span></p>
+<p><span style="font-weight: 400;">이민구 : 두 가지 이유가 있었는데요. 첫 번째는 ‘내가 쓰고 싶은 서비스를 많이 만들어보고 싶다’에 대한 니즈가 컸어요. 리멤버는 명함관리 기능을 넘어서 커리어, 커뮤니티 등 </span><span style="text-decoration: underline;"><strong>직장인들을 위한 서비스가 많아질 것</strong></span><span style="font-weight: 400;">이라고 생각했고, B2C 제품을 경험하며 다수 유저의 피드백을 받고 싶었어요. 두 번째는 ‘개발자 개인으로서가 아니라 개발팀의 팀원으로 개발해보고 싶다’에 대한 갈증이 있었던 것 같아요. 이전에는 회사의 전략상 빠르게 많은 제품을 만들어야 하다보니 효율적으로 업무를 배분해서 각자 개발을 진행하는 방식이었어요. 다른 분이 무슨 일을 하는지 전혀 몰랐죠. 면접에서 개발 문화에 대해 많이 질문 드렸는데 </span><span style="text-decoration: underline;"><strong>코드 리뷰나 페어 프로그래밍 등이 잘 정착</strong></span><span style="font-weight: 400;">되어 있다고 생각해 합류하게 되었습니다. </span></p>
 <p>&nbsp;</p>
 <h3><span style="font-weight: 400;">면접에서 많은 이야기를 나눈다해도<br /></span><span style="font-weight: 400;">입사해서 다녀보지 않으면 모르는 부분이 많을 수밖에 없죠. <br /></span><span style="font-weight: 400;">입사해보니 ‘입사 전엔 예상하지 못했다’라는 부분이 있으셨나요?</span></h3>
 <p><span style="font-weight: 400;">이민구 : 회고가 굉장히 잘 정착되어 있어요. 전 회사에서도 회고가 없었던 건 아니에요. 분기에 한 번 정도 있었죠. </span><span style="font-weight: 400;"><span style="text-decoration: underline;"><strong>리멤버에서는 매주 금요일 회고를 진행하는데 모든 개발자분들이 굉장히 엄격한 마음가짐으로 회고에 임하고 계세요</strong></span>. </span><span style="font-weight: 400;">회고를 반복하다보면 어떤 문제가 지속적으로 발생하는지 알 수 있고, 그 문제를 어떻게 해결할 수 있는지에 대해 논의해볼 수 있어 좋아요.</span> <span style="font-weight: 400;">회고 외에도 많은 양의 코드 리뷰가 이루어져요. 페어 프로그래밍도 자주 진행하는데, 사실 뭐가 도움이 될까 싶었어요. 생산성이 절반이 되는 거 아닌가 싶기도 했고요. 막상 페어 프로그래밍을 진행하니 그동안 내가 잘못 생각해왔구나 싶었죠. 개발 실력을 비약적으로 성장시킬 수 있었던 데에는 개발 문화가 잘 뿌리내려져 있는 점이 큰 것 같아요.</span></p>
@@ -12501,9 +12501,9 @@ Spring 에 비해서 Rails 에서는 그 "언젠가"라는 시가가 좀 더 늦
 <p><span style="font-weight: 400;">강태화 : 얘기가 나온 김에.. 모든 내용을 문서화 해놓으니 어떤 부분이 문제가 됐고, 왜 이런 코드를 짜게 된거고, 어떤 기획에서 나왔는지 디버깅할 때도 쉽고, 히스토리를 찾는 데도 도움이 돼요. 코드도 짜고 문서도 쓰는 게 귀찮을 수 있는데 개발 프로세스를 효율적으로 가져간다는 측면에서 훨씬 좋아요.</span></p>
 <p>&nbsp;</p>
 <h3><span style="font-weight: 400;">태화님은 서버 개발 경험이 없는데 잘 적응해주고 계신 것 같아요.</span></h3>
-<p><span style="font-weight: 400;">강태화 : 온보딩 과제가 도움이 많이 된 것 같아요. 채용 과정에서 진행한 과제를 다시 한 번 해보는데 코드 스타일이나 업무 스타일에 대해 잘 알 수 있었어요. 코드 리뷰를 받으니 모르는 부분도 쉽게 물어볼 수 있고 팀의 스타일이나 컨벤션을 더 쉽게 습득할 수 있었던 것 같고요.</span><span style="font-weight: 400;"> </span></p>
+<p><span style="font-weight: 400;">강태화 : 온보딩 과제가 도움이 많이 된 것 같아요. 채용 과정에서 진행한 과제를 다시 한 번 해보는데 코드 스타일이나 업무 스타일에 대해 잘 알 수 있었어요. 코드 리뷰를 받으니 모르는 부분도 쉽게 물어볼 수 있고 팀의 스타일이나 컨벤션을 더 쉽게 습득할 수 있었던 것 같고요.</span><span style="font-weight: 400;"> </span></p>
 <p>&nbsp;</p>
-<h3><span style="font-weight: 400;">리멤버는 채용 과정에서 과제가 필수이죠. <br /></span><span style="font-weight: 400;">다른 회사에서 일반적으로 진행하는 알고리즘 테스트, 코딩 테스트가 아닌 ‘48시간 과제’를 진행하는데 이 부분은 어떠셨나요?</span></h3>
+<h3><span style="font-weight: 400;">리멤버는 채용 과정에서 과제가 필수이죠. <br /></span><span style="font-weight: 400;">다른 회사에서 일반적으로 진행하는 알고리즘 테스트, 코딩 테스트가 아닌 ‘48시간 과제’를 진행하는데 이 부분은 어떠셨나요?</span></h3>
 <p><span style="font-weight: 400;">강태화 : 과제가 있다고 했을 때 부담스럽긴 했어요. 코딩 테스트는 그냥 가서 하면 되는데, 과제는 제 손을 떠날 때까지 찜찜한 기분이 계속 되잖아요. 막상 과제를 받아보니 ‘겉보기에’ 엄청 어려운 과제는 아니었어요. 면접을 진행하면서 ‘생각보다 심오하구나’ 라고 느꼈죠. 많은 걸 확인할 수 있는 과제라는 생각이 들었고, 역량을 검증하는 데에 도움이 되는 과제였다고 생각합니다.</span></p>
 <p><span style="font-weight: 400;">이민구 : 다른 회사의 과제와 비교해봤을 때 과제가 합리적이라고 생각했어요. 생각보다 그렇지 않은 과제들도 많거든요. 자격 요건 이상의 것을 요구하거나, 현실과 맞지 않는 기술을 요구하는 경우도 많고요. 실제로 회사와 잘 맞는 사람인가를 보는 과정이라고 느꼈습니다. 시간도 길지 않았고요.</span></p>
 <p>&nbsp;</p>
@@ -12521,7 +12521,7 @@ Spring 에 비해서 Rails 에서는 그 "언젠가"라는 시가가 좀 더 늦
 <!-- wp:tadv/classic-paragraph -->
 <h3><span style="font-weight: 400;">두 분이 생각하시는<br /></span><span style="font-weight: 400;">리멤버의 강점은 무엇인가요?</span></h3>
 <p><span style="font-weight: 400;">이민구 : 회사의 측면에서 보면, 사내 조직간의 소통이 굉장히 원활해요. 소통이 원활하다보니 자유롭게 의견을 개진하고, 뜻이 맞는 사람들끼리 원하는걸 구현해볼 수 있어요. 팀 측면에서는 굉장히 개발문화가 잘 잡혀있다는 큰 장점이 있고요.</span></p>
-<p><span style="font-weight: 400;">강태화 : 민구님의 말씀에 동의해요. 열정을 가진 뛰어난 동료들이 많이 있다보니 커뮤니티 웹 서비스의 경우에도 웹 개발자분들이 먼저 제안하고 진행했어요. 가장 큰 강점 중의 하나라고 생각해요. </span></p>
+<p><span style="font-weight: 400;">강태화 : 민구님의 말씀에 동의해요. 열정을 가진 뛰어난 동료들이 많이 있다보니 커뮤니티 웹 서비스의 경우에도 웹 개발자분들이 먼저 제안하고 진행했어요. 가장 큰 강점 중의 하나라고 생각해요. </span></p>
 <p><span style="font-weight: 400;">over-communication을 지향해서 모든 정보가 공유될 수 있도록 노력하죠. 대부분의 조직에서 경영진만 알고 있는 정보가 있는데, 웬만한 정보는 전사에 공유가 잘 되고 있어요. 우리 회사가 어느 방향으로 가고 있으니, 나는 어떻게 기여해야겠구나를 분명히 알 수 있죠.</span></p>
 <p><span style="font-weight: 400;">데이터팀(Data Intelligence팀)이 따로 있어서 데이터를 많이 갖고 있을 뿐 아니라 잘 활용하고, 데이터를 기반으로 의사결정을 해요. 스타트업에서는 그냥 추측만으로 결정 내리고 방향을 잡기 쉬운데 데이터로 결정 내리는 것이 인상적이었죠.</span></p>
 <p>&nbsp;</p>
@@ -12542,7 +12542,7 @@ Spring 에 비해서 Rails 에서는 그 "언젠가"라는 시가가 좀 더 늦
 <h3><span style="font-weight: 400;">어떤 분이 저희랑 잘 맞을까요?</span></h3>
 <p><span style="font-weight: 400;">강태화 : 자율적이고 주도적으로 일하기를 즐거워하시는 분이요. ‘내가 해야 할 일을 누가 알려주겠지’라는 분 보다는 ‘내가 이걸 해야겠다, 만들어봐야겠다’며 팀 플레이어로 함께 만들어가는 것을 좋아하는 분이면 잘 맞을 것 같아요.</span></p>
 <p><span style="font-weight: 400;">이민구 : 스스로 목표를 설정하고 이루기 위해 달리는 분이라면 누구나 환영입니다. 업무가 내려오길 기다리는 분이라면 만족하지 못하실 것 같아요. 의견 개진을 적극적으로 하고, 스스로 개척하는 역량을 요구하는 곳이라고 생각해요.</span></p>
-<p><span style="font-weight: 400;">저희 팀분들을 보면 다 각기 다른 강점과 관심사가 있어요. UI디자인에 관심 있는 분, 웹 기술에 관심 있는 분 등등 다양한데, </span><span style="font-weight: 400;"><span style="text-decoration: underline;"><strong>그 분만의 강점이 있는 분이 오셨으면 좋겠어요. 그 분의 강점이 저희 조직에 녹아서 시너지가 날 수 있는 분이요</strong></span>.</span><span style="font-weight: 400;"> </span></p>
+<p><span style="font-weight: 400;">저희 팀분들을 보면 다 각기 다른 강점과 관심사가 있어요. UI디자인에 관심 있는 분, 웹 기술에 관심 있는 분 등등 다양한데, </span><span style="font-weight: 400;"><span style="text-decoration: underline;"><strong>그 분만의 강점이 있는 분이 오셨으면 좋겠어요. 그 분의 강점이 저희 조직에 녹아서 시너지가 날 수 있는 분이요</strong></span>.</span><span style="font-weight: 400;"> </span></p>
 <p>&nbsp;</p>
 <h3><span style="font-weight: 400;">지원을 망설이고 있는 미래의 동료분께 한 말씀 드린다면?</span></h3>
 <p><span style="font-weight: 400;">이민구 : 개인적으로 회사를 고려할 때에 가장 중요한 키워드가 ‘성장’이라고 생각해요. 내가 여기서 성장할 수 있을까에 대한 질문을 끊임없이 하거든요. 어떤 작가가 그러더라고요. 본인이 쓴 글을 다시 되돌아 봤을 때 부끄럽지 않다면 성장하지 않은 거라고.. 최근에 6개월 전에 쓴 코드를 다시 봤는데, 부끄럽고 아쉬움이 많이 남았어요. 왜 이런 선택을 했을까? 아마 그 당시에는 최선의 선택이었고, 그 때보다 제가 성장했다는 반증이기도 하겠죠. </span><span style="font-weight: 400;"><span style="text-decoration: underline;"><strong>성장에 대해 고민하고 계신 분이라면 꼭 오셨으면 합니다</strong></span>.</span><span style="font-weight: 400;"> 웹 개발 측면으로 보면, 시장에서 보이는 React 관련 최신 기술을 다 써보고 있다고 자신있게 말씀 드리고 싶어요.</span></p>
@@ -14115,7 +14115,7 @@ npm run start 또는 npm run build를 한 후 lhci autorun 으로 진행을 해�
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"fontSize":"normal"} -->
-<ul class="has-normal-font-size"><li>배포가 되었다고 끝이 아닙니다. 해당 개발에 대한 데이터 지표를 확인하고 있습니다. 다른 회사 분들과 대화 할 때 성과를 측정해서 상벌을 하기 위한 내용이 아닌지 궁금해 합니다. 데이터 지표를 확인 하는 이유는 성과를 측정하는 내용은 맞습니다. 하지만 상벌을 하기 위해서가 아닙니다. 과거의 자료는 미래의 기능 선택 할 시점에 도움을 줄 수 있기 때문입니다.<br></li><li>예를 들어 리멤버 나우 위젯의 경우에도 지표의 엄청난 성장을 보여주지  못했습니다.  하지만 이는 사용자들이 안드로이드 위젯의 사용은 제한적으로 사용하는걸 알게 되었고 이를 다음 기획 할때는 데이터를 반영 합니다. 동일한 실패를 반복 하지 않게 하기 위해서 입니다.<br></li><li>위젯을 개발 하면서 코루틴을 사용했던 경험, 기존에 개발 방법이 아닌 간소화된 개발을 진행 했을때의 경험을 팀원들과 공유했습니다.</li></ul>
+<ul class="has-normal-font-size"><li>배포가 되었다고 끝이 아닙니다. 해당 개발에 대한 데이터 지표를 확인하고 있습니다. 다른 회사 분들과 대화 할 때 성과를 측정해서 상벌을 하기 위한 내용이 아닌지 궁금해 합니다. 데이터 지표를 확인 하는 이유는 성과를 측정하는 내용은 맞습니다. 하지만 상벌을 하기 위해서가 아닙니다. 과거의 자료는 미래의 기능 선택 할 시점에 도움을 줄 수 있기 때문입니다.<br></li><li>예를 들어 리멤버 나우 위젯의 경우에도 지표의 엄청난 성장을 보여주지  못했습니다.  하지만 이는 사용자들이 안드로이드 위젯의 사용은 제한적으로 사용하는걸 알게 되었고 이를 다음 기획 할때는 데이터를 반영 합니다. 동일한 실패를 반복 하지 않게 하기 위해서 입니다.<br></li><li>위젯을 개발 하면서 코루틴을 사용했던 경험, 기존에 개발 방법이 아닌 간소화된 개발을 진행 했을때의 경험을 팀원들과 공유했습니다.</li></ul>
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
@@ -16455,7 +16455,7 @@ apps/ @octocat
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>개인적으로 전체는 그 부분의 합보다 크다는 말을 좋아합니다. 팀의 문화가 이끌어내는 시너지의 합이 개인 역량의 총합보다 더 크다고 믿기 때문인데요. 앞선 1년간 다양한 조직 운영 방식을 테스트하며 많은 시행착오와 실패들을 겪었지만, 여전히 부족한 부분들을 많이 느끼고 있습니다. 그럼에도 불구하고, 앞으로 더 나아갈 것이라는 믿음을 가지게 되는 이유는 함께 더 잘 일하기 위해 고민하는 팀원들이 있기 때문입니다. <br><br>긴 글 읽어주셔서 감사합니다.</p>
+<p>개인적으로 전체는 그 부분의 합보다 크다는 말을 좋아합니다. 팀의 문화가 이끌어내는 시너지의 합이 개인 역량의 총합보다 더 크다고 믿기 때문인데요. 앞선 1년간 다양한 조직 운영 방식을 테스트하며 많은 시행착오와 실패들을 겪었지만, 여전히 부족한 부분들을 많이 느끼고 있습니다. 그럼에도 불구하고, 앞으로 더 나아갈 것이라는 믿음을 가지게 되는 이유는 함께 더 잘 일하기 위해 고민하는 팀원들이 있기 때문입니다. <br><br>긴 글 읽어주셔서 감사합니다.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":33} -->
@@ -17967,7 +17967,7 @@ findAndModify()에서는 동시성 문제가 발생하지 않았습니다.]]></w
 <p>그럼 사용자 스토리란 무엇이고, 리멤버에서 어떻게 제품 개발 프로세스가 진행되는지 설명해보겠습니다.</p>
 <p><!-- /wp:paragraph --></p>
 <p><!-- wp:spacer {"height":"59px"} --></p>
- 
+
 <p><!-- /wp:spacer --></p>
 <p><!-- wp:heading {"level":3} --></p>
 <h3>사용자 스토리란?</h3>
@@ -17993,7 +17993,7 @@ findAndModify()에서는 동시성 문제가 발생하지 않았습니다.]]></w
 <p>사용자 스토리는 "대화"라는 측면을 특히 강조합니다.<br />스토리는 처음부터 그 기능의 동작과 예외사항을 모두 포함하지 않으며, 스토리를 구현하기 위해 고려해야할 사항들은 제품팀 안에서 <strong>"대화"를 통해 완성해나가는 방식을 지향</strong>합니다.</p>
 <p><!-- /wp:paragraph --></p>
 <p><!-- wp:spacer {"height":"59px"} --></p>
- 
+
 <p><!-- /wp:spacer --></p>
 <p><!-- wp:heading {"level":3} --></p>
 <h3>왜 사용자 스토리인가?</h3>
@@ -18048,7 +18048,7 @@ findAndModify()에서는 동시성 문제가 발생하지 않았습니다.]]></w
 <p>이렇듯, 사용자 스토리는 스토리 단위로 우선 순위를 부여하여 반복적으로 제품을 보완하고 개선해나가는데에 효율적이라고 생각합니다.</p>
 <p><!-- /wp:paragraph --></p>
 <p><!-- wp:spacer {"height":"59px"} --></p>
- 
+
 <p><!-- /wp:spacer --></p>
 <p><!-- wp:heading {"level":3} --></p>
 <h3>어떻게 업무가 진행되는가?</h3>
@@ -18123,7 +18123,7 @@ findAndModify()에서는 동시성 문제가 발생하지 않았습니다.]]></w
 <p>미리 설정한 가설을 검증하면서, 가설과 다르다면 원인을 찾아보고 보완하면서 위의 iteration을 다시 반복합니다.</p>
 <p><!-- /wp:paragraph --></p>
 <p><!-- wp:spacer {"height":"59px"} --></p>
- 
+
 <p><!-- /wp:spacer --></p>
 <p><!-- wp:heading {"level":3} --></p>
 <h3>무엇을 유의해야 하는가?</h3>
@@ -18165,7 +18165,7 @@ findAndModify()에서는 동시성 문제가 발생하지 않았습니다.]]></w
 <p>필요하다면 persona를 정의해서 특정 사용자 역할을 대표하는 인물을 설정해둔다면 커뮤니케이션이 훨씬 수월해지기도 합니다.</p>
 <p><!-- /wp:paragraph --></p>
 <p><!-- wp:spacer {"height":"59px"} --></p>
- 
+
 <p><!-- /wp:spacer --></p>
 <p><!-- wp:heading {"level":3} --></p>
 <h3>마치며</h3>
@@ -18178,10 +18178,10 @@ findAndModify()에서는 동시성 문제가 발생하지 않았습니다.]]></w
 <p><!-- /wp:paragraph --></p>
 <p><!-- wp:paragraph --></p>
 <p>혹시라도 이런 방식으로 저희와 함께 일해보고 싶은 분이 계시다면, <br />드라마앤컴퍼니의 채용은 항상 열려 있으니 주저말고 연락 주세요!</p>
-<p> </p>
+<p> </p>
 <p><!-- /wp:paragraph --></p>
 <p><!-- wp:paragraph --></p>
-<p> </p>
+<p> </p>
 <p><!-- /wp:paragraph --></p>
 <p><!-- wp:paragraph --></p>
 <p><!-- /wp:paragraph --></p>
@@ -18594,7 +18594,7 @@ findAndModify()에서는 동시성 문제가 발생하지 않았습니다.]]></w
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>[1] Cui, Lei, et al. "Document AI: Benchmarks, Models and Applications." <em>arXiv preprint arXiv:2111.08609</em> (2021).<br>[2] <a href="https://en.wikipedia.org/wiki/Document_layout_analysis">https://en.wikipedia.org/wiki/Document_layout_analysis</a><br>[3] Mathew, Minesh, et al. "InfographicVQA." <em>Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision</em>. 2022.APA<br>[4] Zhong, Xu, Jianbin Tang, and Antonio Jimeno Yepes. "Publaynet: largest dataset ever for document layout analysis." <em>2019 International Conference on Document Analysis and Recognition (ICDAR)</em> . IEEE, 2019.<br>[5] What is Information Extraction? - A Detailed Guide [by Vihar Kurama, <a href="https://nanonets.com/blog/information-extraction/">https://nanonets.com/blog/information-extraction/</a>]<br>[6] Xu, Yang, et al. "Layoutlmv2: Multi-modal pre-training for visually-rich document understanding." <em>arXiv preprint arXiv:2012.14740</em> (2020).<br>[7] Appalaraju, Srikar, et al. "Docformer: End-to-end transformer for document understanding." <em>Proceedings of the IEEE/CVF International Conference on Computer Vision</em>. 2021.APA<br>[8] Yu, Wenwen, et al. "PICK: processing key information extraction from documents using improved graph learning-convolutional networks." <em>2020 25th International Conference on Pattern Recognition (ICPR)</em>. IEEE, 2021.APA<br>[9] Lin, Weihong, et al. "ViBERTgrid: A Jointly Trained Multi-Modal 2D Document Representation for Key Information Extraction from Documents." <em>International Conference on Document Analysis and Recognition</em>. Springer, Cham, 2021.APA<br><br><br></p>
+<p>[1] Cui, Lei, et al. "Document AI: Benchmarks, Models and Applications." <em>arXiv preprint arXiv:2111.08609</em> (2021).<br>[2] <a href="https://en.wikipedia.org/wiki/Document_layout_analysis">https://en.wikipedia.org/wiki/Document_layout_analysis</a><br>[3] Mathew, Minesh, et al. "InfographicVQA." <em>Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision</em>. 2022.APA<br>[4] Zhong, Xu, Jianbin Tang, and Antonio Jimeno Yepes. "Publaynet: largest dataset ever for document layout analysis." <em>2019 International Conference on Document Analysis and Recognition (ICDAR)</em> . IEEE, 2019.<br>[5] What is Information Extraction? - A Detailed Guide [by Vihar Kurama, <a href="https://nanonets.com/blog/information-extraction/">https://nanonets.com/blog/information-extraction/</a>]<br>[6] Xu, Yang, et al. "Layoutlmv2: Multi-modal pre-training for visually-rich document understanding." <em>arXiv preprint arXiv:2012.14740</em> (2020).<br>[7] Appalaraju, Srikar, et al. "Docformer: End-to-end transformer for document understanding." <em>Proceedings of the IEEE/CVF International Conference on Computer Vision</em>. 2021.APA<br>[8] Yu, Wenwen, et al. "PICK: processing key information extraction from documents using improved graph learning-convolutional networks." <em>2020 25th International Conference on Pattern Recognition (ICPR)</em>. IEEE, 2021.APA<br>[9] Lin, Weihong, et al. "ViBERTgrid: A Jointly Trained Multi-Modal 2D Document Representation for Key Information Extraction from Documents." <em>International Conference on Document Analysis and Recognition</em>. Springer, Cham, 2021.APA<br><br><br></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"59px"} -->
@@ -19196,14 +19196,14 @@ findAndModify()에서는 동시성 문제가 발생하지 않았습니다.]]></w
 이번 1분기 회고 역시 이와 같은 방식으로 진행한 것인데요, 4월 네 번째주 위클리 시간을 활용해 워크샵을 진행하였습니다.&nbsp;
 
 <pre><code>        &lt;h2&gt;분기 회고 진행 방식&lt;/h2&gt;
-    &lt;h3&gt;&lt;strong&gt;Form&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;Form은 이름과 크루 명 등을 제외하면 총 6가지의 항목으로 구성됩니다. 
+    &lt;h3&gt;&lt;strong&gt;Form&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;Form은 이름과 크루 명 등을 제외하면 총 6가지의 항목으로 구성됩니다.
 </code></pre>
 
- </p><br />
+ </p><br />
                                     <figure>
                                         <img src="https://blog.dramancompany.com/wp-content/uploads/2022/04/스크린샷-2022-04-26-오후-8.09.38-1.png" title="1분기 회고 form" alt="1분기 회고 form" />                                          <figcaption>KPT 회고 방식을 참고하였습니다. 해당 form은 조직의 구성과 특성에 맞추어 개인적으로 만든 것입니다.</figcaption>
                                         </figure>
-        <ul><li>항목 1. task : 지난 1분기에 진행한 업무를 작성합니다.</li><li>항목 2. summary : task에 대한 간단한 설명을 적습니다.</li><li>항목 3. 만족도 : 해당 task에 대한 만족도를 별 1~5개로 평가합니다<br />                          여기서 주의할 것은 만족도 평가를 포함한 모든 항목은 현재 시점을 기준으로 작성한다는 점입니다.<i><br /></i>                          예를 들어 당시 task에 대한 만족도가 5점이었으나, 현시점에서 3점이라면 해당 task에 대한 만족도는 3점으로 기재하는 방식입니다.</li><li>항목 4. Keep 지속할 것을 적습니다.</li><li>항목 5. Problem 해결하고 싶은 점을 적습니다.</li><li>항목 6. Try 시도할 것을 작성합니다.</li></ul><p>1분기 task에 대한 정리가 끝났다면, 마지막으로 1분기 전체에 대한 만족도와 KPT를 작성합니다.
+        <ul><li>항목 1. task : 지난 1분기에 진행한 업무를 작성합니다.</li><li>항목 2. summary : task에 대한 간단한 설명을 적습니다.</li><li>항목 3. 만족도 : 해당 task에 대한 만족도를 별 1~5개로 평가합니다<br />                          여기서 주의할 것은 만족도 평가를 포함한 모든 항목은 현재 시점을 기준으로 작성한다는 점입니다.<i><br /></i>                          예를 들어 당시 task에 대한 만족도가 5점이었으나, 현시점에서 3점이라면 해당 task에 대한 만족도는 3점으로 기재하는 방식입니다.</li><li>항목 4. Keep 지속할 것을 적습니다.</li><li>항목 5. Problem 해결하고 싶은 점을 적습니다.</li><li>항목 6. Try 시도할 것을 작성합니다.</li></ul><p>1분기 task에 대한 정리가 끝났다면, 마지막으로 1분기 전체에 대한 만족도와 KPT를 작성합니다.
 
 작성 순서는 자유입니다. task를 먼저 정리한 후에 KPT를 정리해도 좋고, 한 task의 항목을 KPT까지 모두 작성한 후에 다음 task를 작성하는 식으로 정리해도 좋습니다.<br>
 
@@ -19211,15 +19211,15 @@ findAndModify()에서는 동시성 문제가 발생하지 않았습니다.]]></w
 
 <h3><strong>뚜렷함에서 얻는 양질의 KPT</strong></h3>
 
-어쩌면 task를 정리하는 것부터가 부담으로 다가올 수 있을 것 같습니다. 그래서 제 나름 도움이 되었던 방법을 공유하고자 합니다. 
+어쩌면 task를 정리하는 것부터가 부담으로 다가올 수 있을 것 같습니다. 그래서 제 나름 도움이 되었던 방법을 공유하고자 합니다.
 
-개인적으로는 떠오르는 대로 마구잡이로(?) 우선 작성해 보는 것이 훨씬 진행하기 수월했습니다. 
+개인적으로는 떠오르는 대로 마구잡이로(?) 우선 작성해 보는 것이 훨씬 진행하기 수월했습니다.
 
-보통 task를 정리하기 위해 figma, slack, wiki 등의 업무 파일을 참고하여 시기별로 리스트업합니다. 
+보통 task를 정리하기 위해 figma, slack, wiki 등의 업무 파일을 참고하여 시기별로 리스트업합니다.
 
-하지만 현시점에서 회상해 보았을 때 머릿속에 남는 task는 시기와 상관없이 나에게 인상적이었던 것들이 우선적으로 떠오릅니다. 
+하지만 현시점에서 회상해 보았을 때 머릿속에 남는 task는 시기와 상관없이 나에게 인상적이었던 것들이 우선적으로 떠오릅니다.
 
-그 이유가 긍정적이건 부정적이건 혹은 현재의 일과 연관이 있어서건 말입니다. 
+그 이유가 긍정적이건 부정적이건 혹은 현재의 일과 연관이 있어서건 말입니다.
 
 따라서 이러한 task 들은 구체적으로 연상하기 쉽고 KPT에 대해서도 좀 더 양질의 회고를 얻을 수 있었습니다.
 
@@ -19258,7 +19258,7 @@ findAndModify()에서는 동시성 문제가 발생하지 않았습니다.]]></w
 
 제가 회고에 대한 필요성을 느끼게 된 부분은 책의 첫 번째 파트인 ‘자라기’였습니다. 해당 파트는 ‘필드에서 개인이 어떻게 성장할 것인가’에 대해 다루고 있습니다.
 
-그 중 ‘일반 조직이 일하는 구조’와 ‘복리 조직이 일하는 구조'에 대한 부분이 인상적이었는데요, 핵심을 압축적으로 보여주는 그림이 있어 인용해 보자면 다음과 같습니다. 
+그 중 ‘일반 조직이 일하는 구조’와 ‘복리 조직이 일하는 구조'에 대한 부분이 인상적이었는데요, 핵심을 압축적으로 보여주는 그림이 있어 인용해 보자면 다음과 같습니다.
 
 <pre><code>                                &lt;figure&gt;
                                     &lt;img width="1024" height="331" src="https://blog.dramancompany.com/wp-content/uploads/2022/04/스크린샷-2022-04-26-오후-4.53.18-1024x331.png" alt="일반조직이 일하는 구조와 복리조직이 일하는 구조" loading="lazy" srcset="https://i0.wp.com/blog.dramancompany.com/wp-content/uploads/2022/04/스크린샷-2022-04-26-오후-4.53.18.png?resize=1024%2C331&amp;ssl=1 1024w, https://i0.wp.com/blog.dramancompany.com/wp-content/uploads/2022/04/스크린샷-2022-04-26-오후-4.53.18.png?resize=300%2C97&amp;ssl=1 300w, https://i0.wp.com/blog.dramancompany.com/wp-content/uploads/2022/04/스크린샷-2022-04-26-오후-4.53.18.png?resize=768%2C248&amp;ssl=1 768w, https://i0.wp.com/blog.dramancompany.com/wp-content/uploads/2022/04/스크린샷-2022-04-26-오후-4.53.18.png?resize=1536%2C497&amp;ssl=1 1536w, https://i0.wp.com/blog.dramancompany.com/wp-content/uploads/2022/04/스크린샷-2022-04-26-오후-4.53.18.png?resize=750%2C243&amp;ssl=1 750w, https://i0.wp.com/blog.dramancompany.com/wp-content/uploads/2022/04/스크린샷-2022-04-26-오후-4.53.18.png?resize=1140%2C369&amp;ssl=1 1140w, https://i0.wp.com/blog.dramancompany.com/wp-content/uploads/2022/04/스크린샷-2022-04-26-오후-4.53.18.png?w=2034&amp;ssl=1 2034w" sizes="(max-width: 1024px) 100vw, 1024px" /&gt;                                         &lt;figcaption&gt;함께 자라기:애자일로 가는 길_김창준 지음 35-36p&lt;/figcaption&gt;
@@ -19283,7 +19283,7 @@ findAndModify()에서는 동시성 문제가 발생하지 않았습니다.]]></w
 
 개인적으로는 분기에 대한 회고는 처음이었기에 또 다른 관점에서 task를 바라볼 수 있어 새로웠습니다.&nbsp;
 
-어쩌다 보니 회고와 더불어 책 추천 글이 된 것 같기도 하네요. (머쓱) 
+어쩌다 보니 회고와 더불어 책 추천 글이 된 것 같기도 하네요. (머쓱)
 
 자발적 환기는 어느 분야, 또 누구에게나 필요한 과정이라고 생각합니다. 그리고 이를 위한 가장 쉬운 방법은 책의 내용을 따라 해 보는 것이 아닐까 싶습니다.&nbsp;
 
@@ -21687,11 +21687,11 @@ fun onClickFromCommunityName() {
 <p style="text-align: left;">안녕하세요, 리멤버 플랫폼 서버 파트의 노아론입니다.<br />이번 글에서는 특정 유저군을 타겟팅하는 과정에서 Redis의 SET 구조 대신 Bitmap 구조를 이용하여 어떻게 메모리를 절약할 수 있었는지에 대해 이야기하려고 합니다.</p>
 <p><a href="https://survey.rememberapp.co.kr/">리멤버 리서치</a>에선 설문 조건에 맞는 유저를 타겟팅하여 응답을 수집하고, 참여한 유저에겐 소정의 리워드를 지급하고 있습니다.<br />특정 유저에게 맞는 설문만을 제공하기 위하여 내부의 타겟 시스템을 이용해 설문마다 참여할 수 있는 유저의 고유 ID를 보관하고 있습니다.</p>
 <p>이 과정에서 Redis에는 설문에 참여할 수 있는 유저 ID 목록을 SET 구조로 저장하였는데요,<br />보관해야 하는 유저의 수에 비해서 Redis에서 차지하는 메모리 크기가 지나치게 비대한 문제가 있었습니다.</p>
-<p> </p>
+<p> </p>
 <h2>리멤버 리서치에서는 Redis를 이렇게 사용합니다.</h2>
 <p>리서치 운영을 위한 사내 어드민 페이지에서 설문 생성을 마치면 지정된 조건에 맞는 유저의 고유 ID를 가져오고,<br />설문 대상이 되는 유저 목록은 리멤버 내의 광고 서버에 요청하여 가져오고 있습니다</p>
 <p><img src="https://blog.dramancompany.com/wp-content/uploads/2022/10/diagram_survey-api-service-map-2-e1665124468487.png" width="269" height="359" /></p>
-<p> </p>
+<p> </p>
 <p>리서치 서버는 원하는 세부 조건에 맞게 타겟팅 된 유저 고유 ID 목록을 광고서버에 요청하여 데이터를 가져옵니다.<br />이렇게 가져온 설문 대상 유저 목록은 Redis에 저장되고 특정 유저가 설문의 대상인지 판별하는 용도로 데이터를 이용하게 됩니다.</p>
 <p>Redis에 대상 유저를 저장하는 용도로 채택한 이유로는 아래와 같습니다.</p>
 <ul>
@@ -21702,22 +21702,22 @@ fun onClickFromCommunityName() {
 <p>대상 유저 ID 목록은 설문이 종료된 뒤에 다시 사용하지 않는 정보입니다. Time-to-live를 어플리케이션 레이어에서 구현하지 않고, Redis 내에서 처리할 수 있습니다.</p>
 </li>
 </ul>
-<h2> </h2>
+<h2> </h2>
 <h2>마주한 상황</h2>
 <p>유저 ID 목록을 Redis에 저장하는 과정에서 우려되는 지점을 발견하였습니다.<br />개발 당시 유저 ID를 Redis에 저장하는 방식으로는 다음 그림과 같이 SET 구조를 사용하였습니다.</p>
 <p><img src="https://blog.dramancompany.com/wp-content/uploads/2022/10/diagram_redis-survey-survey_id-target-user-ids-1.png" /></p>
-<p> </p>
-<p> 설문을 생성하고 유저 5천명에게 타겟팅하였습니다. 이때 아래의 과정으로 유저 ID 5천개를 가지고 있는 SET이 추가됩니다. <img src="https://blog.dramancompany.com/wp-content/uploads/2022/10/redis-sadd-survey1target-user-ids.png" alt="" width="550" height="186" /></p>
-<p> </p>
+<p> </p>
+<p> 설문을 생성하고 유저 5천명에게 타겟팅하였습니다. 이때 아래의 과정으로 유저 ID 5천개를 가지고 있는 SET이 추가됩니다. <img src="https://blog.dramancompany.com/wp-content/uploads/2022/10/redis-sadd-survey1target-user-ids.png" alt="" width="550" height="186" /></p>
+<p> </p>
 <p>이 설문에서 어떤 유저가 참여 대상인지 알기 위해 총 298,456 Byte 크기의 메모리를 소모하였습니다. <img src="https://blog.dramancompany.com/wp-content/uploads/2022/10/redis-survey1targetuser_ids-2.png" alt="" width="550" height="186" /></p>
-<p> </p>
+<p> </p>
 <p>유저의 수가 상대적으로 적거나 동시 진행 중인 설문이 몇가지 되지 않는 상황에서는 천 단위의 유저 ID를 저장하는 상황은 당장 문제가 없어보입니다.<br />하지만 수십만명에 달하는 유저의 참여 가능 여부를 보관해야하는 상황이라면 이야기가 달라집니다.</p>
 <p>두번째 설문에서는 유저 19만명에게 타겟팅하고, 얼만큼의 메모리가 소모되었는지 확인해보겠습니다.<br />동일하게 타겟팅한 유저의 양만큼 SET이 추가됩니다 <img src="https://blog.dramancompany.com/wp-content/uploads/2022/10/redis-sadd-survey2target-user-ids.png" alt="" width="550" height="186" /></p>
-<p> </p>
+<p> </p>
 <p>이때 약 10439.65 KB (10.6902 MB)의 메모리가 소모됩니다. <img src="https://blog.dramancompany.com/wp-content/uploads/2022/10/redis-memory_usage-survey2target-user-ids.png" alt="19만명일때 SCARD로 188608을, MEMORY USAGE로 10690200을 결과로 받은 이미지" width="550" height="186" /></p>
 <p>19만명의 유저의 참여 정보를 저장하기 위해서 약 10MB에 달하는 메모리를 사용한다는 것은 문제가 될 것으로 우려하였습니다.<br />수 백만명을 대상으로 하는 설문 10개가 동시에 진행된다면 오로지 유저 목록을 담기 위해 사용하는 Redis의 메모리 크기만해도 기가바이트 단위가 될 것을 짐작할 수 있습니다.</p>
 <p>이러한 상황을 초래하게 만들지 않고자, 메모리 크기를 줄이기 위해 Redis의 Bitmap 구조를 고려하였습니다.<br />Redis Bitmap은 이진 벡터와 같이 사용할 수 있는 String 자료형에서 확장된 것으로, 정수 0부터 N으로 구성된 형태의 SET을 효율적으로 표현할 수 있습니다.</p>
-<p> </p>
+<p> </p>
 <h2>Redis Bitmap 구조를 이용해 개선 시도하기</h2>
 <p>특정 유저가 설문에 참여 가능한지 정보를 알 수 있어야 하므로, 아래 명령어처럼 Bit 오프셋을 유저의 ID로 사용하였고,<br />Redis의 <code>GETBIT</code> 커맨드를 통해 오프셋 위치에 저장되는 Bit 값을 설문 참여 가능 대상 유저 여부로 사용하였습니다.</p>
 <p><img src="https://blog.dramancompany.com/wp-content/uploads/2022/10/redis-bitmap-survey3target-user-ids.png" alt="" width="550" height="167" /></p>
@@ -21725,7 +21725,7 @@ fun onClickFromCommunityName() {
 <p>Bitmap 구조로 변경하였을 때 메모리 크기는 어느정도 개선할 수 있었는지 보겠습니다. <img src="https://blog.dramancompany.com/wp-content/uploads/2022/10/redis_memory_usage_chart.png" alt="" /></p>
 <p>가장 큰 유저 ID가 50만이면서 50만명에 대한 참여 정보를 담는다면 SET 구조에선 20,194,504 Byte, Bitmap 구조에선 114,768 Byte가 필요합니다.<br />만일 가장 큰 유저 ID가 75만이고, 이들 75만명에 대한 참여 정보를 담는 경우엔 SET 구조에선 36,583,112 Byte가, Bitmap 구조에선 114,768 Byte가 필요하게 됩니다.</p>
 <p>우려되었던 메모리 크기의 문제를 SET 구조에서 Bitmap 구조로 변경하여 크게 절감할 수 있었습니다.</p>
-<p> </p>
+<p> </p>
 <h2>마무리</h2>
 <p>리멤버 리서치의 유저 타겟팅 과정에서 Redis Bitmap 구조를 이용한 것은 상수 시간의 시간 복잡도를 가지면서 차지하는 메모리는 절약하는데 이점을 얻었습니다. <br />그렇지만, Bitmap 구조가 모든 상황에서 좋은 것이 아니라는 점은 주의해야합니다.</p>
 <p>상대적으로 큰 오프셋을 가지며 적은 갯수의 데이터를 보관한다면 Bitmap보다 SET에 저장할 때에 차지하는 메모리 크기가 더 작습니다. <br />최대 유저 ID가 1백만이면서 유저 10명의 대상 여부를 저장하는 경우가 이러한 경우입니다. <br />수십 혹은 수백 단위의 상대적으로 적은 수의 유저가 포함되는 경우엔 SET구조를 함께 사용하도록 고려하는 것이 좋아보입니다.</p>
@@ -25117,7 +25117,7 @@ Key Findings
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><mark style="background-color:rgba(0, 0, 0, 0);color:#656565" class="has-inline-color">Figure 8</mark>. Amazon Q로 네트워크 라우팅 이슈를 디버깅하는 모습(출처: <a href="https://aws.amazon.com/ko/blogs/networking-and-content-delivery/introducing-amazon-q-support-for-network-troubleshooting/" target="_blank" rel="noreferrer noopener">https://aws.amazon.com/ko/blogs/networking-and-content-delivery/introducing-amazon-q-support-for-network-troubleshooting/</a>)</p>
+<p class="has-text-align-center"><mark style="background-color:rgba(0, 0, 0, 0);color:#656565" class="has-inline-color">Figure 8</mark>. Amazon Q로 네트워크 라우팅 이슈를 디버깅하는 모습(출처: <a href="https://aws.amazon.com/ko/blogs/networking-and-content-delivery/introducing-amazon-q-support-for-network-troubleshooting/" target="_blank" rel="noreferrer noopener">https://aws.amazon.com/ko/blogs/networking-and-content-delivery/introducing-amazon-q-support-for-network-troubleshooting/</a>)</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
