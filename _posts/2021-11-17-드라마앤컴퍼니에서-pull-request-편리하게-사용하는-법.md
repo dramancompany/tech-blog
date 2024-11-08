@@ -20,7 +20,7 @@ GitHub에서는 Pull Request 생성 시 리뷰어를 요청하는 기능이 있�
 
 제가 개발하고 있는 커뮤니티 프로젝트에서는 모든 파일에 대해서 프로젝트에 관련된 리뷰어가 지정되도록 하였습니다.
 
-[![]({{ site.baseurl }}/images/eKamUHuPED.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-16-오후-10.11.59.png)
+![]({{ site.baseurl }}/images/eKamUHuPED.png)
 
 ### **문법 예시**
 
@@ -81,21 +81,21 @@ apps/ @octocat
 
 코드 소유자로 지정된 사람이 Approve를 하지 않을 때 머지를 할 수 없도록 설정하고 싶은 경우 Settings -> Branches -> Add rules에서 옵션을 설정하는 것도 가능합니다.
 
-[![]{{ site.baseurl }}/images/c2gocthIaf.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷_2021-11-17_오전_2_10_25.png)
+![]{{ site.baseurl }}/images/c2gocthIaf.png)
 
 ### **Pull Request 생성하여 리뷰어 확인**
 
 Pull Request 생성 단계에서는 리뷰어가 추가되지 않으며 실제로 생성 한 후 Open 상태일 경우 리뷰어가 추가됩니다. Reviewers 탭이 아래 사진과 같이 보인다면 정상적으로 기능이 동작하게 된 것입니다. 추가된 리뷰어에게도 메일이 정상적으로 가는 것도 확인하실 수 있습니다.
 
-[![]({{ site.baseurl }}/images/FiZYCyebcE.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷_2021-10-18_오전_2_01_10.png)
+![]({{ site.baseurl }}/images/FiZYCyebcE.png)
 
-[![]{{ site.baseurl }}/images/MGUV20b469.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/Untitled-1.png)
+![]{{ site.baseurl }}/images/MGUV20b469.png)
 
 ## **Pull Request 템플릿 사용하기**
 
 <figure>
 
-[![]{{ site.baseurl }}/images/VUdz1gAE4E.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-17-오전-12.50.54.png)
+![]{{ site.baseurl }}/images/VUdz1gAE4E.png)
 
 <figcaption>
 
@@ -112,7 +112,7 @@ Pull Request 생성 단계에서는 리뷰어가 추가되지 않으며 실제�
 
 <figure>
 
-[![]{{ site.baseurl }}/images/945hmFOumk.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-18-오전-2.00.49.png)
+![]{{ site.baseurl }}/images/945hmFOumk.png)
 
 <figcaption>
 

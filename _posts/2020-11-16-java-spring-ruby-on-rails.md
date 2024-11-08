@@ -94,7 +94,7 @@ _from [Ruby on Rails 공식 가이드](https://guides.rubyonrails.org/getting_st
 
 <figure>
 
-[![]{{ site.baseurl }}/images/qx8ik6hos3.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/rails-console-example-1.png)
+![]{{ site.baseurl }}/images/qx8ik6hos3.png)
 
 <figcaption>
 
@@ -120,7 +120,7 @@ rails console 실행 예시
 
 <figure>
 
-[![]({{ site.baseurl }}/images/DawhJOxgQZ.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/test-coverage-example.png)
+![]({{ site.baseurl }}/images/DawhJOxgQZ.png)
 
 <figcaption>
 
@@ -169,7 +169,7 @@ Time.current.yesterday.beginning_of_day
 
 <figure>
 
-[![]{{ site.baseurl }}/images/q1nT2naYJx.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/email-preview-example.png)
+![]{{ site.baseurl }}/images/q1nT2naYJx.png)
 
 <figcaption>
 

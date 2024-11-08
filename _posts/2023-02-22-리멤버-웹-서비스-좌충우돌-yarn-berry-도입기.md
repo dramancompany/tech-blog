@@ -32,7 +32,7 @@ tags:
 
 <figure>
 
-[![]{{ site.baseurl }}/images/J7YxaNmlSX.png)](https://blog.dramancompany.com/wp-content/uploads/2023/02/image-2.png)
+![]{{ site.baseurl }}/images/J7YxaNmlSX.png)
 
 <figcaption>
 
@@ -504,7 +504,7 @@ AWS Codebuild - 편집 - 아티팩트 - 캐싱 메뉴 하단
 
 <figure>
 
-[![]{{ site.baseurl }}/images/FSUKtdj9c4.png)](https://blog.dramancompany.com/wp-content/uploads/2023/02/image-6.png)
+![]{{ site.baseurl }}/images/FSUKtdj9c4.png)
 
 <figcaption>
 
@@ -534,7 +534,7 @@ AWS Codebuild - 편집 - 아티팩트 - 캐싱 메뉴 하단
 
 <figure>
 
-[![]({{ site.baseurl }}/images/xAOHOmyavG.png)](https://blog.dramancompany.com/wp-content/uploads/2023/02/image.png)
+![]({{ site.baseurl }}/images/xAOHOmyavG.png)
 
 <figcaption>
 

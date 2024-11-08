@@ -16,11 +16,11 @@ date: "2016-03-18"
 
 그런데 여기에는 한 가지 큰 문제가 있었습니다. 바로 동일한 업무 로직이 여러 애플리케이션에 중복되어 들어간다는 겁니다. 예를 들어 명함과 명함 요청에 대한 도메인 모델은 위의 세 가지 애플리케이션에서 모두 참조합니다.
 
-[![duplicate_domain_model]({{ site.baseurl }}/images/kaTlvXoJlZ.png)](https://blog.dramancompany.com/wp-content/uploads/2016/03/duplicate_domain_model.png)
+![duplicate_domain_model]({{ site.baseurl }}/images/kaTlvXoJlZ.png)
 
 위의 그림에서 보듯이, 명함 요청과 명함 도메인은 전체 라이프사이클에 걸쳐 다양한 애플리케이션에 의해 생성, 수정, 조회와 같은 작업이 일어납니다. 따라서 애플리케이션마다 동일한 명함과 명함 요청의 모델 코드가 들어가 있습니다.
 
-[![duplicate_rails_model]({{ site.baseurl }}/images/9ewUHgMDkx.png)](https://blog.dramancompany.com/wp-content/uploads/2016/03/duplicate_rails_model.png)
+![duplicate_rails_model]({{ site.baseurl }}/images/9ewUHgMDkx.png)
 
 ### 2\. Don't Repeat Yourself
 
@@ -32,7 +32,7 @@ date: "2016-03-18"
 
 ### 3\. Microservices
 
-[![microservice]({{ site.baseurl }}/images/Ctcmq9aiB8.png)](https://blog.dramancompany.com/wp-content/uploads/2016/03/microservice.png)
+![microservice]({{ site.baseurl }}/images/Ctcmq9aiB8.png)
 
 도메인 업무를 수행하는 모델을 별도의 Internal API 서버로 구성하고 각 애플리케이션은 Internal API를 호출합니다. 이렇게 하면 중복 코드를 제거하게 되어 도메인 모델 코드의 유지 보수가 용이해집니다. 그러나 고려해야 할 단점도 많습니다. 사실 Microservice나 그 전신(?)인 SOA Architecture가 고스란히 가지고 있는 단점이기도 합니다.
 
@@ -47,7 +47,7 @@ Microservice는 시스템의 크기가 크고, 팀/조직/프로세스가 잘 �
 
 ### 4\. Rails Engine
 
-[![rails_engine]({{ site.baseurl }}/images/I9YQipTCCY.png)](https://blog.dramancompany.com/wp-content/uploads/2016/03/rails_engine.png)
+![rails_engine]({{ site.baseurl }}/images/I9YQipTCCY.png)
 
 언뜻 보면, 첫 번째 방법인 중복 모델을 그대로 유지하는 것과 별반 다를 게 없어 보이지만 여기에는 아주 중요한 차이가 있습니다. Rails Engine은 별도의 애플리케이션으로 관리되지만, Ruby 라이브러리인 Gem(Java에서는 jar)의 형태로 각 애플리케이션에 import 될 수 있습니다. 따라서 모든 도메인 모델 코드는 Rails Engine 애플리케이션에 작성하고, 각 애플리케이션에서는 라이브러리 클래스를 사용하듯이 이를 가져다가 사용하면 됩니다. 아래는 API 애플리케이션에서 실제로 Rails Engine을 사용하는 예시 코드입니다.
 
