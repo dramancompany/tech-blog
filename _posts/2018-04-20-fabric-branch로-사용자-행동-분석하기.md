@@ -11,7 +11,7 @@ categories:
 
 대부분의 회사는 마케팅을 합니다. 그리고 서비스를 운영하는 회사는 퍼포먼스 마케팅을 합니다.
 
-![](/images/Sb2hKh39o0.jpeg)
+![]{{ site.baseurl }}/images/Sb2hKh39o0.jpeg)
 
 ### 퍼포먼스 마케팅이란?
 
@@ -19,7 +19,7 @@ categories:
 
 (1) 마케팅으로 사용할 스토어 링크에 레퍼러를 삽입합니다.
 
-<caption id="" align="aligncenter" width="1600">![](/images/qcgAUMeBG5.png) 스토어 링크에 utm 속성을 붙입니다.</caption>
+<caption id="" align="aligncenter" width="1600">![]{{ site.baseurl }}/images/qcgAUMeBG5.png) 스토어 링크에 utm 속성을 붙입니다.</caption>
 
 (2) 레퍼러가 삽입된 링크를 통해 스토어에 들어오면 콘솔에 레퍼러 속성이 기록됩니다.
 
@@ -31,7 +31,7 @@ categories:
 
 하지만 우리는 단순 다운로드를 넘어 가입, 결제 등의 행동까지 유도하고, 앱 내에서 행동을 수행한 숫자를 알고 싶습니다. 하지만 이것은 위 스토어 레퍼러로는 불가능합니다. 레퍼러 값이 스토어까지는 유지되지만 앱을 다운로드 받고 진입한 후에는 사라지기 때문입니다. 행동을 측정하기 위해서는 레퍼러 구분값이 앱에 들어와서도 유지되어야 합니다. 이것은 어떻게 구현할까요?
 
-<caption id="" align="aligncenter" width="350">![](/images/fXec1sTFM9.png) 우리는 앱에 들어온 후에도 특정 행동을 유도하고, Step에 따라 측정하고 싶습니다.</caption>
+<caption id="" align="aligncenter" width="350">![]{{ site.baseurl }}/images/fXec1sTFM9.png) 우리는 앱에 들어온 후에도 특정 행동을 유도하고, Step에 따라 측정하고 싶습니다.</caption>
 
 ### Deeplink로 앱 진입을 유도하자
 
@@ -43,7 +43,7 @@ categories:
 
 Deferred Deeplink는 기본적으로 Deeplink와 똑같이 동작하지만 링크 속성이 앱에 들어와서도 유지됩니다. 어떤 마케팅 캠페인으로부터 왔는지 구분할 수 있기 때문에 행동을 직접 유도하고, 실제로 도달하였는지 측정할 수 있습니다.
 
-<caption id="" align="aligncenter" width="864">![](/images/0pAM8YcbOh.jpeg) Deeplink는 단순히 앱에 진입시키지만, Deferred Deeplink는 유지되는 레퍼러 값을 이용하여 행동을 유도할 수 있습니다.</caption>
+<caption id="" align="aligncenter" width="864">![]{{ site.baseurl }}/images/0pAM8YcbOh.jpeg) Deeplink는 단순히 앱에 진입시키지만, Deferred Deeplink는 유지되는 레퍼러 값을 이용하여 행동을 유도할 수 있습니다.</caption>
 
 ### Deferred Deeplink를 어떻게 구현하지?
 
@@ -59,13 +59,13 @@ Branch는 대시보드에서 대부분의 작업을 할 수 있습니다. 대시
 
 대시보드에서 링크 생성, 설정 그리고 분석까지 모두 할 수 있습니다. 메인화면에 각 기능으로 이어지는 메뉴들이 있습니다.
 
-<caption id="" align="aligncenter" width="1600">![](/images/jT15vgQrkY.png) Create Link, Link Settings, Sources 등의 메뉴에서 생성, 설정, 분석을 할 수 있습니다.</caption>
+<caption id="" align="aligncenter" width="1600">![]{{ site.baseurl }}/images/jT15vgQrkY.png) Create Link, Link Settings, Sources 등의 메뉴에서 생성, 설정, 분석을 할 수 있습니다.</caption>
 
 ### (2) 링크 생성
 
 Create Link 기능으로 링크를 생성할 때 Deeplink Path, Failover link, Custom Tag, OG title 등의 설정을 함께 할 수 있습니다.
 
-<caption id="" align="aligncenter" width="1600">![](/images/p9psvMmQ8O.png) 링크를 생성 할 때 기본적인 설정을 함께 할 수 있습니다.</caption>
+<caption id="" align="aligncenter" width="1600">![]{{ site.baseurl }}/images/p9psvMmQ8O.png) 링크를 생성 할 때 기본적인 설정을 함께 할 수 있습니다.</caption>
 
 ### (3) 링크 설정
 
@@ -157,7 +157,7 @@ LinkProperties 객체에 속성을 설정하고, generateShortUrl() 메소드로
 
 지금까지 설명드린 링크 생성, 활용, 분석은 다음 그림 하나로 요약할 수 있습니다.
 
-<caption id="" align="aligncenter" width="1600">![](/images/wI7LQ9jxyu.png) 단계별 도달율이 대시보드에 모두 기록됩니다.</caption>
+<caption id="" align="aligncenter" width="1600">![]{{ site.baseurl }}/images/wI7LQ9jxyu.png) 단계별 도달율이 대시보드에 모두 기록됩니다.</caption>
 
 # 마무리
 

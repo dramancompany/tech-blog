@@ -54,7 +54,7 @@ tags:
 
 <figure>
 
-[![](/images/FfQ2AICZct.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/Weight.png)
+[![]{{ site.baseurl }}/images/FfQ2AICZct.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/Weight.png)
 
 <figcaption>
 
@@ -114,7 +114,7 @@ UI 상에서 1행의 한글 텍스트를 배치했을 때 기존 시스템 서�
 
 <figure>
 
-[![](/images/I8VKPxw8Ev.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/6-1.png)
+[![]{{ site.baseurl }}/images/I8VKPxw8Ev.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/6-1.png)
 
 <figcaption>
 
@@ -128,7 +128,7 @@ UI 상에서 1행의 한글 텍스트를 배치했을 때 기존 시스템 서�
 
 기본적으로 양 폰트 모두 한글을 고려해서 제작되었기 때문에 한글 표현에 강점이 있지만, 한글 폰트의 쏠림 현상은 스포카에서도 여전히 발생하고 있었습니다. 그에 반해 프리텐다드는 폰트에 별 다른 조치를 취하지 않아도 텍스트 박스의 가운데 잘 배치되어 보입니다.
 
-[![](/images/8bHuUJw9Au.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/5.png)
+[![]{{ site.baseurl }}/images/8bHuUJw9Au.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/5.png)
 
 고려 사항을 바탕으로 최종 검토 결과 Pretendard가 더 적합하다고 판단되어 리멤버의 시스템 폰트로 적용하기로 결정하게 되었습니다.
 

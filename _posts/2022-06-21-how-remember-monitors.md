@@ -41,7 +41,7 @@ New Relic 을 이용하여 서버의 처리량(throughput), 평균 응답 시간
 
 <figure>
 
-[![](/images/VtPVIhpj3G.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image.png)
+[![]{{ site.baseurl }}/images/VtPVIhpj3G.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image.png)
 
 <figcaption>
 
@@ -61,7 +61,7 @@ Application Performance Monitoring
 
 <figure>
 
-[![](/images/FkatkB5oKL.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-1.png)
+[![]{{ site.baseurl }}/images/FkatkB5oKL.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-1.png)
 
 <figcaption>
 
@@ -111,7 +111,7 @@ SLI/SLO 설정을 하고 이를 볼 수 있는 페이지를 만드는 것도 자
 
 <figure>
 
-[![](/images/Mh6xBrxdtU.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-3.png)
+[![]{{ site.baseurl }}/images/Mh6xBrxdtU.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-3.png)
 
 <figcaption>
 
@@ -152,7 +152,7 @@ Slack 으로 인지하게 되는 것과 별개로 위 문단에 적어놓은 것
 
 <figure>
 
-[![](/images/kK7WOP1qCh.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-9.png)
+[![]{{ site.baseurl }}/images/kK7WOP1qCh.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-9.png)
 
 <figcaption>
 
@@ -183,7 +183,7 @@ New Relic Alert 가 Slack 으로 게시된 모습
 
 <figure>
 
-[![](/images/P8CoHQWdCC.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-11.png)
+[![]{{ site.baseurl }}/images/P8CoHQWdCC.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-11.png)
 
 <figcaption>
 
@@ -217,7 +217,7 @@ New Relic 에서 본 Logs
 
 <figure>
 
-[![](/images/lGW7m4PDxb.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-7.png)
+[![]{{ site.baseurl }}/images/lGW7m4PDxb.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-7.png)
 
 <figcaption>
 

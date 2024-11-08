@@ -41,7 +41,7 @@ Code Deploy를 이용할 경우 배포는 다음과 같이 이루어집니다.
 6. 새로운 코드 준비가 완료되면 옛날 코드를 갖고 있는 서버들을 새로운 서버로 대체
 7. 배포 끝!
 
-![](/images/sds_architecture.png)
+![]{{ site.baseurl }}/images/sds_architecture.png)
 
 <[http://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html](http://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html)\>
 
@@ -59,7 +59,7 @@ Code Deploy를 이용할 경우 배포는 다음과 같이 이루어집니다.
 
 평소에는 클라이언트의 요청을 ELB에서 받고 1번 ASG로 요청을 보내줍니다. 배포를 하려고 하면 1번 ASG와 똑같은 크기와 설정을 갖는 2번 ASG를 만든 뒤에 ASG 내부에 새로운 코드를 갖고 있는 서버들을 추가합니다. 그리고 ELB에 새로 들어온는 요청들을 1번 ASG에서 2번 ASG로 보내게 하여 무중단 배포를 진행합니다.
 
-[![](/images/EC5JG2mg9L.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
+[![]{{ site.baseurl }}/images/EC5JG2mg9L.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
 
 기존에 저희가 사용하고 있던 운영 서버 배포 절차는 다음과 같습니다.
 
@@ -262,11 +262,11 @@ CodeDeploy에서는 Application, Deployment group, Deployment 세 가지의 개�
 
 같은 application 내에 어떤 종류의 배포인지를 나타냅니다. 예를 들면 test/production 등 환경일 수 있고 특정 Auto Scaling Group일 수 있습니다.
 
-![](/images/CSE6bzz4um.png)
+![]{{ site.baseurl }}/images/CSE6bzz4um.png)
 
 생성 시 deployment type를 정할 수 있으며 배포할 대상(EC2, ASG 등)을 정할수도 있습니다.
 
-![](/images/293hi655t9.png)
+![]{{ site.baseurl }}/images/293hi655t9.png)
 
  
 
@@ -282,15 +282,15 @@ CodeDeploy에서는 Application, Deployment group, Deployment 세 가지의 개�
 
 이제 배포를 진행합니다. 어떤 application의 어떤 그룹에다가 어떤 commit을 배포를 진행할지 적습니다.
 
-[![](/images/F0uI6nhinh.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.03.26.png)
+[![]{{ site.baseurl }}/images/F0uI6nhinh.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.03.26.png)
 
 배포 이력에서 배포 진행 현황을 살펴볼 수 있고, 성공 여부도 볼 수 있습니다.
 
-[![](/images/PpVgaav4n0.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.03.51.png)
+[![]{{ site.baseurl }}/images/PpVgaav4n0.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.03.51.png)
 
 View Events를 통하여 각 hook 부분 당 얼만큼의 시간이 소요되었으며 현재 어떤 과정을 거치고 있는지 실시간으로 확인할 수 있습니다.
 
-[![](/images/XrfWY16oV7.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.04.41.png)
+[![]{{ site.baseurl }}/images/XrfWY16oV7.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-12.04.41.png)
 
 에러가 났을 경우에는 script 실행 중 어떤 로그를 발생하면서 에러가 났는지도 확인할 수 있습니다.
 

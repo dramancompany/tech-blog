@@ -37,7 +37,7 @@ tags:
 
 그래서 좀더 안정적이고 쉬운 배포를 위해 다음과 같이 구성을 해봅시다.
 
-[![](/images/EC5JG2mg9L.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
+[![]{{ site.baseurl }}/images/EC5JG2mg9L.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-16.17.37.png)
 
 AWS에서는 훌륭한 Auto Scaling 서비스를 무료로 제공하고 있습니다. Auto Scaling은 쉽게말해 **Amazon Machine Image(이하 AMI)**를 설정한 조건에 따라 인스턴스를 늘리거나 줄이는 일을 합니다. 여기서 제가 주목하는 점은 'AMI'입니다. AMI는 말 그대로 머신 이미지를 말하는데 이를 이용하면 AMI를 생성하기 위한 서버 1대만 있으면 이를 이용해 이미지를 생성한 후 똑같은 서버를 원하는 만큼 생성할 수 있습니다.
 

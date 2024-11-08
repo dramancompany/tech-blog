@@ -82,7 +82,7 @@ apps/ @octocat
 
 코드 소유자로 지정된 사람이 Approve를 하지 않을 때 머지를 할 수 없도록 설정하고 싶은 경우 Settings -> Branches -> Add rules에서 옵션을 설정하는 것도 가능합니다.
 
-[![](/images/c2gocthIaf.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷_2021-11-17_오전_2_10_25.png)
+[![]{{ site.baseurl }}/images/c2gocthIaf.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷_2021-11-17_오전_2_10_25.png)
 
 ### **Pull Request 생성하여 리뷰어 확인**
 
@@ -90,13 +90,13 @@ Pull Request 생성 단계에서는 리뷰어가 추가되지 않으며 실제�
 
 [![]({{ site.baseurl }}/images/FiZYCyebcE.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷_2021-10-18_오전_2_01_10.png)
 
-[![](/images/MGUV20b469.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/Untitled-1.png)
+[![]{{ site.baseurl }}/images/MGUV20b469.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/Untitled-1.png)
 
 ## **Pull Request 템플릿 사용하기**
 
 <figure>
 
-[![](/images/VUdz1gAE4E.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-17-오전-12.50.54.png)
+[![]{{ site.baseurl }}/images/VUdz1gAE4E.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-17-오전-12.50.54.png)
 
 <figcaption>
 
@@ -113,7 +113,7 @@ Pull Request 생성 단계에서는 리뷰어가 추가되지 않으며 실제�
 
 <figure>
 
-[![](/images/945hmFOumk.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-18-오전-2.00.49.png)
+[![]{{ site.baseurl }}/images/945hmFOumk.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-18-오전-2.00.49.png)
 
 <figcaption>
 

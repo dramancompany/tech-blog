@@ -49,7 +49,7 @@ Client-Side Computing의 경우 큰 장점들이 있지만 다양한 제약 사�
 
 > **ONNX**는 Open Neural Network Exchange의 줄인 말로서 이름과 같이 다른 ML 프레임워크 환경(Tensorflow, PyTorch 등)에서 만들어진 모델들을 서로 호환될 수 있도록 만들어진 공유 플랫폼입니다.
 
-![](/images/4zN8hbGHaQ.png)
+![]{{ site.baseurl }}/images/4zN8hbGHaQ.png)
 
 그림 1. TorchScript의 Script Mode 변환\[1\]
 
@@ -57,7 +57,7 @@ Client-Side Computing의 경우 큰 장점들이 있지만 다양한 제약 사�
 
 > **중간표현(Intermediate Representation, IR)**은 소스 코드를 나타내기 위해 컴파일러 또는 가상 머신에서 내부적으로 사용하는 데이터 구조 또는 코드입니다. IR은 최적화 및 모델 변환과 같은 추가적인 처리 과정에 도움이 되도록 설계되어 있습니다.
 
-![](/images/Jlg6NjoVbw.png)
+![]{{ site.baseurl }}/images/Jlg6NjoVbw.png)
 
 그림 2. ONNX의 상호 운용성 \[2\]
 
@@ -69,7 +69,7 @@ ONNX Graph를 Tensorflow Lite model(.tflite 파일 확장자로 식별되는 최
 
 > **TensorFlow Lite**는 Android 및 iOS, 내장형 Linux 및 마이크로 컨트롤러 등의 기기에서 모델을 실행할 수 있는 기능을 제공하기 위해 On-device에서 ML을 위한 해석기(Interpreter)와 라이브러리를 지원하는 프레임워크 입니다.
 
-![](/images/gSBDpq92eR.png)
+![]{{ site.baseurl }}/images/gSBDpq92eR.png)
 
 그림 3. 모델 변환을 위한 high-level workflow\[4\]
 
@@ -83,13 +83,13 @@ Pytorch Model을 TF Lite Model로의 변환 과정을 코드로 보면 20줄 내
 
 ## **On-deivce 모델 추론을 위한 Tensorflow Lite Interpreter**
 
-![](/images/OaJ6rbAFf3.png)
+![]{{ site.baseurl }}/images/OaJ6rbAFf3.png)
 
 그림 4. On-device에서의 TensorFlow Lite를 사용하여 모델 배포 \[5\]
 
 위의 내용에서 AI 명함 촬영 인식 ‘리오(RIO)’를 Client-Side Computing에서 사용하기 위해 ML Model Converter에 관해 소개했습니다. 실제 모바일 기기에서 ‘리오(RIO)’ 모델의 추론을 진행하기 위해 Tensorflow Lite Interpreter를 활용하게 되는데 위의 그림 4와 같이 모바일 기기의 하드웨어를 사용하게 됩니다.
 
-![](/images/EBXjsVS4Xs.png)
+![]{{ site.baseurl }}/images/EBXjsVS4Xs.png)
 
 그림 5. TensorFlow Lite의 아키텍처 디자인 \[6\]
 
@@ -103,7 +103,7 @@ Tensorflow Lite Interpreter 모델 추론을 통해 얻게 된 결과는 아웃�
 
 ## **AI 명함 촬영 인식 ‘리오(RIO)’ 테스트용 데모 앱**
 
-![](/images/tf68lTTmM9.png)
+![]{{ site.baseurl }}/images/tf68lTTmM9.png)
 
 그림 6. AI 명함 촬영 인식 ‘리오(RIO)’ 테스트용 데모앱 그림
 

@@ -19,13 +19,13 @@ Ranking System은 아래와 같은 분야에서 사용되고 있습니다.
 
 - **Search Engines** : 구글 같은 웹페이지에서 검색 시 나오는 결과들(문서)를 연관성이 높은 순서로 정렬하기.
 
-![](/images/5UabfeBH5b.png)
+![]{{ site.baseurl }}/images/5UabfeBH5b.png)
 
 Figure 1. Searching “artificial intelligence” in Google Search Engines.
 
 - **Recommendation System** : 유저의 특성에 따라 가장 유저에게 알맞을 것 같은 Item을 추천 점수가 높은 순서대로 정렬하기.
 
-![](/images/4WudIwqr1D.png)
+![]{{ site.baseurl }}/images/4WudIwqr1D.png)
 
 Figure 2. Personalized ranked contents in Netflix.
 
@@ -50,7 +50,7 @@ Ranking에서는 모델이 얼마나 Item에 대한 순위를 잘 매기는지 �
 
 ### MRR(Mean Reciprocal Rank)
 
-![](/images/aR1jKtdBxe.png)
+![]{{ site.baseurl }}/images/aR1jKtdBxe.png)
 
 각 Query마다 1위 Item을 맞춘 점수를 평균하는 방법입니다. Query에 대해 여러 Item들이 rank됐을 때 test set의 정답(1위)인 Item이 몇위에 있는가에 따라 reciprocal rank가 계산됩니다. 그리고 모든 Query의 reciprocal rank를 평균하면 MRR 점수가 산출됩니다.
 
@@ -64,13 +64,13 @@ Precision은 추천된 top k의 Item 중 관련성 있는 아이템의 비율을
 
 ### nDCG(normalized Discounted Cumulative Gain)
 
-![](/images/ck7nPEFOWS.png)
+![]{{ site.baseurl }}/images/ck7nPEFOWS.png)
 
-![](/images/8a7Pw2DKBQ.png)
+![]{{ site.baseurl }}/images/8a7Pw2DKBQ.png)
 
-![](/images/mBtK1QqOAz.png)
+![]{{ site.baseurl }}/images/mBtK1QqOAz.png)
 
-![](/images/LC0hEv6jin.png)
+![]{{ site.baseurl }}/images/LC0hEv6jin.png)
 
 nDCG는 MRR과 Precision의 단점을 모두 보완한 metric입니다.
 
@@ -117,7 +117,7 @@ Figure 3은 LTR의 framework입니다. n개의 Query에 대해서 각 Item에 �
 
 ### **GSF(Groupwise Scoring Function)**
 
-![](/images/2efVal3Wqh.png)
+![]{{ site.baseurl }}/images/2efVal3Wqh.png)
 
 Figure 4. GSF architecture
 
@@ -125,7 +125,7 @@ GSF\[2\]는 여러 Item feature들(x1, x2, x3)에 대한 조합(\[x1, x2\], \[x1
 
 ### **seq2slate**
 
-![](/images/GgiRpvwZd2.png)
+![]{{ site.baseurl }}/images/GgiRpvwZd2.png)
 
 Figure 5. seq2slate architecture
 
@@ -135,7 +135,7 @@ seq2slate\[3\]는 Point Network의 varient와 조합된 RNN을 사용하는 방�
 
 ### **DLCM(Deep Listwise Context Model)**
 
-![](/images/jE3r2J3HgF.png)
+![]{{ site.baseurl }}/images/jE3r2J3HgF.png)
 
 Figure 6. DLCM architecture
 
@@ -143,7 +143,7 @@ DLCM\[1\]은 Query와 Item의 feature를 역방향으로 GRU에 통과시킨 각
 
 ### **Context-Aware Ranker**
 
-![](/images/ugMGQuA07h.png)
+![]{{ site.baseurl }}/images/ugMGQuA07h.png)
 
 Figure 7. Context-Aware Ranker architecture
 
