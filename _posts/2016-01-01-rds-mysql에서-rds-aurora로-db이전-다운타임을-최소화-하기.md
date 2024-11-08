@@ -30,7 +30,7 @@ DB이전을 할 때 다운타임을 최소화 하기 위한 방법은 놀라울 
 
 우선 AuroraDB의 인스턴스를 생성해 보겠습니다. 생성 시 기존에 사용하던 MySQL Master DB의 최신 Snapshot을 이용해 AuroraDB로 Migrate합니다. MySQL MasterDB를 선택하고, 상단의 Instance Actions탭에서 "Take Snapshot"을 눌러 현재 시점의 스냅샷을 준비해주세요.
 
-[![Migrate Lastest Snapshot](/images/hDKynz6I9p.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-12.45.08.png)
+[![Migrate Lastest Snapshot]({{ site.baseurl }}/images/hDKynz6I9p.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-12.45.08.png)
 
 스냅샷이 준비되었다면, "Migrate Latest Snapshot"를 눌러줍니다.
 
@@ -42,7 +42,7 @@ _**자, Migrate버튼을 누르기 전에 이쯤에서 정말 중요한 메모�
 
 > SHOW MASTER STATUS;
 
-[![스크린샷 2015-12-09 오후 6.11.10](/images/ybh08w1UGn.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-6.11.10.png)
+[![스크린샷 2015-12-09 오후 6.11.10]({{ site.baseurl }}/images/ybh08w1UGn.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-6.11.10.png)
 
 확인 하셨나요? 그러면 재빨리 Migrate버튼을 눌러 인스턴스를 생성합니다.
 
@@ -64,7 +64,7 @@ _**자, Migrate버튼을 누르기 전에 이쯤에서 정말 중요한 메모�
 
 드디어 되었군요. 4시간 반의 티 타임 끝에 AuroraDB 인스턴스가 준비되었습니다. 이 글을 읽으시는 분 들은 마이그레이션이 언제 완료되나 무작정 기다리지 마시고, "DB Cluster Details"탭의 "Migration Progress"를 참고하시면 현재 진행 상황을 자세하게 알려주니, 저처럼 무작정 기다리지 않으셔도 될 것 같습니다.(있는 줄 몰랐습니다..)
 
-[![스크린샷 2015-12-09 오후 4.19.13](/images/Z7W7yXbb4O.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-4.19.13.png)
+[![스크린샷 2015-12-09 오후 4.19.13]({{ site.baseurl }}/images/Z7W7yXbb4O.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-4.19.13.png)
 
 AuroraDB 인스턴스가 준비되었다면, 다음 단계로 넘어가도록 하겠습니다.
 
@@ -82,7 +82,7 @@ IP를 잘 적어둔 후, RDS Instances 콘솔에 접속한 후 MySQL의 Security
 
 창이 열리면, "Add Rule"를 해 Row하나를 추가 한 후 Type은 "_**All traffic**_"으로 지정하고, 아까 적어 둔 AuroraDB의 아이피를 다음과 같이 적어줍니다. "1.1.1.1/32" (DB 이전을 완료 한 후에는 방금 추가한 Rule을 삭제해 주세요.)
 
-[![스크린샷 2015-12-09 오후 6.06.52](/images/BhcBMP9YI5.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-6.06.52.png)
+[![스크린샷 2015-12-09 오후 6.06.52]({{ site.baseurl }}/images/BhcBMP9YI5.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-6.06.52.png)
 
 이제 VPC 설정은 다 되었습니다.
 

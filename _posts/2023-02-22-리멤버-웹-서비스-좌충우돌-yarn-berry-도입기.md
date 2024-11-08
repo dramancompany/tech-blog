@@ -456,7 +456,7 @@ yarn 2.x 버전 부터는 pre-hook(ex. `preinstall` , `prepare` 등) 을 지원�
 
 <figure>
 
-![image](/images/HypdCkq7Fh.png)
+![image]({{ site.baseurl }}/images/HypdCkq7Fh.png)
 
 <figcaption>
 
@@ -492,7 +492,7 @@ AWS Codebuild - 편집 - 아티팩트 - 캐싱 메뉴 하단
 
 <figure>
 
-![image](/images/oEhoS7O3yb.png)
+![image]({{ site.baseurl }}/images/oEhoS7O3yb.png)
 
 <figcaption>
 

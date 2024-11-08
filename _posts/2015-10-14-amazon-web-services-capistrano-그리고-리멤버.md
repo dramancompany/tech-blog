@@ -21,7 +21,7 @@ tags:
 
 지금 우리가 배포하려는 서버는 다음과 같은 구조를 가지고 있다고 가정합니다.
 
-[![서버구조](/images/8yVXHQuTvF.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-14.42.22.png)
+[![서버구조]({{ site.baseurl }}/images/8yVXHQuTvF.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-25-14.42.22.png)
 
 이와같은 구조에서 배포를 할 경우 일단 ELB 구성이 되어 있으므로 다음과 같은 순서로 무중단 배포는 가능합니다.
 

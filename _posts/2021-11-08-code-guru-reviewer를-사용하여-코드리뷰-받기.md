@@ -23,7 +23,7 @@ Amazon CodeGuru는 코드 품질을 높이고 애플리케이션에서 가장 �
 
 위 설명은 AWS에서 공식적으로 설명하고 있는 내용입니다. 나와 있는 것처럼 말 그대로 코드 리뷰를 자동화해주는 기능입니다. 기계학습을 한 똑똑한 프로그래밍 언어의 전문가가 한 명 더 있어 Pull Request 단계에서 코드 리뷰를 해준다고 생각하시면 됩니다. 현재는 Java와 Python만 지원하고 있습니다.
 
-![AWS CI/CD pipeline with CodeGuru & UnitTest - DEV Community](/images/125892722-da641d48-e54a-4f4e-8303-8b09d99167bf.png)
+![AWS CI/CD pipeline with CodeGuru & UnitTest - DEV Community]({{ site.baseurl }}/images/125892722-da641d48-e54a-4f4e-8303-8b09d99167bf.png)
 
 ## **왜 필요한가요?**
 
