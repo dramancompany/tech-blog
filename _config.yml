@@ -23,7 +23,7 @@ email: dl_drama_eng@remember.co.kr
 description: >- # this means to ignore newlines until "baseurl:"
   일하는 사람과 기회를 연결하여 성공으로! 프로페셔널 네트워크 서비스 '리멤버'를 만듭니다
 baseurl: "tech-blog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dramancompany.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username:
 #github_username:  dramancompany
 #facebook_username: Rememberapp
