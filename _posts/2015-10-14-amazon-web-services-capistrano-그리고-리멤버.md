@@ -55,7 +55,7 @@ AWS에서는 훌륭한 Auto Scaling 서비스를 무료로 제공하고 있습�
 
 아래는 현재 리멤버 서버 배포시 구성을 간략히 그려보았습니다.
 
-[![](/images/ShCmmzxgrH.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-30-12.14.13.png)
+[![]({{ site.baseurl }}/images/ShCmmzxgrH.png)](https://blog.dramancompany.com/wp-content/uploads/2015/09/스크린샷-2015-09-30-12.14.13.png)
 
 AMI 생성용 서버에 Capistrano를 이용해 배포 후 AWS web console에서 설정만 해주면 쉽게 모든 서버 업데이트를 마칠 수 있도록 되어 있습니다. 그럼 Capistrano를 어떻게 설치하고 설정 하는지 알아보도록 하겠습니다.
 

@@ -35,7 +35,7 @@ DB이전을 할 때 다운타임을 최소화 하기 위한 방법은 놀라울 
 
 스냅샷이 준비되었다면, "Migrate Latest Snapshot"를 눌러줍니다.
 
-[![스크린샷 2015-12-09 오후 12.48.50](/images/LtIbQzQgob.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-12.48.50.png)
+[![스크린샷 2015-12-09 오후 12.48.50]({{ site.baseurl }}/images/LtIbQzQgob.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-12.48.50.png)
 
 다음과 같은 화면이 나오면 기본적인 설정을 해 줍니다. 기존 MySQL Master DB의 설정을 따라가기 때문에 DB Instance Identifier와 Availability Zone지정 외에 별다른 작업이 필요 없을 것 같습니다.
 
@@ -47,7 +47,7 @@ _**자, Migrate버튼을 누르기 전에 이쯤에서 정말 중요한 메모�
 
 확인 하셨나요? 그러면 재빨리 Migrate버튼을 눌러 인스턴스를 생성합니다.
 
-[![스크린샷 2015-12-09 오후 12.58.16](/images/EDDslkhVWx.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-12.58.16.png)
+[![스크린샷 2015-12-09 오후 12.58.16]({{ site.baseurl }}/images/EDDslkhVWx.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-12.58.16.png)
 
 마이그레이션이 완료 되고 인스턴스가 생성될 때 까지 잠시(?) 기다려 줍니다. [아마존 블로그](https://aws.amazon.com/ko/blogs/aws/now-available-amazon-aurora/)의 문구를 인용해보자면, 소요되는 시간은 대략 다음과 같습니다.
 
@@ -79,7 +79,7 @@ AuroraDB 인스턴스가 준비되었다면, 다음 단계로 넘어가도록 �
 
 IP를 잘 적어둔 후, RDS Instances 콘솔에 접속한 후 MySQL의 Security Groups에서 사용하고 있는 해당 그룹 링크를 클릭합니다.  이동 한 Security Groups에서 해당 그룹을 선택한 후 상단 Actions탭의 "Edit inbound rules"를 클릭합니다.
 
-[![스크린샷 2015-12-09 오후 5.29.29](/images/odiNJsLkYo.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-5.29.29.png)
+[![스크린샷 2015-12-09 오후 5.29.29]({{ site.baseurl }}/images/odiNJsLkYo.png)](https://blog.dramancompany.com/wp-content/uploads/2015/12/스크린샷-2015-12-09-오후-5.29.29.png)
 
 창이 열리면, "Add Rule"를 해 Row하나를 추가 한 후 Type은 "_**All traffic**_"으로 지정하고, 아까 적어 둔 AuroraDB의 아이피를 다음과 같이 적어줍니다. "1.1.1.1/32" (DB 이전을 완료 한 후에는 방금 추가한 Rule을 삭제해 주세요.)
 

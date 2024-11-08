@@ -103,7 +103,7 @@ PR을 사용할 때는 크게 두 가지 방식이 있는 것 같습니다. 하�
 
 필요하면 코드 리뷰를 더 재미있고 쉽게 만들어주는 PR 기반의 도구를 사용할 수도 있습니다.
 
-[![review_ninja](/images/raTdMYucTh.png)](https://blog.dramancompany.com/wp-content/uploads/2016/05/review_ninja.png)
+[![review_ninja]({{ site.baseurl }}/images/raTdMYucTh.png)](https://blog.dramancompany.com/wp-content/uploads/2016/05/review_ninja.png)
 
 요청자는 리뷰들을 다시 브랜치에 수정 반영하고, 2차 리뷰를 요청합니다. 이러한 과정을 3차, 4차 등으로 계속 반복할 수 있습니다(그렇지만 실제로는 2차 리뷰를 넘는 경우는 거의 없었습니다). 만약 리뷰 후의 수정사항이 간단하여 2차 리뷰를 굳이 받을 필요가 없다고 판단되면, 리뷰를 요청하지 않고 바로 머지할 수도 있습니다.
 

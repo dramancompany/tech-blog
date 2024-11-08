@@ -84,7 +84,7 @@ _대표적으로 Document Image Classification, Visual Question Answering, Infor
 
 문서 이미지에서 획득한 텍스트 정보, 시각 정보 및 레이아웃 정보를 분석하여 질문에 대한 답을 출력하는 작업입니다.
 
-![](/images/xyFWkzmGNB.png)
+![]({{ site.baseurl }}/images/xyFWkzmGNB.png)
 
 Document Visual Question Answering \[3\]
 

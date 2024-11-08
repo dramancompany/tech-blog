@@ -75,7 +75,7 @@ ONNX Graph를 Tensorflow Lite model(.tflite 파일 확장자로 식별되는 최
 
 Pytorch Model을 TF Lite Model로의 변환 과정을 코드로 보면 20줄 내외의 간단한 API 호출 몇 줄로 표현되지만, 내부적인 동작에 대해 상세하게 설명해 보았습니다. Quantization을 추가로 실험하였지만 정확도가 다소 떨어지는 경향이 있었습니다. 아래의 표에서는 모델의 크기를 단순 비교한 테이블입니다. 각 모델에 대한 속도에 대한 비교는 각각 목표 하드웨어에 따라 최적화 방법이 달라 비교하지 않고 Quantization을 제외한 모든 비교 모델에서의 정확도 차이가 크게 나타나지 않아 표기하지 않았습니다.
 
-![](/images/NDgIKxKatq.png)
+![]({{ site.baseurl }}/images/NDgIKxKatq.png)
 
 표 1. 모델 표현 방법에 따른 모델 사이즈 비교
 
@@ -107,7 +107,7 @@ Tensorflow Lite Interpreter 모델 추론을 통해 얻게 된 결과는 아웃�
 
 그림 6. AI 명함 촬영 인식 ‘리오(RIO)’ 테스트용 데모앱 그림
 
-![](/images/DvUxsqkCuT.gif)
+![]({{ site.baseurl }}/images/DvUxsqkCuT.gif)
 
 그림 7. AI 명함 촬영 인식 ‘리오(RIO)’ 배포 버전
 

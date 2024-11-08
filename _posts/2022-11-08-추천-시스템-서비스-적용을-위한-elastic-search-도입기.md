@@ -58,7 +58,7 @@ tags:
 
 콘텐츠 기반 필터링 방식은 사용자가 특정 아이템을 선호하는 경우, 그 아이템과 비슷한 콘텐츠를 가진 다른 아이템을 추천해 주는 방식 입니다.
 
-![](/images/nyVwvzzFyz.png)
+![]({{ site.baseurl }}/images/nyVwvzzFyz.png)
 
 유저가 관심분야의 글을 많이 읽을 것이라는 가정하에 콘텐츠 기반 필터링 방식을 선택했습니다. 커뮤니티에서 글을 추천해주는 방식으로는 유저가 커뮤니티에서 읽은 글과 유사한 글들을 추천해주는 방식을 적용하고자 했습니다.
 
@@ -98,7 +98,7 @@ Unsupervised SimCSE 학습 과정 \[6\]
 
 전체적인 추천 로직을 정리해보자면, 유저 임베딩과 유저가 참여중인 커뮤니티의 콘텐츠들과 유사도를 비교하여 가장 유사한 top K개를 추천해주는 로직 입니다.
 
-![](/images/MFSOLsoFoH.png)
+![]({{ site.baseurl }}/images/MFSOLsoFoH.png)
 
 * * *
 
@@ -160,11 +160,11 @@ Amazon OpenSearch Service는 인프라 관리, 모니터링 및 유지 관리에
 
 k-NN을 사용하면 벡터 공간에서 포인트를 검색하고 해당 포인트에 대한 “가장 가까운 이웃”을 Euclidean 거리 또는 코사인 유사도로 찾을 수 있습니다.
 
-![](/images/AEQOtiNBnr.png)
+![]({{ site.baseurl }}/images/AEQOtiNBnr.png)
 
 ##### HNSW (Hierarchical Navigable Small World Algorithm)
 
-![](/images/kqahmeWdgt.png)
+![]({{ site.baseurl }}/images/kqahmeWdgt.png)
 
 OpenSearch에서 k-NN 검색문제에 대해서 빠르고 정확한 솔루션을 제공하기위해서 HNSW 알고리즘을 기반으로 하여 검색엔진이 동작합니다. 이 알고리즘은 적은 거리를 계산하고, 거리 계산 비용을 더 저렴하게 하도록 하는 것을 중점적으로 두고 있습니다. 입력 쿼리에 대한 가장 가까운 이웃을 찾기 위해 검색 프로세스는 최상위 계층의 그래프에서 가장 가까운 이웃을 찾고 이 점을 후속 계층에 대한 진입점으로 사용합니다.
 

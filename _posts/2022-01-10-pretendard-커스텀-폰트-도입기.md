@@ -26,7 +26,7 @@ tags:
 
 <figure>
 
-[![](/images/aHUCuSxUrN.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/1.png)
+[![]({{ site.baseurl }}/images/aHUCuSxUrN.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/1.png)
 
 <figcaption>
 
@@ -70,7 +70,7 @@ iOS의 시스템폰트가 안드로이드 대비 더 많은 굵기를 제공하�
 
 <figure>
 
-[![](/images/xyFWkzmGNB.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/3.png)
+[![]({{ site.baseurl }}/images/xyFWkzmGNB.png)](https://blog.dramancompany.com/wp-content/uploads/2022/01/3.png)
 
 <figcaption>
 

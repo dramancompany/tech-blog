@@ -121,7 +121,7 @@ rails console 실행 예시
 
 <figure>
 
-[![](/images/DawhJOxgQZ.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/test-coverage-example.png)
+[![]({{ site.baseurl }}/images/DawhJOxgQZ.png)](https://blog.dramancompany.com/wp-content/uploads/2021/02/test-coverage-example.png)
 
 <figcaption>
 

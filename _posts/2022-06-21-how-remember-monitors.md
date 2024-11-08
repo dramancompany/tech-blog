@@ -73,7 +73,7 @@ Infrastructure Metrics - System
 
 <figure>
 
-[![](/images/OHTUUKaiHF.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-2.png)
+[![]({{ site.baseurl }}/images/OHTUUKaiHF.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-2.png)
 
 <figcaption>
 
@@ -89,7 +89,7 @@ Infrastructure Metrics - Storage
 
 <figure>
 
-[![](/images/nchGEUPkiY.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-5.png)
+[![]({{ site.baseurl }}/images/nchGEUPkiY.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-5.png)
 
 <figcaption>
 
@@ -125,7 +125,7 @@ CloudWatch 의 custom metric 및 이에 대한 alarm
 
 <figure>
 
-[![](/images/jMRJjjsNUR.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-4.png)
+[![]({{ site.baseurl }}/images/jMRJjjsNUR.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-4.png)
 
 <figcaption>
 
@@ -167,7 +167,7 @@ Slack 으로 인지하게 되는 것과 별개로 위 문단에 적어놓은 것
 
 <figure>
 
-[![](/images/kfKhyLvHro.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-10.png)
+[![]({{ site.baseurl }}/images/kfKhyLvHro.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-10.png)
 
 <figcaption>
 
@@ -201,7 +201,7 @@ DLQ(Dead Letter Queue) 로 설정해놓은 특정 SQS queue 에 메시지가 전
 
 <figure>
 
-[![](/images/KkTQvMYSvu.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-6.png)
+[![]({{ site.baseurl }}/images/KkTQvMYSvu.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-6.png)
 
 <figcaption>
 
@@ -316,7 +316,7 @@ Prometheus + Grafana, Sentry 같은 오픈소스 제품이나 New Relic, DataDog
 
 <figure>
 
-[![](/images/sHZdEqBLiK.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-8.png)
+[![]({{ site.baseurl }}/images/sHZdEqBLiK.png)](https://blog.dramancompany.com/wp-content/uploads/2022/06/image-8.png)
 
 <figcaption>
 

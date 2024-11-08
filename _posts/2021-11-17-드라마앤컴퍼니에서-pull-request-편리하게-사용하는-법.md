@@ -21,7 +21,7 @@ GitHub에서는 Pull Request 생성 시 리뷰어를 요청하는 기능이 있�
 
 제가 개발하고 있는 커뮤니티 프로젝트에서는 모든 파일에 대해서 프로젝트에 관련된 리뷰어가 지정되도록 하였습니다.
 
-[![](/images/eKamUHuPED.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-16-오후-10.11.59.png)
+[![]({{ site.baseurl }}/images/eKamUHuPED.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷-2021-11-16-오후-10.11.59.png)
 
 ### **문법 예시**
 
@@ -88,7 +88,7 @@ apps/ @octocat
 
 Pull Request 생성 단계에서는 리뷰어가 추가되지 않으며 실제로 생성 한 후 Open 상태일 경우 리뷰어가 추가됩니다. Reviewers 탭이 아래 사진과 같이 보인다면 정상적으로 기능이 동작하게 된 것입니다. 추가된 리뷰어에게도 메일이 정상적으로 가는 것도 확인하실 수 있습니다.
 
-[![](/images/FiZYCyebcE.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷_2021-10-18_오전_2_01_10.png)
+[![]({{ site.baseurl }}/images/FiZYCyebcE.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/스크린샷_2021-10-18_오전_2_01_10.png)
 
 [![](/images/MGUV20b469.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/Untitled-1.png)
 

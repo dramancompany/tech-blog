@@ -38,7 +38,7 @@ Web Vitals란 구글에서 제안하는, 더 나은 웹페이지를 개발하기
 
 <figure>
 
-[![](/images/sWNrGOjMwV.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img1.png)
+[![]({{ site.baseurl }}/images/sWNrGOjMwV.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img1.png)
 
 <figcaption>
 
@@ -112,7 +112,7 @@ CLS 값은 밀려나는 요소의 크기가 클수록, 밀려나는 거리가 �
 
 아래 그림과 같이 크롬에서 측정할 페이지에 접속한후 디버거의 Lighthouse 탭에서 테스트를 돌리고, 결과 리포트를 확인할수 있습니다.
 
-[![](/images/RhawvyXigc.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img4.png)
+[![]({{ site.baseurl }}/images/RhawvyXigc.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img4.png)
 
 [![](/images/2q6NdyiTPa.png)](https://blog.dramancompany.com/wp-content/uploads/2021/04/img5.png)
 

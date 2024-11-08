@@ -254,7 +254,7 @@ CodeDeploy에서는 Application, Deployment group, Deployment 세 가지의 개�
 
 가장 상위 개념으로 CodeDeploy를 이용하여 배포를 진행할 프로젝트를 나타냅니다.
 
-[![](/images/eAJUuCPhop.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-11.14.02.png)
+[![]({{ site.baseurl }}/images/eAJUuCPhop.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-11.14.02.png)
 
  
 
@@ -274,7 +274,7 @@ CodeDeploy에서는 Application, Deployment group, Deployment 세 가지의 개�
 
 실제 배포 건을 나타냅니다.
 
-[![](/images/mwCKiFyxEd.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-11.42.27.png)
+[![]({{ site.baseurl }}/images/mwCKiFyxEd.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-04-14-at-11.42.27.png)
 
  
 
@@ -294,7 +294,7 @@ View Events를 통하여 각 hook 부분 당 얼만큼의 시간이 소요되었
 
 에러가 났을 경우에는 script 실행 중 어떤 로그를 발생하면서 에러가 났는지도 확인할 수 있습니다.
 
-[![](/images/AtiYVvrsUk.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-30-at-11.04.59.png)
+[![]({{ site.baseurl }}/images/AtiYVvrsUk.png)](https://blog.dramancompany.com/wp-content/uploads/2017/03/Screen-Shot-2017-03-30-at-11.04.59.png)
 
  
 

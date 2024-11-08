@@ -25,7 +25,7 @@ categories:
 
 (3) 기록된 레퍼러를 필터로 구분하여 마케팅 채널 별 신규유입을 측정할 수 있습니다.
 
-<caption id="" align="aligncenter" width="1600">![](/images/seZJcFhiTc.png) 콘솔에서 레퍼러로 구분된 숫자들을 확인할 수 있습니다.</caption>
+<caption id="" align="aligncenter" width="1600">![]({{ site.baseurl }}/images/seZJcFhiTc.png) 콘솔에서 레퍼러로 구분된 숫자들을 확인할 수 있습니다.</caption>
 
 ### 하지만…
 
@@ -37,7 +37,7 @@ categories:
 
 행동을 유도하기 위해서는 스토어로만 보내는 링크보다는 Deeplink가 필요합니다. Deeplink는 앱이 설치되어 있다면 앱을, 없다면 Failover가 동작하는 링크입니다. Failover는 보통 스토어를 열어줍니다. Deeplink로 자연스럽게 행동을 위한 앱 진입을 유도할 수 있습니다. 하지만 Deeplink 또한 레퍼러 값이 앱에 진입하면 소실됩니다.
 
-![](/images/iEQofyJMjq.png)
+![]({{ site.baseurl }}/images/iEQofyJMjq.png)
 
 ### Deferred Deeplink로 레퍼러를 유지하자
 
@@ -49,7 +49,7 @@ Deferred Deeplink는 기본적으로 Deeplink와 똑같이 동작하지만 링�
 
 Deferred Deeplink를 이용하면 우리가 원하는 행동 유도 및 분석이 가능함을 알아보았습니다. 그렇다면 Deferred Deeplink는 어떻게 구현할까요? Firebase DynamicLink 등 다양한 라이브러리가 있지만 저는 Fabric의 Branch를 소개하려고 합니다. (이 시점에는 Fabric이 Twitter 소속이였는데 지금은 Firebase와 같은 Google 소속이네요!)
 
-![](/images/iZccMvPSAX.png)
+![]({{ site.baseurl }}/images/iZccMvPSAX.png)
 
 # Branch 사용하기
 
@@ -71,13 +71,13 @@ Create Link 기능으로 링크를 생성할 때 Deeplink Path, Failover link, C
 
 Link Settings 메뉴에서 생성할 링크의 기본 설정을 정의할 수 있습니다.
 
-<caption id="" align="aligncenter" width="1600">![](/images/mLwjaMcbQn.png) Deeplink Path의 Scheme, Failover URL 등을 정의할 수 있습니다.</caption>
+<caption id="" align="aligncenter" width="1600">![]({{ site.baseurl }}/images/mLwjaMcbQn.png) Deeplink Path의 Scheme, Failover URL 등을 정의할 수 있습니다.</caption>
 
 ### (4) 데이터 분석
 
 Sources 메뉴에서 사용자들이 Deeplink를 이용한 데이터를 분석할 수 있습니다. 링크를 생성할 때 설정한 Custom Tag까지 측정이 가능합니다. 여기서 Custom Tag는 우리가 유도하려는 행동을 의미할 것입니다. 아래 그림에서는 SIGNUP 이라는 Tag가 있습니다.
 
-<caption id="" align="aligncenter" width="1600">![](/images/EDLiRTdRTf.png) 단계별 수치 및 Custom Tag가 불린 수치까지 한눈에 볼 수 있습니다. 필터 또한 제공됩니다.</caption>
+<caption id="" align="aligncenter" width="1600">![]({{ site.baseurl }}/images/EDLiRTdRTf.png) 단계별 수치 및 Custom Tag가 불린 수치까지 한눈에 볼 수 있습니다. 필터 또한 제공됩니다.</caption>
 
 하지만 Deeplink는 어떤 행동이 일어났는지를 스스로 알 수 없습니다. Custom Tag 수치를 측정하기 위해서는 앱에서 넘어온 링크 데이터로 시점을 판단하고, 적절한 시점에서 행동이 일어났을 때 Custom Tag에 해당하는 이밴트를 호출해주어야 합니다. 그러면 먼저 시점을 판단하기 위한 Deferred Link 데이터를 받는 방법을 알아보겠습니다.
 

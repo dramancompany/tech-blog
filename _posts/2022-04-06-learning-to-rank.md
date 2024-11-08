@@ -58,7 +58,7 @@ Ranking에서는 모델이 얼마나 Item에 대한 순위를 잘 매기는지 �
 
 ## Precision at k
 
-![](/images/RspfzvROsY.png)
+![]({{ site.baseurl }}/images/RspfzvROsY.png)
 
 Precision은 추천된 top k의 Item 중 관련성 있는 아이템의 비율을 의미합니다. 해당 metric은 관련이 있는지 없는지만 판단합니다. 즉, rank에 대한 점수는 계산하지 않는다는 한계점을 가집니다.
 
@@ -83,7 +83,7 @@ nDCG는 MRR과 Precision의 단점을 모두 보완한 metric입니다.
 
 ## LTR을 위한 머신러닝 모델
 
-![](/images/BIQEGyzRqq.png)
+![]({{ site.baseurl }}/images/BIQEGyzRqq.png)
 
 Figure 3. Learning to Rank framework.
 

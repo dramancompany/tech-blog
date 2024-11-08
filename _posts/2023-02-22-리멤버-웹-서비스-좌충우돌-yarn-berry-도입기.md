@@ -199,7 +199,7 @@ yarn berry는 **Plug'n'Play(PnP)** 라는 기술을 사용하여 이러한 문�
 
 <figure>
 
-![](/images/BKPYCNKNkC.png)
+![]({{ site.baseurl }}/images/BKPYCNKNkC.png)
 
 <figcaption>
 
@@ -211,7 +211,7 @@ yarn classic 에서의 node\_modules 크기 (913MB)
 
 <figure>
 
-![](/images/TDwGaDBzLW.png)
+![]({{ site.baseurl }}/images/TDwGaDBzLW.png)
 
 <figcaption>
 
@@ -535,7 +535,7 @@ AWS Codebuild - 편집 - 아티팩트 - 캐싱 메뉴 하단
 
 <figure>
 
-[![](/images/xAOHOmyavG.png)](https://blog.dramancompany.com/wp-content/uploads/2023/02/image.png)
+[![]({{ site.baseurl }}/images/xAOHOmyavG.png)](https://blog.dramancompany.com/wp-content/uploads/2023/02/image.png)
 
 <figcaption>
 

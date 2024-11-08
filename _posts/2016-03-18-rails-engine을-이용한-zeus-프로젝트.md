@@ -17,7 +17,7 @@ categories:
 
 그런데 여기에는 한 가지 큰 문제가 있었습니다. 바로 동일한 업무 로직이 여러 애플리케이션에 중복되어 들어간다는 겁니다. 예를 들어 명함과 명함 요청에 대한 도메인 모델은 위의 세 가지 애플리케이션에서 모두 참조합니다.
 
-[![duplicate_domain_model](/images/kaTlvXoJlZ.png)](https://blog.dramancompany.com/wp-content/uploads/2016/03/duplicate_domain_model.png)
+[![duplicate_domain_model]({{ site.baseurl }}/images/kaTlvXoJlZ.png)](https://blog.dramancompany.com/wp-content/uploads/2016/03/duplicate_domain_model.png)
 
 위의 그림에서 보듯이, 명함 요청과 명함 도메인은 전체 라이프사이클에 걸쳐 다양한 애플리케이션에 의해 생성, 수정, 조회와 같은 작업이 일어납니다. 따라서 애플리케이션마다 동일한 명함과 명함 요청의 모델 코드가 들어가 있습니다.
 
