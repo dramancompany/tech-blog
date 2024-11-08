@@ -3,8 +3,7 @@ layout: "post"
 title: "Rails Engine을 이용한 Zeus 프로젝트"
 author: "sid"
 date: "2016-03-18"
-categories: 
-  - "develop"
+
 ---
 
 ### 1\. Problem

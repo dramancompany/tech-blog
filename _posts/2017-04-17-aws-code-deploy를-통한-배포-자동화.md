@@ -3,8 +3,7 @@ layout: "post"
 title: "AWS Code Deploy를 통한 배포 자동화"
 author: "tom"
 date: "2017-04-17"
-categories: 
-  - "develop"
+
 tags: 
   - "aws"
   - "code-deploy"

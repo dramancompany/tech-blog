@@ -3,8 +3,7 @@ layout: "post"
 title: "드라마의 Pair Programming과 Code Review 도입 후기"
 author: "sid"
 date: "2016-05-25"
-categories: 
-  - "develop"
+
 ---
 
 작년 11월에 Tom님과 Jaden님이 처음으로 페어 프로그래밍을 진행하고 도전기를 남겨주셨는데요,

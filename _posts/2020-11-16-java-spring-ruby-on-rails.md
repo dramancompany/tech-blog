@@ -3,8 +3,7 @@ layout: "post"
 title: "Java&Spring 개발자가 Ruby on Rails 를 해보고 마주친 생각들"
 author: "hb.lee"
 date: "2020-11-16"
-categories: 
-  - "develop"
+
 tags: 
   - "backend"
   - "java"

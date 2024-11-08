@@ -3,8 +3,7 @@ layout: "post"
 title: "리멤버 웹 서비스 좌충우돌 Yarn Berry 도입기"
 author: "jongtaek.oh"
 date: "2023-02-22"
-categories: 
-  - "develop"
+
 tags: 
   - "frontend"
   - "yarn"

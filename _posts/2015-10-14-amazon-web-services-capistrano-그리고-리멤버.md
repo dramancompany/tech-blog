@@ -3,8 +3,7 @@ layout: "post"
 title: "Amazon Web Services, Capistrano 그리고 리멤버"
 author: "Jaden"
 date: "2015-10-14"
-categories: 
-  - "develop"
+
 tags: 
   - "autoscaling"
   - "aws"

@@ -3,8 +3,7 @@ layout: "post"
 title: "Ruby 코드 성능 최적화 (feat. ruby-prof, Benchmark)"
 author: "tom"
 date: "2016-11-28"
-categories: 
-  - "develop"
+
 tags: 
   - "benchmark"
   - "rails"

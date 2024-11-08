@@ -3,8 +3,7 @@ layout: "post"
 title: "Fabric Branch로 사용자 행동 분석하기"
 author: "rfrost"
 date: "2018-04-20"
-categories: 
-  - "develop"
+
 ---
 
 # Fabric Branch 사용 배경

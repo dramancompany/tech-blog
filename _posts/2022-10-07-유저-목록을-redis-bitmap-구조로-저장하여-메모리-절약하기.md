@@ -3,8 +3,7 @@ layout: "post"
 title: "유저 목록을 Redis Bitmap 구조로 저장하여 메모리 절약하기"
 author: "aaronroh"
 date: "2022-10-07"
-categories: 
-  - "develop"
+
 tags: 
   - "redis"
   - "구조개선"

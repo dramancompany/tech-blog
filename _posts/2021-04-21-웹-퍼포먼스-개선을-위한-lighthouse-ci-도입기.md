@@ -3,8 +3,7 @@ layout: "post"
 title: "웹 퍼포먼스 개선을 위한 Lighthouse CI 도입기"
 author: "jiseop.han"
 date: "2021-04-21"
-categories: 
-  - "develop"
+
 ---
 
 안녕하세요. 리멤버의 웹 프론트엔드 개발을 하고 있는 한지섭입니다.

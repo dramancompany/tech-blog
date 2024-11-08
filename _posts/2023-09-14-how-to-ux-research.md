@@ -3,8 +3,7 @@ layout: "post"
 title: "리멤버에서 UT(사용자 테스트)는 어떻게 진행하나요?"
 author: "heekk"
 date: "2023-09-14"
-categories: 
-  - "design"
+
 tags: 
   - "remember"
   - "research"

@@ -3,8 +3,7 @@ layout: "post"
 title: "AI 명함촬영인식 '리오(RIO)' 적용기 2부 - ML Model Converter와 안드로이드 앱 적용기"
 author: "minseokkang"
 date: "2022-11-23"
-categories: 
-  - "ailab"
+
 tags: 
   - "ai-명함-촬영-인식"
   - "client-side-computing"

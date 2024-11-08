@@ -3,8 +3,7 @@ layout: "post"
 title: "Document Understanding 그리고 Information Extraction의 Multi-Modal Embedding"
 author: "minseokkang"
 date: "2022-03-08"
-categories: 
-  - "ailab"
+
 tags: 
   - "bdc"
   - "docformer"

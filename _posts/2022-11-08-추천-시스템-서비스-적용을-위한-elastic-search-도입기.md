@@ -3,8 +3,7 @@ layout: "post"
 title: "추천 시스템 서비스 적용을 위한 Elastic Search 도입기"
 author: "hh.hwang"
 date: "2022-11-08"
-categories: 
-  - "ailab"
+
 tags: 
   - "aws-opensearch"
   - "elasticsearch"

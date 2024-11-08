@@ -3,8 +3,7 @@ layout: "post"
 title: "Pretendard 커스텀 폰트 도입기"
 author: "ms.kang"
 date: "2022-01-10"
-categories: 
-  - "design"
+
 tags: 
   - "customfont"
   - "designsystem"

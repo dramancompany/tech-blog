@@ -3,8 +3,7 @@ layout: "post"
 title: "CODE GURU REVIEWER를 사용하여 코드리뷰 받기"
 author: "sj.sa"
 date: "2021-11-08"
-categories: 
-  - "develop"
+
 tags: 
   - "aws"
   - "code-review"

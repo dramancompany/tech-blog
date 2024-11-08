@@ -3,8 +3,7 @@ layout: "post"
 title: "리멤버는 서비스 모니터링을 어떻게 하고 있을까?"
 author: "hb.lee"
 date: "2022-06-21"
-categories: 
-  - "develop"
+
 tags: 
   - "aws"
   - "rails"

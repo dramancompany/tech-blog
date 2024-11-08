@@ -3,8 +3,7 @@ layout: "post"
 title: "Learning to Rank"
 author: "mgpark"
 date: "2022-04-06"
-categories: 
-  - "ailab"
+
 ---
 
 안녕하세요!😀  빅데이터센터 AI Lab 박민규입니다.
