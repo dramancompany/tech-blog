@@ -29,7 +29,7 @@ Amazon CodeGuru는 코드 품질을 높이고 애플리케이션에서 가장 �
 
 대부분의 모든 개발자는 기능을 머지하기 전 버그, 코드 퀄리티 등의 이유로 리뷰를 진행합니다. 저희 팀에서도 기능을 개발하고 나면 슬랙을 통해 적극적으로 코드 리뷰를 요청하고 있는데요.
 
-![]{{ site.baseurl }}/images/cy6jbxh9F7.png)
+![]({{ site.baseurl }}/images/cy6jbxh9F7.png)
 
 CodeGuru Reviewer를 사용했을 때 제가 생각하는 장점은 아래와 같습니다.
 
@@ -74,33 +74,33 @@ AWS 공식 문서에 따르면 대표적으로 다음과 같은 항목에 대해
 
 CodeGuru 서비스에 들어간 후 Reviewer → Repository 탭에 들어간 후 리포지토리 연결 버튼을 눌러줍니다.
 
-![]{{ site.baseurl }}/images/04rxbBI42m.png)
+![]({{ site.baseurl }}/images/04rxbBI42m.png)
 
 현재는 BitBucket, CodeCommit, Github, Gihub Enterprise Sever 총 네 가지의 소스 공급자를 제공하고 있습니다. 자신에게 맞는 소스 공급자를 선택 후에 연결 버튼을 눌러줍니다.
 
 실습에서는 Github 기준으로 작성하였습니다.
 
-![]{{ site.baseurl }}/images/rzkdcKr8mA.png)
+![]({{ site.baseurl }}/images/rzkdcKr8mA.png)
 
 연결되기까지는 평균 1분 정도의 시간이 걸리며 아래와 같이 연결된 걸 확인하실 수 있습니다.
 
-![]{{ site.baseurl }}/images/qMrFdeD029.png)
+![]({{ site.baseurl }}/images/qMrFdeD029.png)
 
 ### **2\. Pull Request 생성**
 
 연결이 완료된 후 Pull Request를 생성합니다. CodeGuru Reviewer에 레포지토리를 연결하면 해당 Pull Request 요청 알림을 구독합니다. 개발자가 Pull Request 요청했을시 요청 알림이 CodeGuru Reviewer로 전송되고 해당 서비스를 스캔 후 분석합니다.  
 
-![]{{ site.baseurl }}/images/RqfMLJF23n.png)
+![]({{ site.baseurl }}/images/RqfMLJF23n.png)
 
 ### **3\. 리뷰 확인**
 
 리뷰가 달리기까지에는 코드의 양에 비례해서 시간이 소요되겠지만 평균 5분 정도 걸린다고 합니다. 분석이 완료되면 아래 사진에 보시는 것과 같이 Lamda 함수의 성능을 향상하게 하기 위한 방법이나 AWS의 오래된 API를 사용하지 말라는 등 문제가 될 수 있는 코드에 리뷰가 달린 걸 확인하실 수 있습니다.
 
-![]{{ site.baseurl }}/images/EEYpPSxB3b.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/코드그루_리뷰1.png)[![]{{ site.baseurl }}/images/566mN5JZTo.png)
+![]({{ site.baseurl }}/images/EEYpPSxB3b.png)](https://blog.dramancompany.com/wp-content/uploads/2021/11/코드그루_리뷰1.png)[![]({{ site.baseurl }}/images/566mN5JZTo.png)
 
 Github의 Pull Request 말고도 CodeGuru Reviewer에 코드 검토 탭에서도 리뷰 결과를 확인하실 수 있습니다.
 
-![]{{ site.baseurl }}/images/vpW4PjoRWg.png)
+![]({{ site.baseurl }}/images/vpW4PjoRWg.png)
 
 ## **마무리**
 

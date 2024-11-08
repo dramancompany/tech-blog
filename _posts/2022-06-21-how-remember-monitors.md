@@ -40,7 +40,7 @@ New Relic 을 이용하여 서버의 처리량(throughput), 평균 응답 시간
 
 <figure>
 
-![]{{ site.baseurl }}/images/VtPVIhpj3G.png)
+![]({{ site.baseurl }}/images/VtPVIhpj3G.png)
 
 <figcaption>
 
@@ -60,7 +60,7 @@ Application Performance Monitoring
 
 <figure>
 
-![]{{ site.baseurl }}/images/FkatkB5oKL.png)
+![]({{ site.baseurl }}/images/FkatkB5oKL.png)
 
 <figcaption>
 
@@ -110,7 +110,7 @@ SLI/SLO 설정을 하고 이를 볼 수 있는 페이지를 만드는 것도 자
 
 <figure>
 
-![]{{ site.baseurl }}/images/Mh6xBrxdtU.png)
+![]({{ site.baseurl }}/images/Mh6xBrxdtU.png)
 
 <figcaption>
 
@@ -151,7 +151,7 @@ Slack 으로 인지하게 되는 것과 별개로 위 문단에 적어놓은 것
 
 <figure>
 
-![]{{ site.baseurl }}/images/kK7WOP1qCh.png)
+![]({{ site.baseurl }}/images/kK7WOP1qCh.png)
 
 <figcaption>
 
@@ -182,7 +182,7 @@ New Relic Alert 가 Slack 으로 게시된 모습
 
 <figure>
 
-![]{{ site.baseurl }}/images/P8CoHQWdCC.png)
+![]({{ site.baseurl }}/images/P8CoHQWdCC.png)
 
 <figcaption>
 
@@ -216,7 +216,7 @@ New Relic 에서 본 Logs
 
 <figure>
 
-![]{{ site.baseurl }}/images/lGW7m4PDxb.png)
+![]({{ site.baseurl }}/images/lGW7m4PDxb.png)
 
 <figcaption>
 

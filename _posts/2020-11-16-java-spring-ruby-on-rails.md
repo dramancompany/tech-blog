@@ -94,7 +94,7 @@ _from [Ruby on Rails 공식 가이드](https://guides.rubyonrails.org/getting_st
 
 <figure>
 
-![]{{ site.baseurl }}/images/qx8ik6hos3.png)
+![]({{ site.baseurl }}/images/qx8ik6hos3.png)
 
 <figcaption>
 
@@ -169,7 +169,7 @@ Time.current.yesterday.beginning_of_day
 
 <figure>
 
-![]{{ site.baseurl }}/images/q1nT2naYJx.png)
+![]({{ site.baseurl }}/images/q1nT2naYJx.png)
 
 <figcaption>
 

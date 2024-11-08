@@ -81,7 +81,7 @@ apps/ @octocat
 
 코드 소유자로 지정된 사람이 Approve를 하지 않을 때 머지를 할 수 없도록 설정하고 싶은 경우 Settings -> Branches -> Add rules에서 옵션을 설정하는 것도 가능합니다.
 
-![]{{ site.baseurl }}/images/c2gocthIaf.png)
+![]({{ site.baseurl }}/images/c2gocthIaf.png)
 
 ### **Pull Request 생성하여 리뷰어 확인**
 
@@ -89,13 +89,13 @@ Pull Request 생성 단계에서는 리뷰어가 추가되지 않으며 실제�
 
 ![]({{ site.baseurl }}/images/FiZYCyebcE.png)
 
-![]{{ site.baseurl }}/images/MGUV20b469.png)
+![]({{ site.baseurl }}/images/MGUV20b469.png)
 
 ## **Pull Request 템플릿 사용하기**
 
 <figure>
 
-![]{{ site.baseurl }}/images/VUdz1gAE4E.png)
+![]({{ site.baseurl }}/images/VUdz1gAE4E.png)
 
 <figcaption>
 
@@ -112,7 +112,7 @@ Pull Request 생성 단계에서는 리뷰어가 추가되지 않으며 실제�
 
 <figure>
 
-![]{{ site.baseurl }}/images/945hmFOumk.png)
+![]({{ site.baseurl }}/images/945hmFOumk.png)
 
 <figcaption>
 

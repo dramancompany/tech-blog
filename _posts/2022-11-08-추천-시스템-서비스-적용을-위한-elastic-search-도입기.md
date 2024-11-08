@@ -31,7 +31,7 @@ tags:
 
 리멤버 커뮤니티는 크게 인사이트 / 직무 커뮤니티 / 관심사 커뮤니티 의 카테고리로 나뉩니다. 각 카테고리는 직장생활에서 얻을 수 있는 인사이트를 제공하고, 직무별로 정보를 공유할 수 있으며, 회사생활이나 기타 관심사에 대한 정보도 교류할 수 있는 공간입니다.
 
-![]{{ site.baseurl }}/images/9v8dMqZ6Oj.png)
+![]({{ site.baseurl }}/images/9v8dMqZ6Oj.png)
 
 리멤버 커뮤니티 메인화면 \[1\]
 
@@ -65,7 +65,7 @@ tags:
 
 유사한 콘텐츠를 추천해주기 위해서는 추천이 필요한 각 게시물(콘텐츠)들을 잘 표현해주는 것이 중요합니다. 저희는 각 게시물을 잘 표현하기 위한 모델로 Sentence Representation 모델인 SimCSE(Simple Contrastive Learning of Sentence Embeddings)를 채택했습니다. Input Sentence에 대해서 dropout을 noise로 사용해 contrastive object에서 스스로를 예측하는 비지도학습이 가능한 모델 입니다. 아래 그림과 같이 한 mini-batch에 있는 문장들 안에서, dropout이 적용된 같은 문장을 postive pair로서 활용, 다른 문장들을 negative pair로써 활용하여 contrastive learning을 학습하는 Sentence Representation 모델 입니다.
 
-![]{{ site.baseurl }}/images/dAoKEQxIt0.png)
+![]({{ site.baseurl }}/images/dAoKEQxIt0.png)
 
 Unsupervised SimCSE 학습 과정 \[6\]
 
@@ -79,7 +79,7 @@ Unsupervised SimCSE 학습 과정 \[6\]
 
 콘텐츠를 구성하는 데이터들을 앞서 설명한 SimCSE 모델을 기반으로 임베딩 벡터를 추출합니다. 사용한 SimCSE 인코더는 transformer 기반의 모델인 BERT를 활용했습니다. 각 콘텐츠의 임베딩 벡터는 ”제목”, “본문”, “카테고리”, “좋아요 클릭 여부”, “댓글작성 여부”를 활용하여 생성했습니다. ”커뮤니티 유형”, “입력 시간” 역시 활용하려고 하였으나 추천 결과에 대한 정성 / 정량 평가를 기준으로 표현에서 제외 하게 되었습니다.
 
-![]{{ site.baseurl }}/images/3317qqydGX.png)
+![]({{ site.baseurl }}/images/3317qqydGX.png)
 
 ## 3-2. 가중평균을 활용한 유저 임베딩 벡터 생성
 
@@ -91,7 +91,7 @@ Unsupervised SimCSE 학습 과정 \[6\]
 
 여러 변수를 검증해봤을때 가장 성능이 좋았던 좋아요와 댓글 작성 여부를 활용해서 가중치를 적용하여 가중평균한 임배딩을 산출 했습니다.
 
-![]{{ site.baseurl }}/images/iZXwuB0CPj.png)
+![]({{ site.baseurl }}/images/iZXwuB0CPj.png)
 
 ## 3-3. 전체 추천 로직
 
@@ -118,7 +118,7 @@ Unsupervised SimCSE 학습 과정 \[6\]
 - MongoDB 란?
     - MongoDB는 기존의 테이블 기반 관계형 데이터베이스 구조가 아닌 문서 지향 데이터 모델을 사용하는 교차 플랫폼 오픈 소스 데이터베이스입니다. 이러한 유형의 모델을 사용하면 정형 및 비정형 데이터를 보다 쉽고 빠르게 통합할 수 있습니다.
 - 변경 전 방법  
-    ![]{{ site.baseurl }}/images/06e9PxqXRf.png)
+    ![]({{ site.baseurl }}/images/06e9PxqXRf.png)
 
 - 처음 고려했던 서비스 제공 방식은 위와 같이 설명할 수 있습니다.
     1. 유저가 리멤버 커뮤니티에 접속
@@ -216,7 +216,7 @@ OpenSearch에서는 3가지 다른 방법의 쿼리 벡터에 대해서 k-NN의 
 저희는 소속된 커뮤니티와 날짜를 관련한 필터링 조건이 필요하기 때문에 Script Score k-NN을 선택하여 진행했습니다. _(복잡하지 않은 조건이기 때문에 속도가 더 빠른 Script Score k-NN 사용)_ 이를 통해서 소속된 커뮤니티 등록 날짜 등의 조건으로 필터링된 대상에 대한 검색을 수행할 수 있었습니다.
 
 - 변경 후 방법  
-    ![]{{ site.baseurl }}/images/brnT1ol414.png)
+    ![]({{ site.baseurl }}/images/brnT1ol414.png)
 
 1. 유저가 리멤버 커뮤니티에 접속
 2. MongoDB에서 유저의 임베딩 값을 추출
@@ -229,7 +229,7 @@ MongoDB를 활용하여 임베딩 벡터를 추출할 때 생겼던 병목을 Op
 
 임베딩을 추출하고 유사도를 계산하는 추천 로직에 있어서 평균적으로 _**0.2 sec**_ 로 결과를 반환하는 API를 생성할 수 있었습니다.
 
-![]{{ site.baseurl }}/images/nnAsh0YpgP.png)
+![]({{ site.baseurl }}/images/nnAsh0YpgP.png)
 
 * * *
 
@@ -237,7 +237,7 @@ MongoDB를 활용하여 임베딩 벡터를 추출할 때 생겼던 병목을 Op
 
 구축한 추천 로직을 활용하여 A/B test를 진행했습니다. A/B test를 통해 추천 로직으로 배포된 글과 “최신글 + 인기글(좋아요, 댓글 다수)”의 클릭률을 비교했습니다. 그 결과, 인기글 보단 클릭률이 낮았고 최신글보단 클릭률이 높은 결과가 나타났습니다.
 
-![]{{ site.baseurl }}/images/6ir0f9EOks.png)
+![]({{ site.baseurl }}/images/6ir0f9EOks.png)
 
 좀 더 다양한 변수를 활용한 고도화된 모델에 대한 연구 진행을 검토했으나 내부 사정으로 인해서 추가 연구와 서비스까지는 이어지지는 못했습니다. 그러나 머신러닝 모델에 대한 서비스 적용은 결과 평가에 앞서서 서비스에 어떻게 적용할 것인지를 고민하는 것이 중요하다는 것을 다시 한번 느끼게 해주는 프로젝트 였습니다.
 
